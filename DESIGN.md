@@ -10,7 +10,103 @@
 > - `README.md` — 仓库使用说明
 > - `_source_design.md` — 原始设计研究稿（存档）
 >
-> Last updated: 2026-05-13 · v1.0
+> Last updated: 2026-05-24 · **v4.2 Brand Board**
+
+---
+
+## 0. AI Implementation Rules（所有 AI 写代码必须先读）
+
+`jr-academy-brand/index.html` 是当前视觉 source of truth。任何 AI / Codex / Claude / 设计实现，必须按这张 Brand Board 写 UI，不能再沿用旧 UI Kit。
+
+### 0.1 当前品牌风格
+
+| 维度 | 规范 |
+|------|------|
+| 页面底色 | 暖白 `#FFFCF6`，可叠很轻的黄色点阵；不要冷灰蓝底 |
+| 卡片 | 暖白 `#FFFDF8`，1px 浅橙边 `#F3D8B5`，大区块圆角 16px，产品/控件卡片圆角 8px |
+| 编号标题 | 红色胶囊 `#FF4D4F` + 白字，例如 `01`、`02` |
+| 主按钮 | 黑色 `#0D0F12` 背景，白字，8px 圆角，右箭头 |
+| 次按钮 | 暖白/透明底，黑色 1px 边，8px 圆角 |
+| Tags | 紫色浅底 `#F1EEFF` + 紫色文字；状态 pill 用蓝/绿/灰/红浅底 |
+| 装饰 | 少量黄色 sparkle、黑色手绘箭头/线条；只放 hero/品牌板/空状态，不进数据表 |
+| 字体 | 中文 Source Han Sans / 思源黑体；英文 Inter |
+| 字号 | H1 32px Bold；H2 24px Bold；H3 18px Semibold；Body 14px；Caption 12px |
+
+### 0.2 禁止继续使用的旧风格
+
+- 禁止把 `#FF4D4F` 当大面积主 CTA 以外的底色；红色主要用于编号、强调、danger、progress highlight。
+- 禁止冷灰蓝大底：`#F7F8FC`、`#F8FBFF` 不能作为新版主背景。
+- 禁止旧皇家蓝/旧蓝紫主调：`#5B4BFF`、`#6843FF`、`#6366F1` 不能作为主品牌色，统一换成 `#7B61FF`。
+- 禁止大面积 20px/24px 圆角产品卡片；基础控件和卡片默认 8px，只有 Brand Board 大面板可 16px。
+- 禁止重 neo-brutalism 黑粗边 + 大硬阴影作为默认风格；新版是轻边框、暖白卡片、轻阴影。
+- 禁止把按钮做成全 pill；普通按钮 8px，只有 tag/status/avatar 使用 pill。
+
+### 0.3 AI 写代码时的最小落地清单
+
+1. 先 import/use `tokens/tokens.css` 或把等价 token 映射到项目 design tokens。
+2. 页面背景用 `--jr-surface-canvas`。
+3. 卡片用 `--jr-surface-panel + --jr-border-warm + --jr-radius-panel/--jr-radius-card`。
+4. 主操作按钮用黑底 `--jr-black`，不是红底。
+5. AI/学习类 tag、focus、进度辅助色用 `--jr-purple`。
+6. 成功/完成用 `--jr-green`，警告/成就用 `--jr-yellow`，错误/强调用 `--jr-red`。
+7. **Icon 用 lucide 24×24 + 2px stroke + currentColor**，禁用 emoji 占位（详见 §15 Icon System）。
+8. 修改后打开 `jr-academy-brand/index.html` 对照 01-13 模块自检。
+
+### 0.4 v4.1 → v4.2 Changelog（2026-05-24）
+
+本次 polish 修复了 5 类视觉一致性问题：
+
+1. **Emoji → Lucide SVG（6 处）**：panel 01 brand 4 个 pill 图标（📖→book / ⚡→zap / 📈→trending-up / 🤝→users）、panel 04 删除按钮（🗑→trash-2）、panel 09 功能卡（🤖→bot）全部换成 inline SVG。
+2. **牛小匠头像统一（panel 01）**：从 `heads/01-default.png` 改用 `official/01-hero-fullbody.png`，hero 场景用全身形象更有张力。
+3. **资产库 panel 合并（20 → 11）**：14 logo / 15 装饰（shapes+highlights+scatter）/ 16-19 牛小匠分类（官方+表情/头像+半身+服装/工作+生活+变体/Chibi 全套）/ 20 子品牌 / 21-22 插画 / 23 品牌定位+Voice / 24 Do-Don't+Family — 减少视觉散乱。
+4. **Icon Token 命名空间**：`tokens.css` + `tokens.json` 新增 `--jr-icon-*` / `component.icon` 一套（size / size-sm / size-lg / stroke / color / radius）。
+5. **DESIGN.md §15 Icon System** 新增章节，明确 lucide 来源、token 引用、`.icon-grid--lucide` 用法。
+
+v4.3+ roadmap（不在本次范围）：Dashboard / Mobile 示例 panel、dark mode token、TypeScript `tokens.ts`、Style Dictionary 多端输出、互动 demo。
+
+### 0.5 Icon System (v4.2 新增)
+
+**来源**：[lucide.dev](https://lucide.dev/) — MIT 协议，约 1500+ icon，跨产品免费用。
+
+**规范**：
+
+| 维度 | 规则 | Token |
+|------|------|-------|
+| viewBox | 严格 `0 0 24 24` | — |
+| 尺寸默认 | 24×24 | `--jr-icon-size: 24px` |
+| 尺寸小 | 18×18（pill / tag / inline） | `--jr-icon-size-sm: 18px` |
+| 尺寸大 | 32×32（hero / feature） | `--jr-icon-size-lg: 32px` |
+| 描边 | `stroke-width="2"`，无填充 | `--jr-icon-stroke: 2` |
+| 色彩 | `stroke="currentColor"`，靠父级 `color` 控色 | `--jr-icon-color: currentColor` |
+| 端头 | `stroke-linecap="round" stroke-linejoin="round"` | — |
+| 圆角变体 | `.icon-grid--lucide` + `border-radius: 50%` | `--jr-icon-radius: 4px` |
+| 填充变体 | `star/flag/heart` 等 solid glyph 用 `fill="#FFC84D"` | — |
+
+**禁用**：
+
+- ❌ emoji 当 icon（💡⚡🤖🗑 等）— 高清屏模糊，不能换色，无法统一品牌
+- ❌ Font Awesome / Material Icons — 字体依赖大，跟 lucide 视觉不一致
+- ❌ 自定义 SVG 不遵守 24×24 viewBox / 2px stroke — 跟 lucide 配合时大小不一致
+
+**用法示例**：
+
+```html
+<!-- 标准用法 -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="..."/>
+</svg>
+
+<!-- 跨产品复用 — 用 token 控制尺寸 -->
+<svg style="width: var(--jr-icon-size); height: var(--jr-icon-size)"
+     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  ...
+</svg>
+```
+
+**导出工作流**：在 lucide.dev 复制 SVG → 粘贴到代码 → 把 `<svg>` 属性补全（`fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"`）→ inline 到 HTML。
+
+**当前 brand board 用了哪些 lucide icon**：home / book-open / cap (graduation-cap) / clipboard / users / cpu / trending-up / award / message-circle / settings / star / download / share / calendar / help-circle / book-open / zap / trash-2 / bot — 共 19 个，全部 inline 在 `index.html` panel 01 / 04 / 07 / 09。
 
 ---
 
@@ -971,9 +1067,11 @@ index.html  ←  视觉手册
 
 ---
 
-_v1.3 · 2026-05-13 · JR Academy 总品牌_
+_v4.2 · 2026-05-24 · JR Academy 总品牌_
 
 _Changelog_
+- **v4.2 (2026-05-24)**: emoji→lucide SVG (6 处) / 牛小匠头像统一 / 资产库 panel 合并 20→11 / 新增 `--jr-icon-*` token namespace / 新增 §0.5 Icon System
+- v4.1 (2026-05-24): 视觉 finalize — 13 panel brand board + 暖白底 + 红编号胶囊 + 黑色 CTA + 8px 圆角
 - v1.3 (2026-05-13): 新增 §15 Chibi 资产批次 · 40 张 ChatGPT 设计变体收编（37 识别 + 3 inbox），含 chibi/unimate/jobhunter/outfits-extra/vi-boards 5 大分组 + promote 规则
 - v1.2 (2026-05-13): §14 补充人物插画 Career Impact 系列（16 张：4 scene + 3 quiz + 9 roles）收编到 `assets/illustrations/career-impact/`，design system 成为 source of truth
 - v1.1 (2026-05-13): 新增 §14 装饰元素章节（14 个 SVG/CSS 标准件 + 用色规则 + 跨项目落地映射）
