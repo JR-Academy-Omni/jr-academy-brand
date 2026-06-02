@@ -4,14 +4,14 @@
 > JR Academy 是母品牌，UniMate AI / Cert Master / Job Hunter 都是它的子产品 — 子产品的设计系统在各自仓库，本文件只定义**总品牌**（官网 / Dashboard / AI 职业诊断 / 社区）的视觉标准。
 >
 > 配套文件：
-> - `index.html` — 13 模块视觉设计系统 + 资产摘要
+> - `index.html` — 18 模块标准设计系统 + 资产摘要
 > - `assets.html` — 完整图片资产库
 > - `tokens/tokens.json` — W3C Design Tokens 源数据
 > - `tokens/tokens.css` — `--jr-*` CSS 变量
 > - `README.md` — 仓库使用说明
 > - `_source_design.md` — 原始设计研究稿（存档）
 >
-> Last updated: 2026-06-02 · **v4.3 Brand Board**
+> Last updated: 2026-06-02 · **v4.4 Brand Board**
 
 ---
 
@@ -51,7 +51,7 @@
 5. AI/学习类 tag、focus、进度辅助色用 `--jr-purple`。
 6. 成功/完成用 `--jr-green`，警告/成就用 `--jr-yellow`，错误/强调用 `--jr-red`。
 7. **Icon 用 lucide 24×24 + 2px stroke + currentColor**，禁用 emoji 占位（详见 §15 Icon System）。
-8. 修改后打开 `jr-academy-brand/index.html` 对照 01-13 模块自检。
+8. 修改后打开 `jr-academy-brand/index.html` 对照 01-18 模块自检。
 
 ### 0.4 v4.1 → v4.2 Changelog（2026-05-24）
 
@@ -63,7 +63,7 @@
 4. **Icon Token 命名空间**：`tokens.css` + `tokens.json` 新增 `--jr-icon-*` / `component.icon` 一套（size / size-sm / size-lg / stroke / color / radius）。
 5. **DESIGN.md §15 Icon System** 新增章节，明确 lucide 来源、token 引用、`.icon-grid--lucide` 用法。
 
-v4.3+ roadmap（不在本次范围）：Dashboard / Mobile 示例 panel、dark mode token、TypeScript `tokens.ts`、Style Dictionary 多端输出、互动 demo。
+v4.4+ roadmap（不在本次范围）：Dashboard / Mobile 示例 panel、dark mode token、TypeScript `tokens.ts`、Style Dictionary 多端输出。
 
 ### 0.5 Icon System (v4.2 新增)
 
@@ -774,7 +774,7 @@ PR diff 出现以下立即打回：
 
 ```
 jr-academy-brand/
-├── index.html                ← 13 模块视觉设计系统 + 资产摘要
+├── index.html                ← 18 模块标准设计系统 + 资产摘要
 ├── assets.html               ← 完整图片资产库（按 assets/ 全量生成 132 个资产卡片）
 ├── DESIGN.md                 ← 本文件（完整规范）
 ├── README.md                 ← 仓库使用说明
@@ -1069,9 +1069,10 @@ index.html  ←  视觉手册
 
 ---
 
-_v4.3 · 2026-06-02 · JR Academy 总品牌_
+_v4.4 · 2026-06-02 · JR Academy 总品牌_
 
 _Changelog_
+- **v4.4 (2026-06-02)**: `index.html` 扩展为 18 模块标准设计系统，新增 Motion / Spacing / Elevation / States / Implementation Rules；动效示例包含 entrance、hover lift、feedback pop、loading progress，并支持 `prefers-reduced-motion`
 - **v4.3 (2026-06-02)**: 上半部分按新版 13 模块重排 / 主 Logo 换为设计师正式 Logo 文件 / 下半部分按 `assets/` 当前文件全量展示 132 个图片资产卡片 / 新增 `assets.html` 独立完整资产页，保留 spec sheet、backup、_inbox、吉祥物、Chibi、子品牌 mascot 与插画
 - **v4.2 (2026-05-24)**: emoji→lucide SVG (6 处) / 牛小匠头像统一 / 资产库 panel 合并 20→11 / 新增 `--jr-icon-*` token namespace / 新增 §0.5 Icon System
 - v4.1 (2026-05-24): 视觉 finalize — 13 panel brand board + 暖白底 + 红编号胶囊 + 黑色 CTA + 8px 圆角

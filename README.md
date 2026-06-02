@@ -1,6 +1,6 @@
 # JR Academy / 匠人学院 — Master Design System
 
-> **v4.3 Brand Board · 2026-06-02** — 13 模块 UI 规范 + 全量图片资产库（132 个资产卡片）
+> **v4.4 Brand Board · 2026-06-02** — 18 模块标准设计系统 + 全量图片资产库（132 个资产卡片）
 >
 > **学 AI 来匠人 · STUDY AI AT JR ACADEMY**
 > 一起成为 AI 时代的匠人 · Be an AI Craftsman.
@@ -30,8 +30,8 @@
 - 成功用绿色 `#22C55E`，警告/成就用黄色 `#FFC84D`
 - 不再使用旧冷灰蓝背景、旧大蓝紫主调、全 pill 按钮、重黑粗边大阴影
 
-任何项目落地前先对照 `index.html` 的 13 个模块：
-Brand / Colors / Typography / Buttons / Inputs / Chips / Icons / Navigation / Cards / Feedback / Progress / Table / Product Section Cards.
+任何项目落地前先对照 `index.html` 的 18 个模块：
+Brand / Colors / Typography / Buttons / Inputs / Chips / Icons / Navigation / Cards / Feedback / Progress / Table / Product Section Cards / Motion / Spacing / Elevation / States / Implementation Rules.
 
 ---
 
@@ -39,7 +39,7 @@ Brand / Colors / Typography / Buttons / Inputs / Chips / Icons / Navigation / Ca
 
 ```
 jr-academy-brand/
-├── index.html              ← Brand Board（13 个 UI 模块 + 资产摘要）
+├── index.html              ← Brand Board（18 个 UI / Motion / 落地规则模块 + 资产摘要）
 ├── assets.html             ← 完整图片资产库（按 assets/ 全量生成 132 个资产卡片）
 ├── DESIGN.md               ← 完整设计规范 + AI Implementation Rules
 ├── _source_design.md       ← 原始设计研究稿（存档）
@@ -59,8 +59,8 @@ jr-academy-brand/
 ## 用法
 
 ### 看规范
-双击 `index.html`，13 个模块：
-Brand / Colors / Typography / Buttons / Inputs / Chips / Icons / Navigation / Cards / Feedback / Progress / Table / Product Section Cards.
+双击 `index.html`，18 个模块：
+Brand / Colors / Typography / Buttons / Inputs / Chips / Icons / Navigation / Cards / Feedback / Progress / Table / Product Section Cards / Motion / Spacing / Elevation / States / Implementation Rules.
 
 ### 读设计决策
 `DESIGN.md` — 完整 13 节规范，包含：
@@ -154,10 +154,15 @@ Front · Side · Back · Sitting · Laptop · Tablet · Wave · Like · Thinking
 - [x] 下半部分按 `assets/` 当前文件全量展示 132 个资产卡片（含 spec sheet、backup、_inbox、吉祥物、Chibi、子品牌 mascot、插画）
 - [x] 新增 `assets.html` 独立完整资产页，像 Cert Master 的设计稿参考页一样单独承载所有图片
 
-**v4.3+ roadmap**：
+**v4.4 已完成（2026-06-02）**：
+- [x] 上半部分扩展为 18 模块标准设计系统
+- [x] `学 AI 来匠人` 单独标语素材改为正式图片资产
+- [x] 新增 Motion / Spacing / Elevation / States / Implementation Rules 模块
+- [x] Motion 示例支持 entrance、hover lift、feedback pop、loading progress 和 `prefers-reduced-motion`
+
+**v4.4+ roadmap**：
 - [ ] Dashboard 示例 panel（学习中心 / Admin 后台 / 数据可视化标准布局）
 - [ ] Mobile 示例 panel（H5 / 小程序 / RN 布局规范）
-- [ ] 互动 demo（hover / focus / active 动态演示）
 - [ ] dark mode token（`--jr-paper-dark` / `--jr-panel-dark` 一套）
 - [ ] TypeScript `tokens.ts`（给 React/TS 项目直接 import）
 - [ ] Style Dictionary 多端输出（Tailwind preset / iOS swift / Android xml）
