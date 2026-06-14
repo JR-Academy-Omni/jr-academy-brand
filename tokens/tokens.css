@@ -1,65 +1,91 @@
 /* =====================================================
-   JR Academy / 匠人学院 — Design Tokens (Master Brand · v4)
+   JR Academy / 匠人学院 — Design Tokens (Master Brand · v5 · Neo-Brutalism)
    Tagline: 学 AI 来匠人 / STUDY AI AT JR ACADEMY
    Sub: 一起成为 AI 时代的匠人
    Mascot: 牛小匠 · 红 JR 连帽衫 + 墨镜
-   Grid: 4pt · 中文 思源黑体 · 英文 Inter
-   Source of truth: tokens.json + assets/spec-sheet-v4.png
+
+   🚨 v5 设计语言 = Neo-Brutalism（回归 + 和讲课 deck 统一成一套）
+      - 边框: 3px solid #000（var --jr-border）
+      - 阴影: 偏移硬阴影 6px 6px 0 #000（var --jr-shadow-md），hover 阴影消失 + 位移
+      - 圆角: 0（直角）。只有圆形元素（头像/点/胶囊）用 --jr-radius-full
+      - 色板: 完全对齐 curriculum 讲课 deck theme.ts（red #ff5757 / dark #10162f / warmBg #fff1e7）
+      - 字体: Bricolage Grotesque(标题) + DM Sans(正文) + Space Mono(数据/标签) + Noto Sans SC(中文)
+      ⚠️ v4.2「禁止 neo-brutalism、暖白 + 8px 圆角 + 轻阴影」已废，以本文件为准。
+      ⚠️ DESIGN.md 是文字规范，数值真相唯一在本文件 tokens.css。
+
+   Source of truth: tokens.css（本文件）。对齐基准: curriculum/ai-adoption-bootcamp/src/styles/theme.ts
    ===================================================== */
 
 :root {
-  /* —— Brand · Primary （主黑 v4：更深 #0D0F12）—— */
-  --jr-black:    #0D0F12;  /* 主色 Dark — 主 CTA / Logo / 主标识 */
+  /* —— Brand · Primary （主深色 v5：对齐 deck dark #10162f）—— */
+  --jr-black:    #10162f;  /* 主深色 — 深色 slide / 主 CTA / Logo / 主标识（deck dark）*/
+  --jr-ink-true: #000000;  /* 纯黑 — 仅用于边框 / 偏移硬阴影 */
 
-  /* —— Brand · Accent (4 档 · v4 去掉了 Blue)—— */
-  --jr-red:      #FF4D4F;  /* 强调色 Red — Danger / 强调 */
-  --jr-red-aa:   #D92D20;  /* 可访问红底 — 白色小字 AA */
-  --jr-red-text: #B42318;  /* 可访问红字 — 浅红/暖白底 AA */
-  --jr-purple:   #7B61FF;  /* 紫色 Purple — AI / 学习进度 */
-  --jr-yellow:   #FFC84D;  /* 黄色 Yellow — 警告 / 成就 */
-  --jr-green:    #22C55E;  /* 绿色 Green — Success / 完成 */
+  /* —— Brand · Accent (对齐 deck 六色)—— */
+  --jr-red:      #ff5757;  /* 品牌主色 Red — 强调 / 主 CTA / 编号（deck red）*/
+  --jr-red-aa:   #D92D20;  /* 可访问红底 — 白色小字 AA（保留）*/
+  --jr-red-text: #B42318;  /* 可访问红字 — 浅红/暖底 AA（保留）*/
+  --jr-yellow:   #FFDE59;  /* 黄色 Yellow — 强调 / 高亮 / 成就（deck yellow）*/
+  --jr-green:    #7ED957;  /* 绿色 Green — 成功 / 数据（deck green）*/
+  --jr-blue:     #38B6FF;  /* 蓝色 Blue — 信息 / 链接（deck blue，v5 回归）*/
+  --jr-purple:   #CB6CE6;  /* 紫色 Purple — AI / 学习进度 / 装饰（deck purple）*/
+  --jr-orange:   #FF914D;  /* 橙色 Orange — 警告 / 次强调（deck orange）*/
+
+  /* —— Surface (deck 暖底，不纯白)—— */
+  --jr-surface-canvas: #fff1e7; /* 页面暖底（deck warmBg）*/
+  --jr-surface-panel:  #ffffff; /* 卡片 / 面板（neo-brutalism 多用纯白卡 + 黑边）*/
+  --jr-surface-panel-alt: #FFF8F2;
+  --jr-surface-dark:   #1a1a2e; /* 深色 slide 背景（deck darkBg）*/
+
+  /* —— Border / Shadow（neo-brutalism 核心）—— */
+  --jr-border-color:  #000000;
+  --jr-border:        3px solid #000000;   /* 标准黑粗边 */
+  --jr-border-sm:     2px solid #000000;   /* 小卡 / chip 边 */
+  --jr-shadow-sm:     4px 4px 0 #000000;   /* 小卡偏移硬阴影 */
+  --jr-shadow-md:     6px 6px 0 #000000;   /* 标准偏移硬阴影 */
+  --jr-shadow-lg:     8px 8px 0 #000000;   /* 大区块 / 强调 */
+  --jr-shadow-panel:  6px 6px 0 #000000;
+  --jr-shadow-hard:   6px 6px 0 #000000;   /* 语义别名 */
+  --jr-shadow-hard-sm:4px 4px 0 #000000;
+  /* hover 位移量（配 box-shadow:0 0 0 + translate(Npx,Npx)）*/
+  --jr-press-shift:   4px;
+
+  /* —— Neutral (暖中性，配暖底)—— */
+  --jr-neutral-900: #1a1a2e;  /* 主文字（近 deck darkBg）*/
+  --jr-neutral-600: #5b5750;  /* 次正文（暖灰）*/
+  --jr-neutral-300: #cfc6b8;  /* 次边框（暖，少用，主边一律黑）*/
+  --jr-neutral-100: #f3ece2;  /* 浅暖 bg */
+  --jr-neutral-50:  #fff8f0;  /* 页面浅暖 bg */
 
   /* —— Legacy alias（让旧代码不炸）—— */
-  --jr-coral:    var(--jr-red);
+  --jr-coral:      var(--jr-red);
   --jr-coral-deep: #E63946;
-  --jr-ink:      var(--jr-black);
-  --jr-mint:     var(--jr-green);
-  --jr-blue:     var(--jr-purple);   /* 蓝色 v4 去掉，旧代码 fallback 到紫 */
-
-  /* —— Neutral (v4.3 · 暖中性：配暖白底色相统一，去"脏"感)—— */
-  --jr-neutral-900: #2A2622;  /* 中性 900 — 主文字（暖墨）*/
-  --jr-neutral-600: #6B6358;  /* 中性 600 — 次正文（暖灰，替冷蓝灰 #6B7280）*/
-  --jr-neutral-300: #CFC6B8;  /* 中性 300 — 边框（暖）*/
-  --jr-neutral-100: #F1ECE3;  /* 中性 100 — 浅暖 bg */
-  --jr-neutral-50:  #FAF7F1;  /* 中性 50  — 页面暖 bg */
-
-  /* —— Surface (Brand Board v4.1 · AI 必须使用) —— */
-  --jr-surface-canvas: #FFFCF6; /* 页面暖白底 */
-  --jr-surface-panel:  #FFFDF8; /* 卡片 / 面板暖白 */
-  --jr-surface-panel-alt: #FFFBF1;
-  --jr-border-warm:   #F3D8B5; /* 浅橙细边 */
-  --jr-border-warm-strong: #EFC98F;
-  --jr-divider-warm:  #F0E2CF;
-
-  /* —— Legacy alias（保留旧 var name） —— */
-  --jr-ink-1:    var(--jr-neutral-900);
-  --jr-ink-2:    var(--jr-neutral-600);
-  --jr-slate:    var(--jr-neutral-600);
-  --jr-mist:     var(--jr-neutral-300);
-  --jr-fog:      var(--jr-neutral-300);
-  --jr-canvas:   var(--jr-neutral-50);
-  --jr-canvas-2: var(--jr-neutral-100);
-  --jr-white:    #FFFFFF;
+  --jr-ink:        var(--jr-black);
+  --jr-mint:       var(--jr-green);
+  --jr-ink-1:      var(--jr-neutral-900);
+  --jr-ink-2:      var(--jr-neutral-600);
+  --jr-slate:      var(--jr-neutral-600);
+  --jr-mist:       var(--jr-neutral-300);
+  --jr-fog:        var(--jr-neutral-300);
+  --jr-canvas:     var(--jr-neutral-50);
+  --jr-canvas-2:   var(--jr-neutral-100);
+  --jr-white:      #FFFFFF;
+  --jr-border-warm:        #000000;  /* v5：暖边一律收敛到黑粗边 */
+  --jr-border-warm-strong: #000000;
+  --jr-divider-warm:       #000000;
+  --jr-glow-black:    var(--jr-shadow-lg);
+  --jr-glow-red:      var(--jr-shadow-lg);
+  --jr-glow-purple:   var(--jr-shadow-lg);
 
   /* —— Wash （浅色背景，chip / alert）—— */
-  --jr-wash-red:    #FEE2E2;
-  --jr-wash-purple: #E0E7FF;
-  --jr-wash-yellow: #FEF3C7;
-  --jr-wash-green:  #D1FAE5;
-  --jr-wash-blue:   #DBEAFE;
-  --jr-wash-gray:   #F3F4F6;
-  --jr-wash-coral:  var(--jr-wash-red);  /* legacy alias */
-  --jr-wash-mint:   var(--jr-wash-green); /* legacy alias */
+  --jr-wash-red:    #FFE3E3;
+  --jr-wash-purple: #F4E3FB;
+  --jr-wash-yellow: #FFF6CC;
+  --jr-wash-green:  #E6F9DC;
+  --jr-wash-blue:   #DEF1FF;
+  --jr-wash-gray:   #F1ECE3;
+  --jr-wash-coral:  var(--jr-wash-red);
+  --jr-wash-mint:   var(--jr-wash-green);
 
   /* —— Semantic —— */
   --jr-success: var(--jr-green);
@@ -67,17 +93,18 @@
   --jr-danger:  var(--jr-red);
   --jr-info:    var(--jr-blue);
 
-  /* —— Radius (9 档) —— */
+  /* —— Radius (neo-brutalism = 直角；圆形元素用 -full) —— */
   --jr-radius-0:    0;
-  --jr-radius-xs:   4px;
-  --jr-radius-sm:   8px;     /* Button / Input / Product Card 默认 */
-  --jr-radius-md:   12px;    /* 少量大输入框 / 紧凑面板 */
-  --jr-radius-lg:   16px;    /* Brand Board 大面板默认 */
-  --jr-radius-xl:   20px;
-  --jr-radius-2xl:  24px;    /* Hero / Modal */
-  --jr-radius-3xl:  32px;
-  --jr-radius-4xl:  40px;
-  --jr-radius-full: 9999px;
+  --jr-radius-xs:   0;
+  --jr-radius-sm:   0;     /* Button / Input / Card 默认 = 直角 */
+  --jr-radius-md:   0;
+  --jr-radius-lg:   0;     /* 大区块也直角 */
+  --jr-radius-xl:   0;
+  --jr-radius-2xl:  0;
+  --jr-radius-3xl:  0;
+  --jr-radius-4xl:  0;
+  --jr-radius-full: 9999px; /* 仅圆形：头像 / 状态点 / 胶囊标签 */
+  --jr-radius:      0;      /* 通用别名 */
 
   /* —— Spacing (4pt · 13 档) —— */
   --jr-space-1:  4px;
@@ -100,47 +127,44 @@
   --jr-w-desktop: 1200px;
   --jr-w-wide:    1440px;
 
-  /* —— Shadow —— */
-  --jr-shadow-sm:     0 1px 2px rgba(42,38,34,0.05);
-  --jr-shadow-md:     0 1px 3px rgba(42,38,34,0.04), 0 8px 24px rgba(42,38,34,0.07);  /* v4.3 多层柔阴影 */
-  --jr-shadow-lg:     0 2px 4px rgba(42,38,34,0.05), 0 18px 48px rgba(42,38,34,0.10);
-  --jr-shadow-panel:  0 2px 4px rgba(42,38,34,0.04), 0 14px 36px rgba(42,38,34,0.06);
-  --jr-glow-black:    0 8px 20px rgba(17,17,17,0.32);
-  --jr-glow-red:      0 8px 20px rgba(239,68,68,0.28);
-  --jr-glow-purple:   0 8px 20px rgba(99,102,241,0.30);
+  /* —— Component shortcuts —— */
+  --jr-button-primary-bg:    var(--jr-black);
+  --jr-button-primary-text:  #FFFFFF;
+  --jr-button-primary-hover: #1d2547;
+  --jr-button-accent-bg:     var(--jr-red);   /* 彩色 CTA：红底黑边黑阴影 */
+  --jr-chip-ai-bg:     var(--jr-wash-purple);
+  --jr-chip-ai-border: #000000;
+  --jr-chip-ai-text:   #6b1f86;
+  --jr-focus-ring:     rgba(56,182,255,0.45); /* 蓝色 focus，配直角描边 */
 
-  /* —— Component shortcuts (Brand Board v4.1) —— */
-  --jr-button-primary-bg: var(--jr-black);
-  --jr-button-primary-text: #FFFFFF;
-  --jr-button-primary-hover: #24272D;
-  --jr-chip-ai-bg: #F1EEFF;
-  --jr-chip-ai-border: #D6CEFF;
-  --jr-chip-ai-text: #3F2BA8;
-  --jr-focus-ring: rgba(123,97,255,0.22);
+  /* —— Icon system —— */
+  --jr-icon-size:    24px;
+  --jr-icon-size-sm: 18px;
+  --jr-icon-size-lg: 32px;
+  --jr-icon-stroke:  2;
+  --jr-icon-color:   currentColor;
+  --jr-icon-radius:  0;
 
-  /* —— Icon system (Brand Board v4.2) —— */
-  --jr-icon-size:    24px;            /* lucide 默认 viewBox 0 0 24 24 */
-  --jr-icon-size-sm: 18px;            /* 小尺寸 — 用于 pill/tag */
-  --jr-icon-size-lg: 32px;            /* 大尺寸 — 用于 hero/feature */
-  --jr-icon-stroke:  2;               /* SVG stroke-width 单位 */
-  --jr-icon-color:   currentColor;    /* 继承父级文字色 */
-  --jr-icon-radius:  4px;             /* 方形 icon 内圆角 */
+  /* —— Typography（v5：Bricolage Grotesque + DM Sans + Space Mono + Noto Sans SC）—— */
+  /* 唯一字体真相。对齐 deck theme.ts：标题 Bricolage Grotesque，正文 DM Sans，
+     数据/标签/代码 Space Mono，中文统一 fallback 思源黑体 Noto Sans SC。
+     网页须引 Google Fonts:
+     Bricolage+Grotesque:wght@400;600;700;800 / DM+Sans:wght@400;500;600;700
+     / Space+Mono:wght@400;700 / Noto+Sans+SC:wght@400;500;700;900 */
+  --jr-font-heading: 'Bricolage Grotesque', 'Noto Sans SC', 'PingFang SC',
+                     'Microsoft YaHei', system-ui, sans-serif;
+  --jr-font-sans:    'DM Sans', 'Noto Sans SC', 'PingFang SC',
+                     'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  --jr-font-mono:    'Space Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --jr-font-display: var(--jr-font-heading);  /* Hero 大字也走标题字体 */
 
-  /* —— Typography（v4：思源黑体 + Inter）—— */
-  /* 唯一字体真相（v4.3 统一）：英文 Inter + 中文思源黑体（Noto Sans SC = 思源黑体 webfont 名，
-     网页引 Google Fonts 即可靠渲染）。⚠️ DESIGN.md 旧写 Plus Jakarta Sans 是历史不一致，已废，以此为准。 */
-  --jr-font-sans: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', '思源黑体',
-                  'PingFang SC', 'Microsoft YaHei',
-                  system-ui, -apple-system, sans-serif;
-  --jr-font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
-
-  --jr-fs-display: clamp(40px, 6vw, 68px);  /* Display — Hero 大字（v4.3 新增，补 H1↔正文断层）*/
-  --jr-fs-h1:      32px;   /* 标题 1 — H1 32px Bold */
-  --jr-fs-h2:      24px;   /* 标题 2 — H2 24px Bold */
-  --jr-fs-h3:      18px;   /* 标题 3 — H3 18px Semibold（v4：20→18） */
-  --jr-fs-body-1:  14px;   /* 正文 — v4 默认（16→14） */
-  --jr-fs-body-2:  14px;   /* alias */
-  --jr-fs-caption: 12px;   /* 辅助 */
+  --jr-fs-display: clamp(40px, 6vw, 64px);  /* Display — Hero/Cover 大字 */
+  --jr-fs-h1:      clamp(32px, 4vw, 48px);  /* 标题 1 */
+  --jr-fs-h2:      24px;   /* 标题 2 */
+  --jr-fs-h3:      18px;   /* 标题 3 */
+  --jr-fs-body-1:  15px;   /* 正文 */
+  --jr-fs-body-2:  14px;
+  --jr-fs-caption: 12px;   /* 辅助 / mono 标签 */
   --jr-fs-btn-lg:  16px;
   --jr-fs-btn-md:  14px;
   --jr-fs-btn-text:14px;
@@ -149,8 +173,9 @@
   --jr-fw-medium:   500;
   --jr-fw-semibold: 600;
   --jr-fw-bold:     700;
+  --jr-fw-black:    800;   /* Bricolage 标题极粗 */
 
-  --jr-lh-heading: 1.3;
+  --jr-lh-heading: 1.1;
   --jr-lh-body:    1.6;
 
   /* —— Motion —— */
@@ -162,9 +187,11 @@
 }
 
 /* —— Type presets —— */
-.jr-h1    { font: var(--jr-fw-bold)     var(--jr-fs-h1)/var(--jr-lh-heading) var(--jr-font-sans); color: var(--jr-ink); }
-.jr-h2    { font: var(--jr-fw-bold)     var(--jr-fs-h2)/var(--jr-lh-heading) var(--jr-font-sans); color: var(--jr-ink); }
-.jr-h3    { font: var(--jr-fw-semibold) var(--jr-fs-h3)/var(--jr-lh-heading) var(--jr-font-sans); color: var(--jr-ink); }
-.jr-body-1{ font: var(--jr-fw-regular)  var(--jr-fs-body-1)/var(--jr-lh-body) var(--jr-font-sans); color: var(--jr-ink-2); }
+.jr-display { font: var(--jr-fw-black) var(--jr-fs-display)/var(--jr-lh-heading) var(--jr-font-heading); color: var(--jr-ink); }
+.jr-h1    { font: var(--jr-fw-black)    var(--jr-fs-h1)/var(--jr-lh-heading) var(--jr-font-heading); color: var(--jr-ink); }
+.jr-h2    { font: var(--jr-fw-bold)     var(--jr-fs-h2)/var(--jr-lh-heading) var(--jr-font-heading); color: var(--jr-ink); }
+.jr-h3    { font: var(--jr-fw-semibold) var(--jr-fs-h3)/var(--jr-lh-heading) var(--jr-font-heading); color: var(--jr-ink); }
+.jr-body-1{ font: var(--jr-fw-regular)  var(--jr-fs-body-1)/var(--jr-lh-body) var(--jr-font-sans); color: var(--jr-ink-1); }
 .jr-body-2{ font: var(--jr-fw-regular)  var(--jr-fs-body-2)/var(--jr-lh-body) var(--jr-font-sans); color: var(--jr-slate); }
-.jr-caption{font: var(--jr-fw-medium)   var(--jr-fs-caption)/var(--jr-lh-body) var(--jr-font-sans); color: var(--jr-slate); }
+.jr-caption{font: var(--jr-fw-medium)   var(--jr-fs-caption)/var(--jr-lh-body) var(--jr-font-mono); color: var(--jr-slate); }
+.jr-mono   {font-family: var(--jr-font-mono); }
