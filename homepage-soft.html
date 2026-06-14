@@ -40,10 +40,10 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .nav .reg{height:42px;padding:0 20px;border-radius:var(--pill);background:linear-gradient(135deg,#FF5B5B,#F03E50);color:#fff;font-weight:700;font-size:14px;display:inline-flex;align-items:center;box-shadow:0 6px 16px rgba(240,62,80,.3)}
 
 /* ── hero ── */
-.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 520px at 78% -8%,#FFEFE0 0,rgba(255,239,224,0) 60%),radial-gradient(900px 480px at 12% 0,#F3EEFF 0,rgba(243,238,255,0) 55%),linear-gradient(180deg,#FFFDF8,#FFFCF6)}
-.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none}
-.hero::before{width:340px;height:340px;background:#FFD9C2;right:-60px;top:40px}
-.hero::after{width:300px;height:300px;background:#E3DBFF;left:-80px;bottom:-40px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(880px 520px at 78% -12%,#E0CCFF 0,rgba(224,204,255,0) 56%),radial-gradient(760px 480px at 4% 6%,#C7DBFF 0,rgba(199,219,255,0) 52%),radial-gradient(720px 460px at 56% 122%,#FFD0EC 0,rgba(255,208,236,0) 55%),linear-gradient(180deg,#FAF6FF,#FFFCF6)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(56px);opacity:.65;pointer-events:none}
+.hero::before{width:360px;height:360px;background:#FFC59E;right:-70px;top:30px}
+.hero::after{width:320px;height:320px;background:#CFC0FF;left:-90px;bottom:-50px}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1fr 360px;gap:36px;padding:54px 28px 64px;align-items:center}
 .hero-left{max-width:560px}
 .tagline-img{display:block;width:min(440px,92%);height:auto;margin:18px 0 18px -2px}
@@ -53,7 +53,7 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .feat span{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#56514a}
 .feat i{width:26px;height:26px;border-radius:9px;display:grid;place-items:center;flex:none}
 .feat i svg{width:15px;height:15px}
-.feat .c1{background:#FFE9E0;color:#E8643E}.feat .c2{background:#EAF6E8;color:#37A845}.feat .c3{background:#EEEBFF;color:#6C5BE0}.feat .c4{background:#FFF2D6;color:#C98A12}
+.feat i{color:#fff;box-shadow:0 4px 10px rgba(28,27,34,.12)}.feat .c1{background:linear-gradient(135deg,#FF8A5B,#FF4D6D)}.feat .c2{background:linear-gradient(135deg,#3FD39E,#10B981)}.feat .c3{background:linear-gradient(135deg,#9A7BFF,#6C4BF0)}.feat .c4{background:linear-gradient(135deg,#FFC24B,#FF9500)}
 .cta-row{display:flex;gap:14px;margin-bottom:24px;flex-wrap:wrap}
 .trust{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);font-weight:600}
 .avatars{display:flex}
@@ -89,7 +89,7 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .qc:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
 .qc .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:none}
 .qc .ic svg{width:22px;height:22px}
-.qc .q1{background:#FFE9E0;color:#E8643E}.qc .q2{background:#FFF2D6;color:#C98A12}.qc .q3{background:#EEEBFF;color:#6C5BE0}.qc .q4{background:#E6F7EE;color:#1FAE7E}
+.qc .ic{color:#fff;box-shadow:0 6px 14px rgba(28,27,34,.16)}.qc .q1{background:linear-gradient(135deg,#FF8A5B,#FF4D6D)}.qc .q2{background:linear-gradient(135deg,#FFC24B,#FF9500)}.qc .q3{background:linear-gradient(135deg,#9A7BFF,#6C4BF0)}.qc .q4{background:linear-gradient(135deg,#3FD39E,#10B981)}
 .qc b{font-family:var(--cn);font-size:15px;display:block;margin-bottom:3px}
 .qc p{margin:0;font-size:12.5px;color:var(--muted)}
 .qc .go{margin-top:6px;font-size:12px;font-weight:700;color:var(--red)}
@@ -97,7 +97,8 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 /* ── section ── */
 .sec{padding:68px 0 8px}
 .sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:30px}
-.sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none}
+.sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
+.sec-num.n1{background:linear-gradient(135deg,#8B5CFF,#5A2EE6)}.sec-num.n2{background:linear-gradient(135deg,#FF8A5B,#FF4D6D)}.sec-num.n3{background:linear-gradient(135deg,#2E9BFF,#0E63E0)}.sec-num.n4{background:linear-gradient(135deg,#13D08F,#06A36C)}.sec-num.n5{background:linear-gradient(135deg,#FF4F97,#E01E6E)}.sec-num.n6{background:linear-gradient(135deg,#FFC24B,#FF9500)}
 .sec-head h2{font-size:30px}
 .sec-head p{margin:4px 0 0;color:var(--muted);font-size:14px}
 
@@ -105,10 +106,10 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .dir{position:relative;overflow:hidden;border-radius:22px;padding:24px 22px 22px;color:#fff;min-height:280px;display:flex;flex-direction:column;box-shadow:var(--sh-lg);transition:transform .18s}
 .dir:hover{transform:translateY(-6px)}
-.dir.d1{background:linear-gradient(160deg,#6E5BF6,#4B37C9)}
-.dir.d2{background:linear-gradient(160deg,#F0529B,#C32E78)}
-.dir.d3{background:linear-gradient(160deg,#2E8BF0,#1C5FC0)}
-.dir.d4{background:linear-gradient(160deg,#1FB985,#0E8E63)}
+.dir.d1{background:linear-gradient(155deg,#8B5CFF,#5A2EE6)}
+.dir.d2{background:linear-gradient(155deg,#FF4F97,#E01E6E)}
+.dir.d3{background:linear-gradient(155deg,#2E9BFF,#0E63E0)}
+.dir.d4{background:linear-gradient(155deg,#13D08F,#06A36C)}
 .dir-ic{width:54px;height:54px;border-radius:16px;background:rgba(255,255,255,.18);backdrop-filter:blur(4px);display:grid;place-items:center;margin-bottom:16px}
 .dir-ic svg{width:28px;height:28px;color:#fff}
 .dir .tag{position:absolute;top:18px;right:18px;font-size:11px;font-weight:700;background:rgba(255,255,255,.22);padding:4px 10px;border-radius:99px}
@@ -189,7 +190,7 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .free:hover{transform:translateY(-4px)}
 .free .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin:0 auto 12px}
 .free .ic svg{width:23px;height:23px}
-.free .f1{background:#EEEBFF;color:#6C5BE0}.free .f2{background:#FFE9E0;color:#E8643E}.free .f3{background:#E7F3FF;color:#2E8BF0}.free .f4{background:#E9F8EF;color:#1FAE7E}.free .f5{background:#FFF2D6;color:#C98A12}
+.free .ic{color:#fff;box-shadow:0 6px 14px rgba(28,27,34,.16)}.free .f1{background:linear-gradient(135deg,#9A7BFF,#6C4BF0)}.free .f2{background:linear-gradient(135deg,#FF8A5B,#FF4D6D)}.free .f3{background:linear-gradient(135deg,#5BB8FF,#2E8BF0)}.free .f4{background:linear-gradient(135deg,#3FD39E,#10B981)}.free .f5{background:linear-gradient(135deg,#FFC24B,#FF9500)}
 .free b{font-family:var(--cn);font-size:14.5px;display:block;margin-bottom:4px}
 .free p{font-size:12px;color:var(--muted);margin:0 0 8px}
 .free small{font-size:11px;font-weight:700;color:var(--green)}
@@ -232,6 +233,23 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   footer .cols{grid-template-columns:1fr 1fr}
 }
 
+/* ── AI 学习氛围层（发光 / 火花 / 工具箱 / 神经网络）── */
+.glow{position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,255,.42),rgba(124,92,255,0) 68%);left:-180px;bottom:-20px;z-index:0;pointer-events:none}
+.spark{position:absolute;z-index:6;pointer-events:none;animation:flo 3.6s ease-in-out infinite;filter:drop-shadow(0 3px 5px rgba(0,0,0,.12))}
+.spark.s2{animation-delay:.7s}.spark.s3{animation-delay:1.4s}.spark.s4{animation-delay:2.1s}
+@keyframes flo{0%,100%{transform:translateY(0) scale(1) rotate(0);opacity:.7}50%{transform:translateY(-12px) scale(1.15) rotate(14deg);opacity:1}}
+.ai-tools{position:absolute;z-index:7;background:#fff;border-radius:16px;box-shadow:var(--sh);padding:9px 13px;display:flex;align-items:center;gap:10px;animation:flo 5.5s ease-in-out infinite}
+.ai-tools .lab{font-size:11.5px;font-weight:700;color:var(--ink);font-family:var(--cn);white-space:nowrap}
+.ai-tools .tk{display:flex}
+.ai-tools .tk span{width:27px;height:27px;border-radius:8px;margin-right:-7px;border:2px solid #fff;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:800;box-shadow:var(--sh-sm)}
+.ai-tools .t1{background:linear-gradient(135deg,#10A37F,#0E8E63)}.ai-tools .t2{background:linear-gradient(135deg,#D97757,#B5471F)}.ai-tools .t3{background:linear-gradient(135deg,#8B5CFF,#5A2EE6)}.ai-tools .t4{background:linear-gradient(135deg,#FFC24B,#FF8A00)}
+.neural{position:absolute;right:40px;top:30px;width:220px;opacity:.5;z-index:0;pointer-events:none}
+.eyebrow.ai{background:linear-gradient(135deg,#8B5CFF,#5A2EE6);border:0;color:#fff;box-shadow:0 8px 20px rgba(124,92,255,.38)}
+.eyebrow.ai b{color:#fff}.eyebrow.ai svg{width:15px;height:15px}
+.gridfx{position:absolute;inset:0;background-image:linear-gradient(rgba(124,92,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,255,.08) 1px,transparent 1px);background-size:44px 44px;-webkit-mask:radial-gradient(circle at 70% 26%,#000,transparent 70%);mask:radial-gradient(circle at 70% 26%,#000,transparent 70%);z-index:0;pointer-events:none}
+.grad-ai{background:linear-gradient(110deg,#7C5CFF,#3B9EFF 55%,#FF5B9E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag-ai{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:#fff;background:linear-gradient(135deg,#8B5CFF,#5A2EE6);padding:3px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+
 @media(max-width:980px){
   .hero .wrap{grid-template-columns:1fr;gap:40px}
   .hero-stage{justify-content:flex-start;margin-top:30px}
@@ -251,9 +269,16 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   <div class="right"><a class="login" href="/login">登录</a><a class="reg" href="/register">注册 / 开始学习</a></div>
 </div></nav>
 
-<header class="hero"><div class="wrap">
+<header class="hero">
+  <div class="gridfx"></div>
+  <svg class="neural" viewBox="0 0 220 150" fill="none"><g stroke="#8B5CFF" stroke-width="1.3" opacity=".5"><line x1="18" y1="40" x2="80" y2="22"/><line x1="80" y1="22" x2="140" y2="55"/><line x1="18" y1="40" x2="70" y2="95"/><line x1="70" y1="95" x2="140" y2="55"/><line x1="140" y1="55" x2="200" y2="40"/><line x1="70" y1="95" x2="130" y2="125"/><line x1="140" y1="55" x2="130" y2="125"/></g><g fill="#8B5CFF"><circle cx="18" cy="40" r="5"/><circle cx="80" cy="22" r="4"/><circle cx="140" cy="55" r="6"/><circle cx="70" cy="95" r="5"/><circle cx="200" cy="40" r="4"/><circle cx="130" cy="125" r="5"/></g></svg>
+  <span class="spark" style="top:128px;left:47%"><svg width="26" height="26" viewBox="0 0 24 24" fill="#FFB23E"><path d="M12 0c1 6 5 10 12 12-7 2-11 6-12 12-1-6-5-10-12-12 7-2 11-6 12-12z"/></svg></span>
+  <span class="spark s2" style="top:64px;right:33%"><svg width="18" height="18" viewBox="0 0 24 24" fill="#8B5CFF"><path d="M12 0c1 6 5 10 12 12-7 2-11 6-12 12-1-6-5-10-12-12 7-2 11-6 12-12z"/></svg></span>
+  <span class="spark s3" style="bottom:66px;left:39%"><svg width="15" height="15" viewBox="0 0 24 24" fill="#FF5B9E"><path d="M12 0c1 6 5 10 12 12-7 2-11 6-12 12-1-6-5-10-12-12 7-2 11-6 12-12z"/></svg></span>
+  <span class="spark s4" style="top:212px;left:52%"><svg width="20" height="20" viewBox="0 0 24 24" fill="#3B9EFF"><path d="M12 0c1 6 5 10 12 12-7 2-11 6-12 12-1-6-5-10-12-12 7-2 11-6 12-12z"/></svg></span>
+  <div class="wrap">
   <div class="hero-left">
-    <span class="eyebrow">🐮 <b>新一代 AI 学习与成长平台</b></span>
+    <span class="eyebrow ai"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1 6 5 10 12 12-7 2-11 6-12 12-1-6-5-10-12-12 7-2 11-6 12-12z"/></svg> <b>AI 驱动的学习与成长平台</b></span>
     <img class="tagline-img" src="assets/logo/tagline-xueai-laijiangren.png" alt="学 AI 来匠人"/>
     <p class="hero-sub">更快掌握 AI 技能，打造可落地的<b>实战能力</b>。</p>
     <div class="feat">
@@ -270,6 +295,8 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   </div>
 
   <div class="hero-stage">
+    <div class="glow"></div>
+    <div class="ai-tools" style="right:-6px;top:-34px"><span class="lab">AI 工具箱</span><div class="tk"><span class="t1">G</span><span class="t2">C</span><span class="t3">M</span><span class="t4">✦</span></div></div>
     <div class="speech">牛小匠陪你<br>一起学 AI <b>!</b></div>
     <img class="mascot-hero" src="assets/mascot/official/01-hero-fullbody.png" alt="牛小匠"/>
     <div class="dash">
@@ -292,7 +319,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">01</span><div><h2>四大热门学习方向</h2><p>紧跟 AI 趋势，选择你的成长赛道</p></div></div>
+  <div class="sec-head"><span class="sec-num n1">01</span><div><h2>四大热门学习方向</h2><p>紧跟 AI 趋势，选择你的成长赛道</p></div></div>
   <div class="dirs">
     <a class="dir d1" href="/learn/vibe-coding/hub"><span class="tag">热门</span><div class="dir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></div><h3>Vibe Coding</h3><div class="en">用 AI 快速构建应用</div><ul><li>AI 编程工具实战</li><li>全栈项目开发</li><li>从想法到上线</li></ul><span class="more">了解详情 →</span></a>
     <a class="dir d2" href="/learn/prompt-master"><span class="tag">热门</span><div class="dir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8 19 13M15 9h0M17.8 6.2 19 5M3 21l9-9M12.2 6.2 11 5"/></svg></div><h3>Prompt 大师</h3><div class="en">掌握提示词的艺术</div><ul><li>提示词工程核心方法</li><li>场景化提示词库</li><li>提升 AI 输出质量</li></ul><span class="more">了解详情 →</span></a>
@@ -302,7 +329,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">02</span><div><h2>课程中心 · 近期开班</h2><p>从零基础到拿得出手的作品，按目标选课</p></div></div>
+  <div class="sec-head"><span class="sec-num n2">02</span><div><h2>课程中心 · 近期开班</h2><p>从零基础到拿得出手的作品，按目标选课</p></div></div>
   <div class="course-grid">
     <article class="course c1"><div class="cover"><span class="lvl">转行向</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg></div><div class="bd"><h3>AI 工程师训练营</h3><p class="who">想转行做 AI 工程师、有编程基础</p><div class="meta"><span>训练营 · 12 周</span><span>项目驱动</span></div><div class="out">学完产出：<b>3 个可展示的 AI 应用作品</b></div><div class="enroll"><span class="date">近期开班 · 报名中</span><span class="go">报名 →</span></div></div></article>
     <article class="course c2"><div class="cover"><span class="lvl">零基础</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M13 6l-2 12"/></svg></div><div class="bd"><h3>全栈编程训练营</h3><p class="who">0 基础想入行做开发</p><div class="meta"><span>训练营 · 16 周</span><span>就业陪跑</span></div><div class="out">学完产出：<b>独立上线一个全栈项目</b></div><div class="enroll"><span class="date">近期开班 · 报名中</span><span class="go">报名 →</span></div></div></article>
@@ -313,7 +340,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">03</span><div><h2>学员成果</h2><p>他们在匠人，收获了更好的自己</p></div></div>
+  <div class="sec-head"><span class="sec-num n3">03</span><div><h2>学员成果</h2><p>他们在匠人，收获了更好的自己</p></div></div>
   <div class="proof-grid">
     <div class="stu"><div class="top"><span class="av"></span><div><div class="nm">张同学</div><div class="ro">Vibe Coding 学员</div></div></div><p class="q">"跟着做完 3 个项目，现在能自己用 AI 搭小工具解决工作里的问题了。"</p><span class="badge">做出 3 个作品</span></div>
     <div class="stu"><div class="top"><span class="av"></span><div><div class="nm">李同学</div><div class="ro">Prompt 大师学员</div></div></div><p class="q">"系统学完 Prompt，写文案、做方案的效率比以前高了一大截。"</p><span class="badge">技能跃迁</span></div>
@@ -323,7 +350,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">04</span><div><h2>近期课程 &amp; 活动</h2><p>精选课程与活动，助你持续成长</p></div></div>
+  <div class="sec-head"><span class="sec-num n4">04</span><div><h2>近期课程 &amp; 活动</h2><p>精选课程与活动，助你持续成长</p></div></div>
   <div class="act-grid">
     <a class="act" href="/videos"><span class="lab l1">直播预告</span><h4>ChatGPT 最新能力解读与应用实战</h4><p class="info">本周三 20:00 · 匠人导师团</p><span class="go">预约直播 →</span></a>
     <a class="act" href="/bootcamp"><span class="lab l2">新课上线</span><h4>RAG 实战：从 0 到 1 构建企业知识库</h4><p class="info">报名中 · 大模型专家主讲</p><span class="go">立即学习 →</span></a>
@@ -333,7 +360,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">05</span><div><h2>导师领路 · 社区同行</h2><p>一起学习，一起成长</p></div></div>
+  <div class="sec-head"><span class="sec-num n5">05</span><div><h2>导师领路 · 社区同行</h2><p>一起学习，一起成长</p></div></div>
   <div class="ms-grid">
     <a class="ms" href="/instructors"><div class="lab">优秀导师团队</div><h4>行业大咖来授</h4><div class="ment"><span></span><span></span><span></span><span></span></div><div style="height:14px"></div><span class="go">查看全部导师 →</span></a>
     <a class="ms" href="/events"><div class="lab">活跃学习社区</div><h4>互动交流 · 共同成长</h4><div class="stat"><div><b>12.8w+</b><small>社区成员</small></div><div><b>8.6w+</b><small>今日互动</small></div></div><span class="go">进入社区 →</span></a>
@@ -343,7 +370,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">06</span><div><h2>全球华人学 AI 的入口</h2><p>免费学习资源，持续更新</p></div></div>
+  <div class="sec-head"><span class="sec-num n6">06</span><div><h2>全球华人学 AI 的入口</h2><p>免费学习资源，持续更新</p></div></div>
   <div class="free-grid">
     <a class="free" href="/wiki"><div class="ic f1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><b>Wiki 知识库</b><p>系统知识条目</p><small>持续更新</small></a>
     <a class="free" href="/roadmaps"><div class="ic f2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></div><b>学习路线图</b><p>可视化成长路径</p><small>多方向</small></a>
