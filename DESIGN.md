@@ -83,6 +83,25 @@
 
 深色页要点：底 `#10162f`，卡用白底或深 `#161d38`，强调/结论用黄 `--jr-yellow`，标签/边线用红/蓝/绿点缀。
 
+### 0.2d 表单控件 + 浮层（panel 22）
+
+之前只有 input/select/textarea，补齐常用控件，全 neo-brutalism（2px 黑边 + 直角 + 必要处硬阴影）：
+
+| 控件 | class | 要点 |
+|------|-------|------|
+| 复选框 | `.nb-check`（`.on`/`.ind`） | 选中黑底白 ✓，半选黄底 |
+| 单选 | `.nb-radio.on` | **方形**（neo 不用圆），选中红方块 |
+| 开关 | `.nb-toggle.on` | 开=绿底 + 方形 knob 右移 |
+| 滑块 | `.nb-slider`（`.fill`/`.knob`） | 红填充 + 黄方块 knob |
+| 步进器 | `.nb-stepper` | 深底 −/+ + mono 数字 |
+| 下拉选择 | `.nb-select` / 原生 `select` | 统一自定义 chevron（原生 `appearance:none` + data-uri caret），不要native 丑箭头 |
+| 下拉菜单 | `.nb-menu`（`.active`/`.danger`/`.menu-div`） | active 黄底、危险红字、2px 黑分隔 |
+| 自动补全 | `.nb-ac` / `.nb-ac-input` / `.nb-ac-list` | 匹配片段 `<b>` 黄底高亮 |
+| 工具提示 | `.nb-tip` | 黑底白字 + 箭头 |
+| 分页 | `.nb-page`（`.on`） | 方形按钮，当前页红底 |
+
+仍可按需补（暂未做）：Modal/Dialog、Accordion、Breadcrumb、Date Picker、Skeleton、Avatar+状态点。需要时再加 panel。
+
 ### 0.3 AI 写代码时的最小落地清单
 
 1. 先 import/use `tokens/tokens.css` 或把等价 token 映射到项目 design tokens。

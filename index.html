@@ -239,8 +239,51 @@ td{border-bottom:2px solid #000}
 .product-mascot.sm{width:86px}
 .product-card .speech{right:8px;bottom:auto;top:40px;max-width:122px}
 .product-card.dark .speech{background:#fff;color:#000}
+/* —— 22 表单控件 + 浮层 —— */
+.forms{grid-column:span 24}
+.fc-rows{display:flex;flex-direction:column;gap:11px}
+.opt{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--dark);cursor:pointer}
+.nb-check{width:20px;height:20px;border:2px solid #000;background:#fff;display:inline-grid;place-items:center;font-size:13px;font-weight:900;color:#fff;flex:none;line-height:1}
+.nb-check.on{background:#000}
+.nb-check.ind{background:var(--yellow);color:#000}
+.nb-radio{width:20px;height:20px;border:2px solid #000;background:#fff;display:inline-grid;place-items:center;flex:none}
+.nb-radio.on::after{content:"";width:10px;height:10px;background:var(--red)}
+.nb-toggle{width:44px;height:24px;border:2px solid #000;background:#fff;display:inline-flex;align-items:center;padding:2px;flex:none}
+.nb-toggle i{width:16px;height:16px;background:#000;display:block;transition:transform .15s}
+.nb-toggle.on{background:var(--green)}
+.nb-toggle.on i{transform:translateX(18px)}
+.nb-slider{position:relative;height:10px;border:2px solid #000;background:#fff}
+.nb-slider .fill{position:absolute;left:0;top:0;bottom:0;width:65%;background:var(--red)}
+.nb-slider .knob{position:absolute;left:65%;top:50%;transform:translate(-50%,-50%);width:18px;height:18px;border:2px solid #000;background:var(--yellow)}
+.nb-stepper{display:inline-flex;border:2px solid #000;box-shadow:3px 3px 0 #000}
+.nb-stepper button{width:32px;height:32px;border:0;background:var(--dark);color:#fff;font-size:16px;font-weight:900;cursor:pointer;line-height:1}
+.nb-stepper span{width:42px;display:grid;place-items:center;font-family:var(--jr-font-mono);font-weight:700;border-left:2px solid #000;border-right:2px solid #000}
+.nb-select{display:flex;align-items:center;justify-content:space-between;gap:8px;height:38px;padding:0 12px;border:2px solid #000;background:#fff;box-shadow:3px 3px 0 #000;font-size:13px;font-weight:600;color:var(--dark);cursor:pointer}
+.nb-select svg{width:16px;height:16px;flex:none}
+.nb-menu{border:2px solid #000;background:#fff;box-shadow:4px 4px 0 #000;padding:4px;display:flex;flex-direction:column}
+.nb-menu a{padding:7px 10px;font-size:13px;font-weight:600;color:var(--dark);cursor:pointer}
+.nb-menu a:hover{background:var(--n100)}
+.nb-menu a.active{background:var(--yellow)}
+.nb-menu a.danger{color:var(--red-text)}
+.menu-div{height:2px;background:#000;margin:4px 0}
+.nb-ac-input{height:38px;padding:0 12px;border:2px solid #000;background:#fff;box-shadow:3px 3px 0 #000;display:flex;align-items:center;font-family:var(--jr-font-mono);font-size:13px;color:var(--dark)}
+.caret-blink{display:inline-block;width:2px;height:14px;background:#000;margin-left:1px;animation:cb 1s steps(1) infinite}
+@keyframes cb{50%{opacity:0}}
+.nb-ac-list{margin-top:6px;border:2px solid #000;background:#fff;box-shadow:4px 4px 0 #000;padding:4px}
+.nb-ac-list a{display:block;padding:7px 10px;font-size:13px;cursor:pointer;color:var(--n600)}
+.nb-ac-list a:hover{background:var(--n100)}
+.nb-ac-list a b{color:#000;background:var(--yellow);padding:0 1px;font-weight:700}
+.nb-tip-wrap{position:relative;display:inline-block}
+.nb-tip{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;background:#000;color:#fff;font-size:11px;font-weight:700;padding:5px 9px}
+.nb-tip::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#000}
+.nb-page{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nb-page button{min-width:32px;height:32px;border:2px solid #000;background:#fff;font-weight:700;font-family:var(--jr-font-mono);cursor:pointer}
+.nb-page button.on{background:var(--red);color:#000;box-shadow:2px 2px 0 #000}
+.nb-page span{font-family:var(--jr-font-mono);color:var(--n600)}
+/* 修原生 select 的丑箭头 —— 统一自定义 caret */
+select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 6 8 10 12 6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}
 </style></head>
-<body><main class="page"><nav class="topbar" aria-label="Brand navigation"><img src="assets/logo/logo-official-black.svg" alt="JR Academy" /><strong>Brand Board · 完整资产库</strong><div class="toplinks"><a class="primary" href="#brand-board">21 模块规范</a><a href="#motion-system">动效规范</a><a href="assets.html">完整图片资产库</a><a href="#asset-library">本页资产摘要</a><a href="#asset-04">牛小匠</a><a href="#asset-13">Chibi</a></div></nav>
+<body><main class="page"><nav class="topbar" aria-label="Brand navigation"><img src="assets/logo/logo-official-black.svg" alt="JR Academy" /><strong>Brand Board · 完整资产库</strong><div class="toplinks"><a class="primary" href="#brand-board">22 模块规范</a><a href="#motion-system">动效规范</a><a href="assets.html">完整图片资产库</a><a href="#asset-library">本页资产摘要</a><a href="#asset-04">牛小匠</a><a href="#asset-13">Chibi</a></div></nav>
 <section id="brand-board" class="board-grid">
 <section class="panel brand"><header class="title"><span class="num">01</span><span>品牌头部</span><span class="en">/ Brand</span></header><img class="brand-logo" src="assets/logo/logo-official-black.svg" alt="匠人学院 JR Academy" /><img class="tagline-art" src="assets/logo/tagline-xueai-laijiangren.png" alt="学 AI 来匠人单独标语素材" /><p class="brand-copy">系统化 AI 学习与职业成长平台，陪你从入门到精通，用 AI 改变未来。</p><div class="brand-pills"><div class="brand-pill"><span class="pill-ico p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><strong>体系化课程</strong><span>系统学习路径</span></span></div><div class="brand-pill"><span class="pill-ico y"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span><span><strong>AI 实战项目</strong><span>学以致用</span></span></div><div class="brand-pill"><span class="pill-ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M12 11v7M17 7v11"/></svg></span><span><strong>职业赋能</strong><span>能力进阶</span></span></div><div class="brand-pill"><span class="pill-ico r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span><span><strong>陪伴式成长</strong><span>社群与教练</span></span></div></div><img class="brand-mascot" src="assets/mascot/heads/01-default.png" alt="牛小匠头像" /><span class="doodle" style="right:34px;top:34px;font-size:32px;color:var(--yellow);text-shadow:1px 1px 0 var(--dark);">✦</span><span class="doodle spark2">✦</span><span class="doodle spark3">· ·</span><span class="doodle lines">⌁</span></section>
 <section class="panel colors"><header class="title"><span class="num">02</span><span>颜色系统</span><span class="en">/ Colors</span></header><div class="color-grid"><div class="swatch"><div class="box dark"></div><strong>主深色 / Dark</strong><code>#10162F</code></div><div class="swatch"><div class="box red"></div><strong>主色 / Red</strong><code>#FF5757</code></div><div class="swatch"><div class="box yellow"></div><strong>黄色 / Yellow</strong><code>#FFDE59</code></div><div class="swatch"><div class="box green"></div><strong>绿色 / Green</strong><code>#7ED957</code></div><div class="swatch"><div class="box blue"></div><strong>蓝色 / Blue</strong><code>#38B6FF</code></div><div class="swatch"><div class="box purple"></div><strong>紫色 / Purple</strong><code>#CB6CE6</code></div></div><div class="neutral-row"><div class="neutral"><div class="nbox" style="background:#1a1a2e"></div><strong>中性 900</strong><code>#1A1A2E</code></div><div class="neutral"><div class="nbox" style="background:#5b5750"></div><strong>中性 600</strong><code>#5B5750</code></div><div class="neutral"><div class="nbox" style="background:#cfc6b8"></div><strong>中性 300</strong><code>#CFC6B8</code></div><div class="neutral"><div class="nbox" style="background:#f3ece2"></div><strong>中性 100</strong><code>#F3ECE2</code></div><div class="neutral"><div class="nbox" style="background:#fff8f0"></div><strong>中性 50</strong><code>#FFF8F0</code></div></div><svg class="curve-arrow" viewBox="0 0 80 80" fill="none"><path d="M62 18c-17 1-29 8-28 19 1 9 13 11 17 4 5-8-5-18-18-8-10 8-15 18-16 31" stroke="#0D0F12" stroke-width="2.5" stroke-linecap="round"/><path d="M11 57l6 7 8-5" stroke="#0D0F12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></section>
@@ -346,6 +389,19 @@ td{border-bottom:2px solid #000}
 <p class="dark-conclusion">只有目录（metadata）永远在 → 挂 76 个 skill 也不爆 context。</p>
 </div>
 </section>
+<section class="panel forms"><header class="title"><span class="num">22</span><span>表单控件 + 浮层</span><span class="en">/ Form Controls & Overlays · 补齐 + dropdown 重做 + autocomplete</span></header><p class="small" style="margin:-6px 0 12px">之前缺的常用控件补齐（复选/单选/开关/滑块/步进），dropdown 重做、autocomplete 完成（静态展示交互态）。</p>
+<div class="zshow">
+<div class="zcell"><span class="zlabel">复选框 Checkbox</span><div class="fc-rows"><label class="opt"><span class="nb-check on">✓</span> 已选中</label><label class="opt"><span class="nb-check"></span> 未选中</label><label class="opt"><span class="nb-check ind">–</span> 半选 indeterminate</label></div></div>
+<div class="zcell"><span class="zlabel">单选 Radio（方形）</span><div class="fc-rows"><label class="opt"><span class="nb-radio on"></span> 自学版</label><label class="opt"><span class="nb-radio"></span> 教学版</label><label class="opt"><span class="nb-radio"></span> 陪跑版</label></div></div>
+<div class="zcell"><span class="zlabel">开关 Toggle</span><div class="fc-rows"><label class="opt"><span class="nb-toggle on"><i></i></span> 邮件提醒 · 开</label><label class="opt"><span class="nb-toggle"><i></i></span> 短信提醒 · 关</label></div></div>
+<div class="zcell"><span class="zlabel">滑块 Slider</span><div style="padding-top:16px"><div class="nb-slider"><span class="fill"></span><span class="knob"></span></div><p class="small" style="margin-top:12px;font-family:var(--jr-font-mono)">学习时长 · 65%</p></div></div>
+<div class="zcell"><span class="zlabel">步进器 Stepper</span><div class="nb-stepper"><button>−</button><span>3</span><button>+</button></div><p class="small" style="margin-top:10px">报名名额</p></div>
+<div class="zcell"><span class="zlabel">下拉选择 Select（重做）</span><div class="nb-select">选择学习方向<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 6 8 10 12 6"/></svg></div><p class="small" style="margin-top:8px">原生 select 也已套同款箭头</p></div>
+<div class="zcell"><span class="zlabel">下拉菜单 Dropdown（展开态）</span><div class="nb-menu"><a class="active">个人主页</a><a>我的课程</a><a>账号设置</a><div class="menu-div"></div><a class="danger">退出登录</a></div></div>
+<div class="zcell"><span class="zlabel">自动补全 Autocomplete（完成）</span><div class="nb-ac"><div class="nb-ac-input">prom<span class="caret-blink"></span></div><div class="nb-ac-list"><a><b>prom</b>pt 工程实战</a><a><b>prom</b>pt 大师班</a><a><b>prom</b>oting AI 内容</a></div></div></div>
+<div class="zcell"><span class="zlabel">工具提示 Tooltip</span><div style="padding:26px 0 10px;display:flex;justify-content:center"><span class="nb-tip-wrap"><span class="nb-tip">会员专属功能</span><span class="cta">悬停我</span></span></div></div>
+<div class="zcell wide"><span class="zlabel">分页 Pagination</span><div class="nb-page"><button>‹</button><button class="on">1</button><button>2</button><button>3</button><span>…</span><button>9</button><button>›</button></div></div>
+</div></section>
 </section>
 <section id="asset-library" class="asset-library"><div class="library-hero"><h1>完整图片 / 吉祥物资产库</h1><p>下方直接读取当前仓库里所有图片资产路径生成，共 132 张/个图片文件。包含 spec sheet、当前 logo、backup logo、装饰、牛小匠、Chibi、子品牌 mascot、_inbox 待整理素材、Career Impact 插画和 VI 设计板。</p><div class="toc"><a href="#asset-00">Spec Sheets</a><a href="#asset-01">Logo Family</a><a href="#asset-02">Logo Backup</a><a href="#asset-03">Decorations</a><a href="#asset-04">牛小匠 Official</a><a href="#asset-05">牛小匠 Emojis</a><a href="#asset-06">牛小匠 Heads</a><a href="#asset-07">牛小匠 Busts</a><a href="#asset-08">牛小匠 Working</a><a href="#asset-09">牛小匠 Lifestyle</a><a href="#asset-10">牛小匠 Outfits</a><a href="#asset-11">牛小匠 Extra Outfits</a><a href="#asset-12">牛小匠 Variants</a><a href="#asset-13">Chibi App Icons</a><a href="#asset-13">Chibi Expressions</a><a href="#asset-13">Chibi Lifestyle</a><a href="#asset-13">Chibi Working</a><a href="#asset-14">Sub-brand UniMate</a><a href="#asset-15">Sub-brand Job Hunter</a><a href="#asset-16">Inbox</a><a href="#asset-18">Career Impact Illustrations</a><a href="#asset-19">VI Boards</a></div></div>
       <section class="asset-section" id="asset-00">
