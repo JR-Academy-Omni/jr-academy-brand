@@ -73,6 +73,16 @@
 
 做页面 / landing / slide 时，先想用哪几种范式组合（标题用 eyebrow+marker、对比用 cmp-card、结论用 callout、边注用 code-note），不要从头到尾只有一种卡片网格。
 
+**整页骨架**见 Brand Board **panel 21「整页版式」**（对照讲课 deck）3 种页面级 archetype：
+
+| 范式 | 结构 | class |
+|------|------|------|
+| **浅色开场页** split hero | 左叙事（红眉标 + 超大 `.mk` 标题 + 正文 `<b>` 强调 + `.conclusion` 红结论）+ 右证据（`.quote-card` + 深色 `.hl-y` 重点卡） | `.slide-demo` |
+| **深色三栏卡** dark canvas | 黄眉标 + 白标题 + 3 张 `.trio-card`（彩色 `.tlabel` + `.cmp-rule` 分隔 + `.eg` 彩边例子框）+ `.dark-callout` 红边 + `.dark-conclusion` 黄结论 | `.slide-demo.dark` + `.trio` |
+| **深色流程** pipeline | 黄眉标 + 白/黄标题 + 3 张 `.flow-card`（彩色右边 `.edge-g/o/b`）`.flow-arrow` → 连接 + 黄结论 | `.slide-demo.dark` + `.flow3` |
+
+深色页要点：底 `#10162f`，卡用白底或深 `#161d38`，强调/结论用黄 `--jr-yellow`，标签/边线用红/蓝/绿点缀。
+
 ### 0.3 AI 写代码时的最小落地清单
 
 1. 先 import/use `tokens/tokens.css` 或把等价 token 映射到项目 design tokens。
