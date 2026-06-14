@@ -2,8 +2,12 @@
    JR Academy — Zine 年轻化表达层（v4.5 · 2026-06）
    定位: marketing 物料的年轻化表达（电子书 web 版 / campaign
         landing / 活动页 / 社媒长图 HTML），不进官网产品 UI 主框架。
-   规则: token 全走 tokens.css v4.2，不新增颜色；cool 感只来自
+   规则: token 全走 tokens.css，不新增颜色；cool 感只来自
         字体（Anton/Caveat）、角度、纹理、动效四件事。
+   🚨 字体铁律: Anton 只渲染拉丁字母/数字；中文大字用思源黑体 Heavy(900)，
+        绝不让中文掉进 Anton fallback（会变细体、和英文粗细不一致）。
+        品牌口号「学 AI 来匠人」用字标图 assets/logo/tagline-xueai-laijiangren.png，
+        不用任何字体重排（DESIGN.md：口号不改字）。
    依赖: 先引 ../tokens/tokens.css
    参考实现: jr-ebooks/theme/web-zine.css（整页级完整版）
    规范: DESIGN.md §16
@@ -13,12 +17,15 @@
 
 /* —— 1. 大字报 Display —— */
 .zine-display {
-  font-family: 'Anton', var(--jr-font-sans);
+  /* Anton 渲染拉丁/数字；中文 fallback 到思源黑体 900（够粗配 Anton），不掉细体 */
+  font-family: 'Anton', 'Noto Sans SC', var(--jr-font-sans);
+  font-weight: 900;
   letter-spacing: .01em;
   line-height: 1.05;
 }
 .zine-blocktitle {
-  font-family: 'Anton', var(--jr-font-sans);
+  font-family: 'Anton', 'Noto Sans SC', var(--jr-font-sans);
+  font-weight: 900;
   display: inline-block;
   background: var(--jr-black);
   color: var(--jr-surface-canvas);

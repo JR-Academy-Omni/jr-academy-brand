@@ -391,22 +391,22 @@ JR Academy (匠人学院 · 总品牌)
 
 | 角色 | 字体 | CSS Var |
 |------|------|---------|
-| 主字体 | `'Plus Jakarta Sans', 'Source Han Sans SC', '思源黑体', 'PingFang SC', 'Microsoft YaHei', ...` | `--jr-font-sans` |
+| 主字体 | `'Inter', 'Noto Sans SC', 'Source Han Sans SC', '思源黑体', 'PingFang SC', ...` | `--jr-font-sans` |
 | 等宽 | `'JetBrains Mono', 'SF Mono', Menlo, ...` | `--jr-font-mono` |
 
-**英文 Plus Jakarta Sans** — 圆润、几何、年轻；
-**中文思源黑体（Source Han Sans）** — 标准 / 现代 / 易读 / 开源。
+**英文 Inter** — 清晰、中性、屏幕易读（唯一英文字体，以 tokens.css 为准；旧文档写过 Plus Jakarta Sans，已废）；
+**中文思源黑体（Noto Sans SC / Source Han Sans）** — 标准 / 现代 / 开源，网页引 Google Fonts `Noto Sans SC` 可靠渲染。
 
-### 5.2 字号尺度（v2 升级 · 6 级 + 按钮 3 档）
+### 5.2 字号尺度（v4.3 · 以 tokens.css 为唯一真相，文档不再另写一套）
 
-| Level | Size | Weight | 用途 |
-|-------|------|--------|------|
-| **H1** | **48px** | Bold (700) | 大标题 / Hero（v2 升级 from 32） |
-| **H2** | **32px** | Bold (700) | 页面标题（v2 升级 from 24） |
-| H3 | 20px | Semibold (600) | 区块标题 |
-| Body-1 | 16px | Regular (400) | 正文 |
-| Body-2 | 14px | Regular (400) | 课程说明 / 列表 |
-| Caption | 12px | Regular (400) | 辅助 / metadata |
+| Level | Size | Weight | CSS Var |
+|-------|------|--------|---------|
+| **Display** | **clamp(40–68px)** | ExtraBold (800) | `--jr-fs-display`（v4.3 新增，撑 Hero，补 H1↔正文断层）|
+| H1 | 32px | Bold (700) | `--jr-fs-h1` |
+| H2 | 24px | Bold (700) | `--jr-fs-h2` |
+| H3 | 18px | Semibold (600) | `--jr-fs-h3` |
+| Body | 14px | Regular (400) | `--jr-fs-body-1` |
+| Caption | 12px | Regular (400) | `--jr-fs-caption` |
 
 #### 按钮字号 Button Text Styles
 
@@ -422,6 +422,8 @@ JR Academy (匠人学院 · 总品牌)
 - ❌ 不要用 ≥4 种字号在同屏
 - ❌ Caption 不要 < 12px
 - ❌ 不要在中文里混 italic（中文斜体可读性差）
+- ❌ 品牌口号「学 AI 来匠人」不用字体重排，一律用字标图 `assets/logo/tagline-xueai-laijiangren.png`（口号不改字）
+- ❌ Anton 不渲染中文（无中文字形会掉细体 fallback）；中文大字报用思源黑体 Heavy(900)，见 `styles/zine.css`
 
 ---
 
