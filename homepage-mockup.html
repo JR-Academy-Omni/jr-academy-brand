@@ -1,0 +1,2087 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>匠人学院 首页 · v5 Neo-Brutalism Mockup</title>
+<link rel="stylesheet" href="tokens/tokens.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--dark:#10162f;--ink:#000;--red:#ff5757;--paper:#fff1e7;--panel:#fff;--yellow:#FFDE59;--green:#7ED957;--blue:#38B6FF;--purple:#CB6CE6;--n900:#1a1a2e;--n600:#5b5750;--n100:#f3ece2;--border:3px solid #000;--shadow:6px 6px 0 #000;--shadow-sm:4px 4px 0 #000}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:radial-gradient(circle at 24px 24px,rgba(0,0,0,.045) 0 1.4px,transparent 1.4px),var(--paper);background-size:30px 30px,auto;color:var(--dark);font-family:var(--jr-font-sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--jr-font-heading);font-weight:800;line-height:1.1;margin:0}
+.hp-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.mascot-outline{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(1.5px 1.5px 0 #fff) drop-shadow(-1.5px 1.5px 0 #fff) drop-shadow(1.5px -1.5px 0 #fff) drop-shadow(-1.5px -1.5px 0 #fff)}
+
+/* ===== section: header ===== */
+.hp-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 241, 231, 0.88);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid #000;
+}
+
+.hp-header .hp-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 64px;
+}
+
+/* —— Logo —— */
+.hp-header .hp-header-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.hp-header .hp-header-logo img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* —— Nav links (center/right) —— */
+.hp-header .hp-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.hp-header .hp-header-nav a {
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--n900, #1a1a2e);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1), color 120ms ease;
+}
+.hp-header .hp-header-nav a:hover {
+  color: var(--red, #ff5757);
+  transform: translateY(-2px);
+}
+
+/* —— Right actions —— */
+.hp-header .hp-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.hp-header .hp-header-login {
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--n900, #1a1a2e);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1), color 120ms ease;
+}
+.hp-header .hp-header-login:hover {
+  color: var(--red, #ff5757);
+  transform: translateY(-2px);
+}
+
+.hp-header .hp-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  background: var(--dark, #10162f);
+  border: 3px solid #000;
+  border-radius: 0;
+  padding: 9px 16px;
+  box-shadow: var(--shadow-sm, 4px 4px 0 #000);
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 120ms ease;
+}
+.hp-header .hp-header-cta:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #000;
+}
+.hp-header .hp-header-cta svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* —— Mobile —— */
+@media (max-width: 900px) {
+  .hp-header .hp-header-nav { display: none; }
+  .hp-header .hp-header-inner { height: 56px; }
+}
+@media (max-width: 480px) {
+  .hp-header .hp-header-login { display: none; }
+  .hp-header .hp-header-logo img { height: 26px; }
+}
+
+/* ===== section: hero ===== */
+.hp-hero {
+  background: var(--paper);
+  padding: 88px 0 96px;
+  overflow: hidden;
+  position: relative;
+}
+.hp-hero .hp-hero-grid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 56px;
+  align-items: center;
+}
+
+/* —— Left column —— */
+.hp-hero .hp-hero-left {
+  min-width: 0;
+}
+.hp-hero .hp-eyebrow {
+  display: inline-block;
+  background: var(--dark);
+  color: #fff;
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border: 3px solid #000;
+  box-shadow: var(--shadow-sm);
+}
+.hp-hero .hp-title {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.08;
+  color: var(--dark);
+  margin: 24px 0 0;
+  letter-spacing: -1px;
+}
+.hp-hero .hp-mk {
+  background: var(--yellow);
+  padding: 0 8px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.hp-hero .hp-subtitle {
+  font-family: var(--jr-font-sans);
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--n600);
+  margin: 22px 0 0;
+  max-width: 520px;
+}
+.hp-hero .hp-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+.hp-hero .hp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-family: var(--jr-font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.hp-hero .hp-pill svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.hp-hero .hp-pill.c-red { color: var(--red); }
+.hp-hero .hp-pill.c-green { color: var(--green); }
+.hp-hero .hp-pill.c-blue { color: var(--blue); }
+.hp-hero .hp-pill.c-purple { color: var(--purple); }
+
+.hp-hero .hp-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 34px 0 0;
+}
+.hp-hero .hp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--jr-font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 26px;
+  border: 3px solid #000;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .15s var(--jr-ease-standard, ease), box-shadow .15s var(--jr-ease-standard, ease);
+}
+.hp-hero .hp-btn svg { width: 18px; height: 18px; }
+.hp-hero .hp-btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #000;
+}
+.hp-hero .hp-btn-primary {
+  background: var(--dark);
+  color: #fff;
+}
+.hp-hero .hp-btn-accent {
+  background: var(--yellow);
+  color: #000;
+}
+
+.hp-hero .hp-trust {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 36px 0 0;
+}
+.hp-hero .hp-avatars {
+  display: flex;
+}
+.hp-hero .hp-avatars span {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 3px solid #000;
+  margin-left: -12px;
+  box-sizing: border-box;
+}
+.hp-hero .hp-avatars span:first-child { margin-left: 0; }
+.hp-hero .hp-avatars .a1 { background: var(--red); }
+.hp-hero .hp-avatars .a2 { background: var(--yellow); }
+.hp-hero .hp-avatars .a3 { background: var(--green); }
+.hp-hero .hp-avatars .a4 { background: var(--blue); }
+.hp-hero .hp-avatars .a5 { background: var(--purple); }
+.hp-hero .hp-trust-text {
+  font-family: var(--jr-font-sans);
+  font-size: 15px;
+  color: var(--dark);
+}
+.hp-hero .hp-trust-text b {
+  font-family: var(--jr-font-mono);
+  font-weight: 700;
+}
+
+/* —— Right column: dashboard preview —— */
+.hp-hero .hp-hero-right {
+  position: relative;
+  min-width: 0;
+}
+.hp-hero .hp-board {
+  background: #fff;
+  border: 3px solid #000;
+  box-shadow: var(--shadow);
+  padding: 22px;
+  position: relative;
+  z-index: 2;
+}
+.hp-hero .hp-board-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #000;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+.hp-hero .hp-board-title {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--dark);
+}
+.hp-hero .hp-board-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: var(--green);
+  border: 2px solid #000;
+}
+
+.hp-hero .hp-ring-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--paper);
+  border: 2px solid #000;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.hp-hero .hp-ring {
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  background: conic-gradient(var(--green) 0% 78%, var(--n100) 78% 100%);
+  border: 3px solid #000;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.hp-hero .hp-ring::after {
+  content: "";
+  position: absolute;
+  inset: 11px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 999px;
+}
+.hp-hero .hp-ring span {
+  position: relative;
+  z-index: 1;
+  font-family: var(--jr-font-mono);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--dark);
+}
+.hp-hero .hp-ring-meta .hp-ring-label {
+  font-family: var(--jr-font-mono);
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--n600);
+}
+.hp-hero .hp-ring-meta .hp-ring-big {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--dark);
+  margin-top: 3px;
+}
+
+.hp-hero .hp-block {
+  border: 2px solid #000;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+.hp-hero .hp-block:last-child { margin-bottom: 0; }
+.hp-hero .hp-block-label {
+  font-family: var(--jr-font-mono);
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--n600);
+  margin-bottom: 8px;
+}
+.hp-hero .hp-learning-name {
+  font-family: var(--jr-font-sans);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 9px;
+}
+.hp-hero .hp-learning-name em {
+  font-family: var(--jr-font-mono);
+  font-style: normal;
+  font-size: 13px;
+  color: var(--red);
+}
+.hp-hero .hp-bar {
+  height: 14px;
+  background: var(--n100);
+  border: 2px solid #000;
+  position: relative;
+}
+.hp-hero .hp-bar i {
+  position: absolute;
+  inset: 0 32% 0 0;
+  background: var(--red);
+  border-right: 2px solid #000;
+}
+
+.hp-hero .hp-task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--jr-font-sans);
+  font-size: 14px;
+  color: var(--dark);
+  padding: 4px 0;
+}
+.hp-hero .hp-task + .hp-task { border-top: 1.5px solid #000; }
+.hp-hero .hp-check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 2px solid #000;
+  display: grid;
+  place-items: center;
+}
+.hp-hero .hp-check.done {
+  background: var(--dark);
+}
+.hp-hero .hp-check.done svg { width: 12px; height: 12px; color: #fff; }
+.hp-hero .hp-check.todo {
+  border-radius: 999px;
+  background: #fff;
+}
+.hp-hero .hp-task.is-done span { color: var(--n600); }
+
+.hp-hero .hp-mascot {
+  position: absolute;
+  bottom: -34px;
+  right: -28px;
+  width: 132px;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* —— Responsive —— */
+@media (max-width: 900px) {
+  .hp-hero { padding: 56px 0 64px; }
+  .hp-hero .hp-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+  .hp-hero .hp-subtitle { max-width: none; }
+  .hp-hero .hp-mascot {
+    width: 104px;
+    right: 0;
+    bottom: -28px;
+  }
+}
+@media (max-width: 480px) {
+  .hp-hero .hp-cta-row .hp-btn { flex: 1 1 auto; justify-content: center; }
+  .hp-hero .hp-mascot { width: 86px; }
+}
+
+/* ===== section: compass ===== */
+.hp-compass{background:var(--paper);padding:80px 0;position:relative;overflow:hidden}
+.hp-compass .hp-wrap{position:relative;z-index:1}
+
+/* header */
+.hp-compass__eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--dark);color:#fff;font-family:var(--jr-font-mono);font-size:13px;font-weight:700;letter-spacing:.04em;padding:7px 14px;border:var(--border);box-shadow:var(--shadow-sm);text-transform:uppercase}
+.hp-compass__title{font-family:var(--jr-font-heading);font-weight:800;font-size:clamp(30px,4.4vw,46px);line-height:1.08;color:var(--n900);margin:18px 0 8px}
+.hp-compass__title .mk{background:var(--yellow);box-shadow:2px 0 0 var(--yellow),-2px 0 0 var(--yellow);padding:0 2px}
+.hp-compass__lede{font-family:var(--jr-font-sans);font-size:16px;color:var(--n600);max-width:640px;line-height:1.55;margin:0}
+
+/* gate grid */
+.hp-compass__gates{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
+.hp-compass__gate{background:var(--panel);border:var(--border);box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .15s var(--jr-ease-standard,ease),box-shadow .15s var(--jr-ease-standard,ease)}
+.hp-compass__gate:hover{transform:translate(3px,3px);box-shadow:0 0 0 #000}
+.hp-compass__gate-head{display:block;padding:22px 20px 18px;border-bottom:var(--border);text-decoration:none;color:inherit}
+.hp-compass__gate-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;font-size:30px;border:var(--border);box-shadow:var(--shadow-sm);margin-bottom:14px}
+.hp-compass__gate--learn .hp-compass__gate-icon{background:var(--purple)}
+.hp-compass__gate--jobs .hp-compass__gate-icon{background:var(--blue)}
+.hp-compass__gate--cert .hp-compass__gate-icon{background:var(--yellow)}
+.hp-compass__gate--explore .hp-compass__gate-icon{background:var(--green)}
+.hp-compass__gate-name{font-family:var(--jr-font-heading);font-weight:800;font-size:21px;color:var(--n900);display:flex;align-items:center;gap:8px}
+.hp-compass__gate-name .arr{font-family:var(--jr-font-mono);font-weight:700;transition:transform .15s ease}
+.hp-compass__gate-head:hover .arr{transform:translateX(4px)}
+.hp-compass__gate-desc{font-family:var(--jr-font-sans);font-size:14px;color:var(--n600);line-height:1.5;margin:8px 0 0}
+
+/* mini paths */
+.hp-compass__paths{padding:14px 20px 20px;display:flex;flex-direction:column;gap:8px}
+.hp-compass__paths-label{font-family:var(--jr-font-mono);font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--n600);text-transform:uppercase;margin:2px 0 4px}
+.hp-compass__path{display:flex;align-items:center;gap:9px;text-decoration:none;border:1.5px solid #000;background:var(--n100);padding:9px 11px;transition:background .12s ease,transform .12s ease,box-shadow .12s ease}
+.hp-compass__path:hover{background:var(--panel);transform:translate(-2px,-2px);box-shadow:var(--shadow-sm)}
+.hp-compass__path-num{font-family:var(--jr-font-mono);font-size:12px;font-weight:700;color:#fff;background:var(--red);border:1.5px solid #000;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.hp-compass__path-text{font-family:var(--jr-font-sans);font-size:13.5px;font-weight:600;color:var(--n900);line-height:1.3}
+
+/* bottom strip */
+.hp-compass__strip{margin-top:34px;background:var(--dark);border:var(--border);box-shadow:var(--shadow);padding:16px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px}
+.hp-compass__strip-label{font-family:var(--jr-font-mono);font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--yellow);text-transform:uppercase;margin-right:6px}
+.hp-compass__strip a{font-family:var(--jr-font-mono);font-size:13px;font-weight:700;color:#fff;text-decoration:none;border-bottom:2px solid transparent;padding:2px 0;transition:color .12s ease,border-color .12s ease}
+.hp-compass__strip a:hover{color:var(--yellow);border-bottom-color:var(--yellow)}
+.hp-compass__strip .sep{font-family:var(--jr-font-mono);color:#5b6080;font-size:13px;user-select:none}
+
+@media(max-width:880px){
+.hp-compass__gates{grid-template-columns:repeat(2,1fr);gap:18px}
+}
+@media(max-width:480px){
+.hp-compass{padding:56px 0}
+.hp-compass__gates{grid-template-columns:1fr}
+}
+
+/* ===== section: courses ===== */
+.hp-courses {
+  background: var(--paper);
+  padding: 96px 24px;
+  position: relative;
+}
+.hp-courses .hp-wrap { position: relative; }
+
+.hp-courses__eyebrow {
+  display: inline-block;
+  background: var(--dark);
+  color: #fff;
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.hp-courses__title {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: clamp(32px, 4.4vw, 52px);
+  line-height: 1.08;
+  color: var(--dark);
+  margin: 20px 0 0;
+  max-width: 780px;
+}
+.hp-courses__title .mk {
+  background: var(--yellow);
+  padding: 0 8px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.hp-courses__lede {
+  font-family: var(--jr-font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--n600);
+  margin: 16px 0 0;
+  max-width: 620px;
+}
+
+.hp-courses__block-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 64px 0 28px;
+}
+.hp-courses__block-num {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--jr-font-mono);
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+.hp-courses__block-q {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: clamp(22px, 2.6vw, 30px);
+  color: var(--dark);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hp-courses__router {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.hp-courses__route {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 20px 18px;
+  text-decoration: none;
+  color: var(--dark);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.hp-courses__route:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #000;
+}
+.hp-courses__route-goal {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.25;
+  color: var(--dark);
+}
+.hp-courses__route-who {
+  font-family: var(--jr-font-sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--n600);
+  margin: 10px 0 18px;
+  flex: 1;
+}
+.hp-courses__route-arrow {
+  align-self: flex-end;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: var(--dark);
+  border: 2px solid #000;
+  color: #fff;
+}
+.hp-courses__route:hover .hp-courses__route-arrow {
+  background: var(--red);
+  color: #000;
+}
+.hp-courses__route--c1 .hp-courses__route-arrow:not(:hover) { background: var(--green); color: #000; }
+.hp-courses__route svg { width: 18px; height: 18px; }
+
+.hp-courses__ladder {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  background: var(--dark);
+  overflow: hidden;
+}
+.hp-courses__rung {
+  flex: 1 1 0;
+  min-width: 150px;
+  padding: 22px 18px;
+  background: var(--dark);
+  border-right: 2px solid rgba(255,255,255,0.16);
+  position: relative;
+  text-decoration: none;
+  display: block;
+  transition: background 0.15s ease;
+}
+.hp-courses__rung:last-child { border-right: none; }
+.hp-courses__rung:hover { background: #1d2547; }
+.hp-courses__rung-step {
+  font-family: var(--jr-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 0.05em;
+}
+.hp-courses__rung-name {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 17px;
+  color: #fff;
+  margin: 10px 0 8px;
+  line-height: 1.2;
+}
+.hp-courses__rung-desc {
+  font-family: var(--jr-font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #c7cbe0;
+}
+.hp-courses__rung-tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--jr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  background: var(--yellow);
+  border: 2px solid #000;
+  padding: 2px 8px;
+}
+.hp-courses__commit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 0;
+  font-family: var(--jr-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--n600);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.hp-courses__commit-bar {
+  flex: 1;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, var(--red) 0 24px, var(--dark) 24px 30px);
+  border: 2px solid #000;
+}
+
+.hp-courses__cards-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 56px 0 24px;
+}
+.hp-courses__cards-title {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: clamp(22px, 2.6vw, 30px);
+  color: var(--dark);
+  margin: 0;
+}
+.hp-courses__cards-link {
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 2px;
+}
+.hp-courses__cards-link:hover { color: var(--red); }
+.hp-courses__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.hp-courses__card {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1.5px solid #000;
+  padding: 20px 18px;
+  text-decoration: none;
+  color: var(--dark);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.hp-courses__card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-sm);
+}
+.hp-courses__card-format {
+  font-family: var(--jr-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.04em;
+}
+.hp-courses__card-name {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--dark);
+  margin: 10px 0 0;
+}
+.hp-courses__card-who {
+  font-family: var(--jr-font-sans);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--n600);
+  margin: 8px 0 16px;
+  flex: 1;
+}
+.hp-courses__card-meta {
+  border-top: 1.5px solid #000;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hp-courses__card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--jr-font-sans);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--dark);
+}
+.hp-courses__card-row svg { width: 15px; height: 15px; flex: none; margin-top: 2px; color: var(--n600); }
+.hp-courses__card-row b { font-weight: 700; }
+.hp-courses__card-date {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--jr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+  background: var(--green);
+  border: 2px solid #000;
+  padding: 3px 9px;
+  align-self: flex-start;
+}
+
+@media (max-width: 1000px) {
+  .hp-courses__router { grid-template-columns: repeat(2, 1fr); }
+  .hp-courses__grid { grid-template-columns: repeat(2, 1fr); }
+  .hp-courses__rung { flex: 1 1 45%; border-right: none; border-bottom: 2px solid rgba(255,255,255,0.16); }
+}
+@media (max-width: 560px) {
+  .hp-courses { padding: 64px 16px; }
+  .hp-courses__router { grid-template-columns: 1fr; }
+  .hp-courses__grid { grid-template-columns: 1fr; }
+  .hp-courses__rung { flex: 1 1 100%; }
+}
+
+/* ===== section: ops ===== */
+.hp-ops { background: var(--paper); padding: 64px 0; font-family: var(--jr-font-sans); color: var(--n900); }
+.hp-ops .hp-wrap { display: flex; flex-direction: column; gap: 32px; }
+
+.hp-ops__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.hp-ops__eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--dark); color: #fff; font-family: var(--jr-font-mono); font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 6px 12px; border: var(--border); box-shadow: var(--shadow-sm); }
+.hp-ops__pulse { width: 9px; height: 9px; border-radius: 999px; background: var(--green); border: 2px solid #000; animation: hp-ops-blink 1.6s steps(1) infinite; }
+@keyframes hp-ops-blink { 0%,60% { opacity: 1; } 61%,100% { opacity: 0.25; } }
+.hp-ops__title { font-family: var(--jr-font-heading); font-weight: 800; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; margin: 12px 0 0; }
+.hp-ops__title em { font-style: normal; background: var(--yellow); box-shadow: 0 0 0 4px var(--yellow); padding: 0 2px; }
+.hp-ops__sub { font-size: 15px; color: var(--n600); margin: 8px 0 0; max-width: 460px; line-height: 1.6; }
+.hp-ops__stamp { font-family: var(--jr-font-mono); font-size: 12px; color: var(--n600); white-space: nowrap; }
+
+.hp-ops__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+.hp-ops__card { display: flex; flex-direction: column; background: var(--panel); border: 1.5px solid #000; padding: 18px; text-decoration: none; color: inherit; transition: transform var(--jr-dur-base, 200ms) ease, box-shadow var(--jr-dur-base, 200ms) ease; }
+.hp-ops__card:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow); }
+
+.hp-ops__label { display: inline-flex; align-items: center; gap: 7px; font-family: var(--jr-font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1.5px solid #000; }
+.hp-ops__dot { width: 8px; height: 8px; border-radius: 999px; border: 1.5px solid #000; }
+.hp-ops__dot--jobs { background: var(--blue); }
+.hp-ops__dot--win { background: var(--green); }
+.hp-ops__dot--class { background: var(--red); }
+.hp-ops__dot--video { background: var(--purple); }
+
+.hp-ops__lead { font-family: var(--jr-font-heading); font-weight: 800; font-size: 17px; line-height: 1.25; margin: 0 0 8px; }
+.hp-ops__note { font-size: 13px; line-height: 1.55; color: var(--n600); margin: 0; }
+
+.hp-ops__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.hp-ops__row { display: flex; gap: 9px; align-items: baseline; }
+.hp-ops__date { font-family: var(--jr-font-mono); font-size: 11px; font-weight: 700; color: #fff; background: var(--dark); padding: 2px 6px; white-space: nowrap; flex-shrink: 0; }
+.hp-ops__rowtxt { font-size: 13px; line-height: 1.4; }
+.hp-ops__vidnum { font-family: var(--jr-font-mono); font-size: 12px; font-weight: 700; color: var(--red); flex-shrink: 0; }
+
+.hp-ops__more { margin-top: auto; padding-top: 14px; font-family: var(--jr-font-mono); font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; gap: 5px; }
+.hp-ops__more svg { width: 15px; height: 15px; transition: transform var(--jr-dur-base, 200ms) ease; }
+.hp-ops__card:hover .hp-ops__more svg { transform: translateX(3px); }
+
+@media (max-width: 980px) {
+  .hp-ops__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .hp-ops { padding: 48px 0; }
+  .hp-ops__grid { grid-template-columns: 1fr; }
+  .hp-ops__head { align-items: flex-start; }
+}
+
+/* ===== section: proof ===== */
+.hp-proof {
+  background: var(--paper);
+  padding: 96px 0;
+  position: relative;
+}
+
+.hp-proof .hp-wrap {
+  position: relative;
+}
+
+/* —— Eyebrow —— */
+.hp-proof__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dark);
+  color: #fff;
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.hp-proof__eyebrow span {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--green);
+  border: 2px solid #000;
+}
+
+/* —— Heading row —— */
+.hp-proof__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 20px 0 48px;
+  flex-wrap: wrap;
+}
+
+.hp-proof__title {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: clamp(32px, 4.4vw, 48px);
+  line-height: 1.05;
+  color: var(--dark);
+  margin: 0;
+  max-width: 18ch;
+}
+
+.hp-proof__title em {
+  font-style: normal;
+  background: var(--yellow);
+  box-shadow: 0 0 0 2px #000;
+  padding: 0 6px;
+}
+
+.hp-proof__lede {
+  font-family: var(--jr-font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--n600);
+  max-width: 34ch;
+  margin: 0;
+}
+
+/* —— Quote card grid —— */
+.hp-proof__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.hp-proof__card {
+  background: var(--panel);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--jr-dur-base, 200ms) var(--jr-ease-standard, ease),
+              box-shadow var(--jr-dur-base, 200ms) var(--jr-ease-standard, ease);
+}
+
+.hp-proof__card:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 #000;
+}
+
+/* label chip + decorative quote mark */
+.hp-proof__cardtop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.hp-proof__label {
+  font-family: var(--jr-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border: 2px solid #000;
+  padding: 4px 9px;
+}
+
+.hp-proof__label--work { background: var(--blue); }
+.hp-proof__label--skill { background: var(--green); }
+.hp-proof__label--story { background: var(--purple); }
+
+.hp-proof__qmark {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 0.6;
+  color: var(--red);
+  user-select: none;
+}
+
+.hp-proof__quote {
+  font-family: var(--jr-font-sans);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--n900);
+  margin: 0 0 20px;
+}
+
+.hp-proof__quote b {
+  font-weight: 700;
+  box-shadow: inset 0 -10px 0 var(--yellow);
+}
+
+/* project / outcome tag inside card */
+.hp-proof__tag {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: var(--jr-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--n600);
+  background: var(--n100);
+  border: 1.5px solid #000;
+  padding: 4px 8px;
+  margin-bottom: 18px;
+}
+
+.hp-proof__by {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 2px solid #000;
+}
+
+.hp-proof__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 2px solid #000;
+  background: var(--n100);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hp-proof__name {
+  font-family: var(--jr-font-heading);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.hp-proof__role {
+  font-family: var(--jr-font-mono);
+  font-size: 12px;
+  color: var(--n600);
+  line-height: 1.4;
+}
+
+/* —— Bottom qualitative data band (dark) —— */
+.hp-proof__band {
+  margin-top: 32px;
+  background: var(--dark);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-proof__stat {
+  text-align: center;
+  position: relative;
+}
+
+.hp-proof__stat + .hp-proof__stat::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.hp-proof__num {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--yellow);
+}
+
+.hp-proof__num small {
+  font-size: 22px;
+  color: var(--red);
+}
+
+.hp-proof__statlabel {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--jr-font-mono);
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.hp-proof__statlabel--soft {
+  font-family: var(--jr-font-heading);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--green);
+  letter-spacing: 0;
+}
+
+/* —— Responsive —— */
+@media (max-width: 900px) {
+  .hp-proof__grid { grid-template-columns: 1fr; }
+  .hp-proof__band {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hp-proof__stat + .hp-proof__stat::before {
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hp-proof { padding: 64px 0; }
+  .hp-proof__head { margin-bottom: 36px; }
+}
+
+/* ===== section: mentors ===== */
+.hp-mentors{background:var(--paper);padding:80px 24px;border-top:var(--border);}
+.hp-mentors .hp-head{display:flex;flex-direction:column;gap:14px;margin-bottom:48px;}
+.hp-mentors .hp-eyebrow{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:var(--dark);color:#fff;font-family:var(--jr-font-mono);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border:var(--border);}
+.hp-mentors .hp-title{font-family:var(--jr-font-heading);font-weight:800;font-size:clamp(30px,4.4vw,46px);line-height:1.06;color:var(--dark);margin:0;max-width:18ch;}
+.hp-mentors .hp-title .mk{background:var(--yellow);box-shadow:6px 0 0 var(--yellow),-6px 0 0 var(--yellow);}
+.hp-mentors .hp-lede{font-family:var(--jr-font-sans);font-size:16px;line-height:1.6;color:var(--n600);max-width:46ch;margin:0;}
+
+.hp-mentors .hp-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;}
+.hp-mentors .hp-col-right{display:flex;flex-direction:column;gap:28px;}
+
+.hp-mentors .nb-card{background:var(--panel);border:var(--border);box-shadow:var(--shadow);padding:28px;display:flex;flex-direction:column;}
+.hp-mentors .nb-card.dark{background:var(--dark);color:#fff;}
+
+.hp-mentors .card-tag{align-self:flex-start;font-family:var(--jr-font-mono);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border:2px solid #000;margin-bottom:18px;}
+.hp-mentors .nb-card .card-tag{background:var(--red);color:#fff;}
+.hp-mentors .nb-card.dark .card-tag{background:var(--yellow);color:#000;border-color:#000;}
+
+.hp-mentors .card-h{font-family:var(--jr-font-heading);font-weight:800;font-size:24px;line-height:1.12;margin:0 0 10px;}
+.hp-mentors .nb-card.dark .card-h{color:#fff;}
+.hp-mentors .card-p{font-family:var(--jr-font-sans);font-size:15px;line-height:1.6;color:var(--n600);margin:0;}
+.hp-mentors .nb-card.dark .card-p{color:#d7d4ea;}
+
+/* ① mentor avatars */
+.hp-mentors .avatar-row{display:flex;align-items:center;margin:6px 0 20px;}
+.hp-mentors .avatar{width:60px;height:60px;border-radius:9999px;border:3px solid #000;background:var(--panel);margin-left:-16px;display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:var(--jr-font-heading);font-weight:800;font-size:18px;color:#fff;}
+.hp-mentors .avatar:first-child{margin-left:0;}
+.hp-mentors .avatar img{width:100%;height:100%;object-fit:cover;}
+.hp-mentors .avatar.a1{background:var(--blue);}
+.hp-mentors .avatar.a2{background:var(--purple);}
+.hp-mentors .avatar.a3{background:var(--green);}
+.hp-mentors .avatar.more{background:var(--dark);}
+
+.hp-mentors .mentor-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;}
+.hp-mentors .mentor-tag{font-family:var(--jr-font-mono);font-size:12px;font-weight:700;padding:6px 11px;border:2px solid #000;background:var(--n100);color:var(--dark);}
+
+.hp-mentors .nb-btn{align-self:flex-start;margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-family:var(--jr-font-heading);font-weight:800;font-size:15px;text-decoration:none;border:var(--border);padding:13px 22px;background:var(--dark);color:#fff;box-shadow:var(--shadow-sm);transition:transform .12s ease,box-shadow .12s ease;}
+.hp-mentors .nb-btn:hover{transform:translate(4px,4px);box-shadow:0 0 0 #000;}
+.hp-mentors .nb-btn svg{width:18px;height:18px;}
+.hp-mentors .nb-btn.accent{background:var(--red);}
+.hp-mentors .nb-card.dark .nb-btn{background:var(--yellow);color:#000;}
+
+/* ② community stats */
+.hp-mentors .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 20px;}
+.hp-mentors .stat{border:2px solid rgba(255,255,255,.28);padding:14px;}
+.hp-mentors .stat .num{font-family:var(--jr-font-mono);font-weight:700;font-size:26px;color:var(--yellow);line-height:1;}
+.hp-mentors .stat .lbl{font-family:var(--jr-font-sans);font-size:13px;color:#c8c5dd;margin-top:6px;}
+.hp-mentors .comm-mascot{position:absolute;right:18px;top:18px;width:66px;height:66px;}
+.hp-mentors .comm-mascot img{width:100%;height:100%;object-fit:contain;}
+.hp-mentors .nb-card.dark.comm{position:relative;overflow:hidden;}
+
+/* ③ events */
+.hp-mentors .event-list{display:flex;flex-direction:column;gap:0;margin:6px 0 22px;border:2px solid #000;}
+.hp-mentors .event{display:flex;align-items:center;gap:14px;padding:14px 16px;border-bottom:2px solid #000;text-decoration:none;transition:background .12s ease;}
+.hp-mentors .event:last-child{border-bottom:0;}
+.hp-mentors .event:hover{background:var(--n100);}
+.hp-mentors .ev-date{flex:0 0 56px;text-align:center;border:2px solid #000;padding:6px 2px;background:var(--yellow);}
+.hp-mentors .ev-date .d{font-family:var(--jr-font-heading);font-weight:800;font-size:20px;line-height:1;color:#000;}
+.hp-mentors .ev-date .m{font-family:var(--jr-font-mono);font-size:10px;font-weight:700;letter-spacing:.5px;color:#000;text-transform:uppercase;}
+.hp-mentors .ev-body{flex:1;min-width:0;}
+.hp-mentors .ev-kind{display:inline-block;font-family:var(--jr-font-mono);font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 7px;border:1.5px solid #000;margin-bottom:5px;}
+.hp-mentors .ev-kind.meetup{background:var(--blue);color:#000;}
+.hp-mentors .ev-kind.hack{background:var(--purple);color:#fff;}
+.hp-mentors .ev-kind.fest{background:var(--green);color:#000;}
+.hp-mentors .ev-name{font-family:var(--jr-font-heading);font-weight:800;font-size:15px;color:var(--dark);line-height:1.2;}
+.hp-mentors .ev-city{font-family:var(--jr-font-mono);font-size:12px;color:var(--n600);margin-top:3px;}
+.hp-mentors .ev-arrow{flex:0 0 auto;color:var(--dark);}
+.hp-mentors .ev-arrow svg{width:18px;height:18px;}
+
+@media(max-width:880px){
+.hp-mentors{padding:56px 18px;}
+.hp-mentors .hp-grid{grid-template-columns:1fr;}
+.hp-mentors .stat-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* ===== section: free ===== */
+.hp-free{background:var(--paper);padding:88px 24px;position:relative;overflow:hidden}
+.hp-free .hp-wrap{position:relative;z-index:1}
+.hp-free__head{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:48px}
+.hp-free__eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--dark);color:#fff;font-family:var(--jr-font-mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border:var(--border);box-shadow:var(--shadow-sm)}
+.hp-free__eyebrow svg{width:15px;height:15px}
+.hp-free__title{font-family:var(--jr-font-heading);font-weight:800;font-size:clamp(32px,5vw,52px);line-height:1.05;color:var(--dark);margin:20px 0 0}
+.hp-free__title .mk{position:relative;display:inline-block;white-space:nowrap}
+.hp-free__title .mk::after{content:"";position:absolute;left:-4px;right:-4px;bottom:4px;height:38%;background:var(--yellow);z-index:-1}
+.hp-free__lede{font-family:var(--jr-font-sans);font-size:16px;line-height:1.6;color:var(--n600);max-width:560px;margin:18px auto 0}
+.hp-free__grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.hp-free__card{display:flex;flex-direction:column;background:var(--panel);border:1.5px solid #000;padding:22px 18px 20px;text-decoration:none;color:var(--dark);transition:transform .15s ease,box-shadow .15s ease}
+.hp-free__card:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow)}
+.hp-free__icon{width:46px;height:46px;display:flex;align-items:center;justify-content:center;border:2px solid #000;margin-bottom:16px;color:var(--dark)}
+.hp-free__icon svg{width:24px;height:24px}
+.hp-free__card--wiki .hp-free__icon{background:var(--blue)}
+.hp-free__card--map .hp-free__icon{background:var(--purple)}
+.hp-free__card--sheet .hp-free__icon{background:var(--yellow)}
+.hp-free__card--video .hp-free__icon{background:var(--red);color:#fff}
+.hp-free__card--res .hp-free__icon{background:var(--green)}
+.hp-free__name{font-family:var(--jr-font-heading);font-weight:800;font-size:18px;line-height:1.2;margin:0 0 8px}
+.hp-free__desc{font-family:var(--jr-font-sans);font-size:13.5px;line-height:1.55;color:var(--n600);margin:0 0 16px;flex:1}
+.hp-free__count{display:inline-flex;align-items:center;gap:6px;font-family:var(--jr-font-mono);font-size:11.5px;font-weight:700;color:var(--dark);border-top:1.5px solid #000;padding-top:12px}
+.hp-free__count::before{content:"";width:7px;height:7px;border-radius:999px;background:var(--green);flex:none}
+.hp-free__arrow{margin-left:auto;display:flex;align-items:center;justify-content:center;transition:transform .15s ease}
+.hp-free__arrow svg{width:16px;height:16px}
+.hp-free__card:hover .hp-free__arrow{transform:translate(3px,0)}
+@media(max-width:1024px){.hp-free__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hp-free{padding:64px 18px}.hp-free__grid{grid-template-columns:1fr}}
+
+/* ===== section: membership ===== */
+.hp-membership{padding:64px 0;background:var(--paper);}
+.hp-membership .hp-wrap{display:block;}
+.hp-membership .mb-card{position:relative;background:var(--dark);border:var(--border);box-shadow:var(--shadow);padding:40px;color:#fff;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;overflow:hidden;}
+.hp-membership .mb-left{position:relative;z-index:1;}
+.hp-membership .mb-eyebrow{display:inline-block;font-family:var(--jr-font-mono);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;background:var(--yellow);color:#000;border:2px solid #000;padding:5px 12px;margin-bottom:18px;}
+.hp-membership .mb-headline{font-family:var(--jr-font-heading);font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.08;margin:0 0 16px;color:#fff;}
+.hp-membership .mb-headline .mk{color:#000;background:var(--yellow);padding:0 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.hp-membership .mb-sub{font-family:var(--jr-font-sans);font-size:15px;line-height:1.6;color:#cfc6e0;margin:0 0 26px;max-width:42ch;}
+.hp-membership .mb-sub b{color:var(--yellow);font-weight:700;}
+.hp-membership .mb-cta{display:inline-flex;align-items:center;gap:10px;font-family:var(--jr-font-heading);font-weight:800;font-size:16px;background:var(--red);color:#fff;border:var(--border);box-shadow:var(--shadow-sm);padding:14px 26px;text-decoration:none;transition:transform var(--jr-dur-base,200ms) ease,box-shadow var(--jr-dur-base,200ms) ease;}
+.hp-membership .mb-cta svg{width:20px;height:20px;flex:none;}
+.hp-membership .mb-cta:hover{transform:translate(3px,3px);box-shadow:0 0 0 #000;}
+.hp-membership .mb-mascot{position:absolute;right:-18px;bottom:-22px;width:150px;height:auto;z-index:0;opacity:.9;pointer-events:none;}
+.hp-membership .mb-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative;z-index:1;}
+.hp-membership .mb-tier{background:#fff;border:var(--border);box-shadow:var(--shadow-sm);padding:20px 14px;text-align:center;color:#000;transition:transform var(--jr-dur-base,200ms) ease,box-shadow var(--jr-dur-base,200ms) ease;}
+.hp-membership .mb-tier:hover{transform:translate(3px,3px);box-shadow:0 0 0 #000;}
+.hp-membership .mb-tier.is-feat{background:var(--yellow);}
+.hp-membership .mb-tier-name{font-family:var(--jr-font-mono);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#000;margin:0 0 10px;}
+.hp-membership .mb-tier-price{font-family:var(--jr-font-heading);font-weight:800;font-size:26px;line-height:1;color:#000;}
+.hp-membership .mb-tier-price .cur{font-size:15px;vertical-align:top;}
+.hp-membership .mb-tier-cycle{display:block;font-family:var(--jr-font-mono);font-size:11px;color:var(--n600);margin-top:8px;}
+.hp-membership .mb-flag{display:inline-block;font-family:var(--jr-font-mono);font-size:10px;font-weight:700;letter-spacing:.5px;background:#000;color:var(--yellow);padding:2px 7px;border-radius:999px;margin-bottom:8px;}
+@media(max-width:860px){
+.hp-membership{padding:48px 0;}
+.hp-membership .mb-card{grid-template-columns:1fr;gap:28px;padding:28px;}
+.hp-membership .mb-mascot{width:108px;right:-10px;bottom:-14px;opacity:.55;}
+}
+@media(max-width:480px){
+.hp-membership .mb-tiers{grid-template-columns:1fr;}
+}
+
+/* ===== section: footer ===== */
+.hp-footer{background:var(--dark);color:#fff;font-family:var(--jr-font-sans);}
+
+/* ===== 深色大 CTA 区 ===== */
+.hp-footer .hp-footer-cta{border-bottom:3px solid #000;padding:80px 0 72px;}
+.hp-footer .hp-footer-cta-inner{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;}
+.hp-footer .hp-footer-cta-eyebrow{display:inline-block;font-family:var(--jr-font-mono);font-size:13px;letter-spacing:1px;text-transform:uppercase;background:#000;border:3px solid #000;color:#fff;padding:6px 14px;margin-bottom:24px;}
+.hp-footer .hp-footer-cta-title{font-family:var(--jr-font-heading);font-weight:800;font-size:clamp(34px,5vw,56px);line-height:1.05;margin:0 0 20px;color:#fff;}
+.hp-footer .hp-footer-cta-title .hl{color:var(--yellow);}
+.hp-footer .hp-footer-cta-sub{font-size:17px;line-height:1.65;color:#cfcbe0;max-width:520px;margin:0 0 32px;}
+.hp-footer .hp-footer-cta-btn{display:inline-flex;align-items:center;gap:10px;background:var(--yellow);color:#000;font-family:var(--jr-font-heading);font-weight:800;font-size:18px;text-decoration:none;padding:16px 32px;border:3px solid #000;box-shadow:var(--shadow);transition:transform .15s ease,box-shadow .15s ease;}
+.hp-footer .hp-footer-cta-btn:hover{transform:translate(3px,3px);box-shadow:0 0 0 #000;}
+.hp-footer .hp-footer-cta-mascot{width:240px;height:auto;display:block;justify-self:end;}
+
+/* ===== 页脚 ===== */
+.hp-footer .hp-footer-main{padding:64px 0 0;}
+.hp-footer .hp-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:40px;align-items:start;}
+
+.hp-footer .hp-footer-brand .hp-footer-logo{height:34px;width:auto;display:block;margin-bottom:18px;filter:brightness(0) invert(1);}
+.hp-footer .hp-footer-tagline{font-size:14px;line-height:1.6;color:#a9a5c2;max-width:240px;margin:0 0 22px;}
+.hp-footer .hp-footer-news-label{font-family:var(--jr-font-mono);font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--yellow);margin:0 0 10px;}
+.hp-footer .hp-footer-news{display:flex;}
+.hp-footer .hp-footer-news input{flex:1;min-width:0;background:#fff;color:#000;border:3px solid #000;font-family:var(--jr-font-sans);font-size:14px;padding:11px 12px;outline:none;}
+.hp-footer .hp-footer-news input::placeholder{color:#6b6b6b;}
+.hp-footer .hp-footer-news button{background:var(--red);color:#fff;border:3px solid #000;border-left:none;font-family:var(--jr-font-heading);font-weight:800;font-size:15px;padding:0 16px;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;box-shadow:var(--shadow-sm);}
+.hp-footer .hp-footer-news button:hover{transform:translate(2px,2px);box-shadow:0 0 0 #000;}
+
+.hp-footer .hp-footer-col h4{font-family:var(--jr-font-heading);font-weight:800;font-size:15px;color:#fff;margin:0 0 16px;}
+.hp-footer .hp-footer-col ul{list-style:none;margin:0;padding:0;}
+.hp-footer .hp-footer-col li{margin-bottom:11px;}
+.hp-footer .hp-footer-col a{color:#b5b1cc;text-decoration:none;font-size:14px;line-height:1.4;transition:color .15s ease;}
+.hp-footer .hp-footer-col a:hover{color:var(--yellow);}
+
+.hp-footer .hp-footer-qr{justify-self:end;text-align:center;}
+.hp-footer .hp-footer-qr-box{width:104px;height:104px;background:#3a3a52;border:3px solid #000;box-shadow:var(--shadow-sm);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}
+.hp-footer .hp-footer-qr-box span{font-family:var(--jr-font-mono);font-size:11px;color:#8e8aa8;}
+.hp-footer .hp-footer-qr-cap{font-family:var(--jr-font-mono);font-size:12px;color:#a9a5c2;margin:0;}
+
+/* ===== 底部条 ===== */
+.hp-footer .hp-footer-bottom{margin-top:56px;border-top:1.5px solid #3a3a52;padding:22px 0 30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.hp-footer .hp-footer-bottom p{font-family:var(--jr-font-mono);font-size:12px;color:#8e8aa8;margin:0;}
+
+@media(max-width:900px){
+  .hp-footer .hp-footer-cta-inner{grid-template-columns:1fr;}
+  .hp-footer .hp-footer-cta-mascot{justify-self:start;width:180px;}
+  .hp-footer .hp-footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+  .hp-footer .hp-footer-brand{grid-column:1 / -1;}
+  .hp-footer .hp-footer-qr{justify-self:start;text-align:left;}
+  .hp-footer .hp-footer-qr-box{margin:0 0 10px;}
+}
+@media(max-width:520px){
+  .hp-footer .hp-footer-grid{grid-template-columns:1fr;}
+}
+</style></head><body>
+
+<section class="hp-header">
+  <div class="hp-wrap hp-header-inner">
+    <a class="hp-header-logo" href="/" aria-label="匠人学院 JR Academy">
+      <img src="assets/logo/logo-official-black.svg" alt="匠人学院 JR Academy" />
+    </a>
+
+    <nav class="hp-header-nav" aria-label="主导航">
+      <a href="/roadmaps">学习路径</a>
+      <a href="/bootcamp">课程</a>
+      <a href="/learn">学 AI</a>
+      <a href="/certifications">考证匠</a>
+      <a href="/career-coaching">求职匠</a>
+      <a href="/events">社区</a>
+    </nav>
+
+    <div class="hp-header-actions">
+      <a class="hp-header-login" href="/learn">登录</a>
+      <a class="hp-header-cta" href="/bootcamp">
+        注册 / 开始学习
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14"/>
+          <path d="m12 5 7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="hp-hero">
+  <div class="hp-wrap">
+    <div class="hp-hero-grid">
+
+      <!-- LEFT -->
+      <div class="hp-hero-left">
+        <span class="hp-eyebrow">新一代 AI 学习与成长平台</span>
+
+        <h1 class="hp-title">学 <span style="color:var(--red)">AI</span>，就来<span class="hp-mk">匠人</span></h1>
+
+        <p class="hp-subtitle">更快掌握 AI 技能，打造可落地的实战能力。</p>
+
+        <div class="hp-pills">
+          <span class="hp-pill"><svg class="c-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9-4 9 4-9 4-9-4z"/><path d="M3 6v6l9 4 9-4V6"/></svg>体系化路径</span>
+          <span class="hp-pill"><svg class="c-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>实战项目驱动</span>
+          <span class="hp-pill"><svg class="c-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>名师答疑</span>
+          <span class="hp-pill"><svg class="c-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>就业陪跑</span>
+        </div>
+
+        <div class="hp-cta-row">
+          <a class="hp-btn hp-btn-primary" href="/learn">开始学习
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="hp-btn hp-btn-accent" href="/career-coaching">免费咨询</a>
+        </div>
+
+        <div class="hp-trust">
+          <div class="hp-avatars">
+            <span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span><span class="a5"></span>
+          </div>
+          <div class="hp-trust-text"><b>10w+</b> 学员正在学习</div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hp-hero-right">
+        <div class="hp-board">
+          <div class="hp-board-head">
+            <div class="hp-board-title">我的学习看板</div>
+            <span class="hp-board-dot" aria-hidden="true"></span>
+          </div>
+
+          <div class="hp-ring-row">
+            <div class="hp-ring"><span>78%</span></div>
+            <div class="hp-ring-meta">
+              <div class="hp-ring-label">本周完成度</div>
+              <div class="hp-ring-big">连续打卡 12 天</div>
+            </div>
+          </div>
+
+          <div class="hp-block">
+            <div class="hp-block-label">正在学习</div>
+            <div class="hp-learning-name">Prompt 工程实战 <em>68%</em></div>
+            <div class="hp-bar"><i></i></div>
+          </div>
+
+          <div class="hp-block">
+            <div class="hp-block-label">今日任务</div>
+            <div class="hp-task is-done">
+              <span class="hp-check done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>看完「上下文工程」一节</span>
+            </div>
+            <div class="hp-task is-done">
+              <span class="hp-check done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+              <span>提交 RAG 检索小练习</span>
+            </div>
+            <div class="hp-task">
+              <span class="hp-check todo"></span>
+              <span>复盘本周作品并发到社区</span>
+            </div>
+          </div>
+        </div>
+
+        <img class="hp-mascot mascot-outline" src="assets/mascot/working/working-01-laptop-desk.png" alt="牛小匠在桌前用电脑学习" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hp-compass">
+  <div class="hp-wrap">
+    <span class="hp-compass__eyebrow">📍 你是为什么来的?</span>
+    <h2 class="hp-compass__title">选一个门进去,<span class="mk">剩下的我带你走</span></h2>
+    <p class="hp-compass__lede">不用先搞懂整个平台。挑最贴近你现在状态的那扇门,下面每条路径都直接落到具体起点。</p>
+
+    <div class="hp-compass__gates">
+      <!-- 学 AI -->
+      <div class="hp-compass__gate hp-compass__gate--learn">
+        <a class="hp-compass__gate-head" href="/learn">
+          <div class="hp-compass__gate-icon">🎓</div>
+          <div class="hp-compass__gate-name">学 AI <span class="arr">→</span></div>
+          <p class="hp-compass__gate-desc">系统搭起 AI 能力,从用好工具到能上手做东西。</p>
+        </a>
+        <div class="hp-compass__paths">
+          <div class="hp-compass__paths-label">从这里开始</div>
+          <a class="hp-compass__path" href="/learn/ai-engineer/hub"><span class="hp-compass__path-num">1</span><span class="hp-compass__path-text">AI 入门路线:从零到能做项目</span></a>
+          <a class="hp-compass__path" href="/learn/prompt-master"><span class="hp-compass__path-num">2</span><span class="hp-compass__path-text">Prompt 速成:把 AI 真正用顺</span></a>
+          <a class="hp-compass__path" href="/learn/vibe-coding/hub"><span class="hp-compass__path-num">3</span><span class="hp-compass__path-text">0 基础先学这个:用 AI 写代码</span></a>
+        </div>
+      </div>
+
+      <!-- 找工作 -->
+      <div class="hp-compass__gate hp-compass__gate--jobs">
+        <a class="hp-compass__gate-head" href="/ai-jobs">
+          <div class="hp-compass__gate-icon">💼</div>
+          <div class="hp-compass__gate-name">找工作 <span class="arr">→</span></div>
+          <p class="hp-compass__gate-desc">看真实在招的岗位,练面试,把简历改到能投。</p>
+        </a>
+        <div class="hp-compass__paths">
+          <div class="hp-compass__paths-label">从这里开始</div>
+          <a class="hp-compass__path" href="/ai-jobs"><span class="hp-compass__path-num">1</span><span class="hp-compass__path-text">先看本周在招的 AI 岗位</span></a>
+          <a class="hp-compass__path" href="/job-interview/mock"><span class="hp-compass__path-num">2</span><span class="hp-compass__path-text">模拟面试:对着真题练一遍</span></a>
+          <a class="hp-compass__path" href="/career-coaching"><span class="hp-compass__path-num">3</span><span class="hp-compass__path-text">找教练帮你看方向和简历</span></a>
+        </div>
+      </div>
+
+      <!-- 考证 -->
+      <div class="hp-compass__gate hp-compass__gate--cert">
+        <a class="hp-compass__gate-head" href="/certifications">
+          <div class="hp-compass__gate-icon">📜</div>
+          <div class="hp-compass__gate-name">考证 <span class="arr">→</span></div>
+          <p class="hp-compass__gate-desc">挑一张证书,跟着章节刷题,考点不漏。</p>
+        </a>
+        <div class="hp-compass__paths">
+          <div class="hp-compass__paths-label">从这里开始</div>
+          <a class="hp-compass__path" href="/certifications"><span class="hp-compass__path-num">1</span><span class="hp-compass__path-text">先挑一张要考的证书</span></a>
+          <a class="hp-compass__path" href="/cheat-sheets"><span class="hp-compass__path-num">2</span><span class="hp-compass__path-text">速查表:考前快速过考点</span></a>
+          <a class="hp-compass__path" href="/wiki"><span class="hp-compass__path-num">3</span><span class="hp-compass__path-text">Wiki:概念没懂就来查</span></a>
+        </div>
+      </div>
+
+      <!-- 还没想好 -->
+      <div class="hp-compass__gate hp-compass__gate--explore">
+        <a class="hp-compass__gate-head" href="/roadmaps">
+          <div class="hp-compass__gate-icon">🧭</div>
+          <div class="hp-compass__gate-name">还没想好 <span class="arr">→</span></div>
+          <p class="hp-compass__gate-desc">先看路线图全貌,找到你想去的那条路。</p>
+        </a>
+        <div class="hp-compass__paths">
+          <div class="hp-compass__paths-label">从这里开始</div>
+          <a class="hp-compass__path" href="/roadmaps"><span class="hp-compass__path-num">1</span><span class="hp-compass__path-text">浏览全部学习路线图</span></a>
+          <a class="hp-compass__path" href="/videos"><span class="hp-compass__path-num">2</span><span class="hp-compass__path-text">挑几个视频感受一下</span></a>
+          <a class="hp-compass__path" href="/free-resources"><span class="hp-compass__path-num">3</span><span class="hp-compass__path-text">从免费资源轻松起步</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hp-compass__strip">
+      <span class="hp-compass__strip-label">直达</span>
+      <a href="/bootcamp">课程</a><span class="sep">·</span>
+      <a href="/roadmaps">路线图</a><span class="sep">·</span>
+      <a href="/cheat-sheets">速查表</a><span class="sep">·</span>
+      <a href="/wiki">Wiki</a><span class="sep">·</span>
+      <a href="/videos">视频</a><span class="sep">·</span>
+      <a href="/job-interview/mock">面经</a><span class="sep">·</span>
+      <a href="/free-resources">免费资源</a>
+    </div>
+  </div>
+</section>
+
+<section class="hp-courses">
+  <div class="hp-wrap">
+    <span class="hp-courses__eyebrow">课程中心</span>
+    <h2 class="hp-courses__title">从<span class="mk">零基础</span>到拿得出手的作品，<br>每一步都有人陪你走</h2>
+    <p class="hp-courses__lede">不知道从哪开始？先按你的目标选条路，再顺着课程阶梯往上走——能自学就先自学，想要带着学、有人盯进度，也都有对应的档位。</p>
+
+    <!-- A · 按目标选课路由器 -->
+    <div class="hp-courses__block-head">
+      <div class="hp-courses__block-num">01</div>
+      <h3 class="hp-courses__block-q">你想用 AI 做什么？</h3>
+    </div>
+    <div class="hp-courses__router">
+      <a class="hp-courses__route hp-courses__route--c1" href="/learn">
+        <span class="hp-courses__route-goal">零基础入门 AI</span>
+        <span class="hp-courses__route-who">没写过代码、连概念都还没搞清，想先把地基打扎实。</span>
+        <span class="hp-courses__route-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+      <a class="hp-courses__route" href="/learn/ai-engineer/hub">
+        <span class="hp-courses__route-goal">转行做 AI 工程师</span>
+        <span class="hp-courses__route-who">想系统转码、把 RAG / Agent 这些真正做进项目里。</span>
+        <span class="hp-courses__route-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+      <a class="hp-courses__route" href="/learn/ai-pm">
+        <span class="hp-courses__route-goal">用 AI 提升现在的工作</span>
+        <span class="hp-courses__route-who">已经在职，想把 AI 用进日常，效率和产出都拉一档。</span>
+        <span class="hp-courses__route-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+      <a class="hp-courses__route" href="/certifications">
+        <span class="hp-courses__route-goal">考 AWS / Azure / CKA 证</span>
+        <span class="hp-courses__route-who">要一张能写进简历的云证书，需要题库和系统复习。</span>
+        <span class="hp-courses__route-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+      <a class="hp-courses__route" href="/career-coaching">
+        <span class="hp-courses__route-goal">用 AI 找工作</span>
+        <span class="hp-courses__route-who">简历、面试、内推都想有人带着改、陪着练。</span>
+        <span class="hp-courses__route-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+    </div>
+
+    <!-- B · 课程阶梯 -->
+    <div class="hp-courses__block-head">
+      <div class="hp-courses__block-num">02</div>
+      <h3 class="hp-courses__block-q">课程阶梯：先学懂，再上手，最后上岸</h3>
+    </div>
+    <div class="hp-courses__ladder">
+      <a class="hp-courses__rung" href="/learn">
+        <div class="hp-courses__rung-step">STEP 01</div>
+        <div class="hp-courses__rung-name">免费自学方向</div>
+        <div class="hp-courses__rung-desc">0 元先把方向学懂，搞清楚自己适不适合再投入。</div>
+        <span class="hp-courses__rung-tag">免费</span>
+      </a>
+      <a class="hp-courses__rung" href="/bootcamp">
+        <div class="hp-courses__rung-step">STEP 02</div>
+        <div class="hp-courses__rung-name">引流课</div>
+        <div class="hp-courses__rung-desc">用一次完整作业体验真实节奏，看看带教的感觉。</div>
+        <span class="hp-courses__rung-tag">低门槛</span>
+      </a>
+      <a class="hp-courses__rung" href="/bootcamp">
+        <div class="hp-courses__rung-step">STEP 03</div>
+        <div class="hp-courses__rung-name">训练营三档</div>
+        <div class="hp-courses__rung-desc">自学 / 教学 / 陪跑三档，按你要多少陪伴自己挑。</div>
+        <span class="hp-courses__rung-tag">主课</span>
+      </a>
+      <a class="hp-courses__rung" href="/certifications">
+        <div class="hp-courses__rung-step">STEP 04</div>
+        <div class="hp-courses__rung-name">考证</div>
+        <div class="hp-courses__rung-desc">把技能换成一张能写进简历的云证书。</div>
+        <span class="hp-courses__rung-tag">背书</span>
+      </a>
+      <a class="hp-courses__rung" href="/career-coaching">
+        <div class="hp-courses__rung-step">STEP 05</div>
+        <div class="hp-courses__rung-name">求职陪跑</div>
+        <div class="hp-courses__rung-desc">简历、面试、内推一路陪练到拿到面试机会。</div>
+        <span class="hp-courses__rung-tag">陪跑</span>
+      </a>
+    </div>
+    <div class="hp-courses__commit">
+      <span>承诺度递增</span>
+      <span class="hp-courses__commit-bar" aria-hidden="true"></span>
+      <span>陪伴越多</span>
+    </div>
+
+    <!-- 代表性训练营课程卡 -->
+    <div class="hp-courses__cards-head">
+      <h3 class="hp-courses__cards-title">近期开课的训练营</h3>
+      <a class="hp-courses__cards-link" href="/bootcamp">查看全部训练营 →</a>
+    </div>
+    <div class="hp-courses__grid">
+
+      <a class="hp-courses__card" href="/bootcamp">
+        <span class="hp-courses__card-format">训练营 · 8 周</span>
+        <h4 class="hp-courses__card-name">AI 工程师训练营</h4>
+        <p class="hp-courses__card-who">想从后端 / 全栈转 AI 方向、能写代码但没做过 LLM 项目的人。</p>
+        <div class="hp-courses__card-meta">
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="0"/><path d="M3 10h18"/></svg>
+            <span>每期实战项目 + 代码评审</span>
+          </div>
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/></svg>
+            <span>学完产出：一个可上线的 <b>RAG / Agent 应用</b></span>
+          </div>
+        </div>
+        <span class="hp-courses__card-date">6 月 28 日开班</span>
+      </a>
+
+      <a class="hp-courses__card" href="/bootcamp">
+        <span class="hp-courses__card-format">训练营 · 10 周</span>
+        <h4 class="hp-courses__card-name">全栈编程训练营</h4>
+        <p class="hp-courses__card-who">零基础或转码新手，想把前后端一整套真正写出来的人。</p>
+        <div class="hp-courses__card-meta">
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="0"/><path d="M3 10h18"/></svg>
+            <span>每周作业 + 答疑 + 进度跟进</span>
+          </div>
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/></svg>
+            <span>学完产出：<b>3 个完整全栈项目</b>进作品集</span>
+          </div>
+        </div>
+        <span class="hp-courses__card-date">7 月 5 日开班</span>
+      </a>
+
+      <a class="hp-courses__card" href="/bootcamp">
+        <span class="hp-courses__card-format">训练营 · 6 周</span>
+        <h4 class="hp-courses__card-name">Vibe Coding 训练营</h4>
+        <p class="hp-courses__card-who">不想死磕语法，想用 AI 把脑子里的想法快速做成产品的人。</p>
+        <div class="hp-courses__card-meta">
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="0"/><path d="M3 10h18"/></svg>
+            <span>边做边讲，每节课产出可运行 demo</span>
+          </div>
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/></svg>
+            <span>学完产出：<b>一个自己上线的小产品</b></span>
+          </div>
+        </div>
+        <span class="hp-courses__card-date">7 月 12 日开班</span>
+      </a>
+
+      <a class="hp-courses__card" href="/bootcamp">
+        <span class="hp-courses__card-format">训练营 · 8 周</span>
+        <h4 class="hp-courses__card-name">AI 产品经理训练营</h4>
+        <p class="hp-courses__card-who">在职产品 / 运营，想把 AI 落进真实需求和团队里的人。</p>
+        <div class="hp-courses__card-meta">
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="0"/><path d="M3 10h18"/></svg>
+            <span>真实案例拆解 + PRD 实操批改</span>
+          </div>
+          <div class="hp-courses__card-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z"/><path d="M14 2v6h6"/></svg>
+            <span>学完产出：<b>一份完整 AI 产品方案</b></span>
+          </div>
+        </div>
+        <span class="hp-courses__card-date">7 月 19 日开班</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="hp-ops">
+  <div class="hp-wrap">
+    <div class="hp-ops__head">
+      <div>
+        <span class="hp-ops__eyebrow"><span class="hp-ops__pulse"></span>平台每天在更新</span>
+        <h2 class="hp-ops__title">不是录完就放着的课，<br>是 <em>每天都在动</em> 的平台</h2>
+        <p class="hp-ops__sub">新岗位、上岸捷报、开课排期、最新视频，匠人后台每天都有人在更新——你今天来和上周来，看到的东西不一样。</p>
+      </div>
+      <span class="hp-ops__stamp">// LAST SYNC: TODAY 09:00 AEST</span>
+    </div>
+
+    <div class="hp-ops__grid">
+
+      <a class="hp-ops__card" href="/ai-jobs">
+        <span class="hp-ops__label"><span class="hp-ops__dot hp-ops__dot--jobs"></span>今日岗位深析</span>
+        <p class="hp-ops__lead">AI Engineer · RAG 方向 / 悉尼</p>
+        <p class="hp-ops__note">JD 写 "LangChain + 向量库"，其实在考你能不能把检索质量调上去——光会调 API 不够，得懂 chunk 和 eval。</p>
+        <span class="hp-ops__more">看岗位拆解 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="hp-ops__card" href="/career-coaching">
+        <span class="hp-ops__label"><span class="hp-ops__dot hp-ops__dot--win"></span>上岸捷报</span>
+        <p class="hp-ops__lead">本周多位学员收到面试邀约</p>
+        <p class="hp-ops__note">方向集中在本地企业的数据与 AI 团队，做模型落地和数据管线。简历、作品集、模拟面试都在平台里磨过一遍。</p>
+        <span class="hp-ops__more">约一次诊断 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="hp-ops__card" href="/bootcamp">
+        <span class="hp-ops__label"><span class="hp-ops__dot hp-ops__dot--class"></span>近期开课</span>
+        <ul class="hp-ops__list">
+          <li class="hp-ops__row"><span class="hp-ops__date">06/23</span><span class="hp-ops__rowtxt">AI Engineer 实战训练营</span></li>
+          <li class="hp-ops__row"><span class="hp-ops__date">07/07</span><span class="hp-ops__rowtxt">Vibe Coding 全栈班</span></li>
+          <li class="hp-ops__row"><span class="hp-ops__date">07/21</span><span class="hp-ops__rowtxt">AI 产品经理转型班</span></li>
+        </ul>
+        <span class="hp-ops__more">看全部班次 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+      <a class="hp-ops__card" href="/videos">
+        <span class="hp-ops__label"><span class="hp-ops__dot hp-ops__dot--video"></span>最新视频</span>
+        <ul class="hp-ops__list">
+          <li class="hp-ops__row"><span class="hp-ops__vidnum">01</span><span class="hp-ops__rowtxt">用 RAG 给私有文档做问答，从 0 到能跑</span></li>
+          <li class="hp-ops__row"><span class="hp-ops__vidnum">02</span><span class="hp-ops__rowtxt">写 Prompt 老翻车？三个改写套路直接抄</span></li>
+          <li class="hp-ops__row"><span class="hp-ops__vidnum">03</span><span class="hp-ops__rowtxt">Cursor + Claude 一晚搭出可演示的小工具</span></li>
+        </ul>
+        <span class="hp-ops__more">去视频库 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="hp-proof">
+  <div class="hp-wrap">
+    <div class="hp-proof__eyebrow"><span></span>学员成果</div>
+
+    <div class="hp-proof__head">
+      <h2 class="hp-proof__title">不是结业证书，是<em>真正做出来的东西</em></h2>
+      <p class="hp-proof__lede">这里放学员自己的原话——做了什么项目、从不会到能独立上手、踩过的坑。比任何宣传语都实在。</p>
+    </div>
+
+    <div class="hp-proof__grid">
+      <!-- 作品展示 -->
+      <article class="hp-proof__card">
+        <div class="hp-proof__cardtop">
+          <span class="hp-proof__label hp-proof__label--work">作品展示</span>
+          <span class="hp-proof__qmark">&ldquo;</span>
+        </div>
+        <span class="hp-proof__tag">PROJECT — 报销单 RAG 助手</span>
+        <p class="hp-proof__quote">我把公司一堆报销规则喂给 <b>RAG</b>，做了个内部问答机器人。同事现在直接问它能不能报，不用翻 PDF 了——上线第一周就被部门拿去用。</p>
+        <div class="hp-proof__by">
+          <img class="hp-proof__avatar mascot-outline" src="assets/mascot/heads/04-clipboard.png" alt="">
+          <div>
+            <div class="hp-proof__name">陈同学</div>
+            <div class="hp-proof__role">AI 工程师方向 · 在职转行</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 技能跃迁 -->
+      <article class="hp-proof__card">
+        <div class="hp-proof__cardtop">
+          <span class="hp-proof__label hp-proof__label--skill">技能跃迁</span>
+          <span class="hp-proof__qmark">&ldquo;</span>
+        </div>
+        <span class="hp-proof__tag">FROM 不会写代码 → 能独立交付</span>
+        <p class="hp-proof__quote">报名前我连终端都不敢开。现在能用 <b>Vibe Coding</b> 自己把一个落地页从零搭起来、部署上线，遇到报错也知道该怎么查、怎么问 AI。</p>
+        <div class="hp-proof__by">
+          <img class="hp-proof__avatar mascot-outline" src="assets/mascot/working/working-01-laptop-desk.png" alt="">
+          <div>
+            <div class="hp-proof__name">林同学</div>
+            <div class="hp-proof__role">Vibe Coding 方向 · 零基础</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 真实故事 -->
+      <article class="hp-proof__card">
+        <div class="hp-proof__cardtop">
+          <span class="hp-proof__label hp-proof__label--story">真实故事</span>
+          <span class="hp-proof__qmark">&ldquo;</span>
+        </div>
+        <span class="hp-proof__tag">STORY — 卡住时有人接得住</span>
+        <p class="hp-proof__quote">最难的不是学，是一个人卡住时容易放弃。这里我能把 <b>报错截图</b> 直接丢群里，导师和同学半天内就帮我看出问题。坚持下来全靠这个。</p>
+        <div class="hp-proof__by">
+          <img class="hp-proof__avatar mascot-outline" src="assets/mascot/busts/bust-03-loving-heart.png" alt="">
+          <div>
+            <div class="hp-proof__name">王同学</div>
+            <div class="hp-proof__role">AI 产品经理方向 · 应届</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="hp-proof__band">
+      <div class="hp-proof__stat">
+        <div class="hp-proof__num">100<small>+</small></div>
+        <span class="hp-proof__statlabel">学员可展示作品</span>
+      </div>
+      <div class="hp-proof__stat">
+        <div class="hp-proof__num">50<small>+</small></div>
+        <span class="hp-proof__statlabel">真实项目实战</span>
+      </div>
+      <div class="hp-proof__stat">
+        <span class="hp-proof__statlabel--soft">本周多位学员上岸</span>
+        <span class="hp-proof__statlabel">社区互动持续活跃</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hp-mentors">
+  <div class="hp-wrap">
+    <div class="hp-head">
+      <span class="hp-eyebrow">导师 · 社群 · 活动</span>
+      <h2 class="hp-title">不是一个人学，<span class="mk">有人带、有人一起</span></h2>
+      <p class="hp-lede">大厂在职导师 1v1 陪练，匠人社群每天都有人在改简历、对项目、抠 bug。学到一半卡住，问一句就有回应。</p>
+    </div>
+
+    <div class="hp-grid">
+      <!-- ① 导师团队 -->
+      <div class="nb-card">
+        <span class="card-tag">行业导师</span>
+        <h3 class="card-h">大厂在职导师 1v1 陪练</h3>
+        <div class="avatar-row">
+          <div class="avatar a1">A</div>
+          <div class="avatar a2">M</div>
+          <div class="avatar a3">L</div>
+          <div class="avatar more">+</div>
+        </div>
+        <p class="card-p">导师都来自一线团队，自己每天还在写代码、做面试官。陪你过项目、改简历、模拟面，知道现在真招什么样的人。</p>
+        <div class="mentor-tags">
+          <span class="mentor-tag">代码 Review</span>
+          <span class="mentor-tag">模拟面试</span>
+          <span class="mentor-tag">项目陪跑</span>
+          <span class="mentor-tag">求职复盘</span>
+        </div>
+        <a class="nb-btn" href="/instructors">认识导师
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="hp-col-right">
+        <!-- ② 社群 -->
+        <div class="nb-card dark comm">
+          <span class="card-tag">匠人社群</span>
+          <img class="comm-mascot mascot-outline" src="assets/mascot/busts/bust-01-cheer-victory.png" alt="牛小匠欢呼" />
+          <h3 class="card-h">每天都有人在线一起学</h3>
+          <div class="stat-grid">
+            <div class="stat"><div class="num">每天</div><div class="lbl">改简历 / 对项目互动</div></div>
+            <div class="stat"><div class="num">本周</div><div class="lbl">多位同学拿到面试</div></div>
+          </div>
+          <p class="card-p">遇到问题别自己死磕，群里抛一句，导师和同学一起接。线上活动持续更新，挑感兴趣的就来。</p>
+          <a class="nb-btn" href="/events">加入社群
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- ③ 近期活动 -->
+        <div class="nb-card">
+          <span class="card-tag">近期活动</span>
+          <div class="event-list">
+            <a class="event" href="/events">
+              <div class="ev-date"><div class="d">21</div><div class="m">JUN</div></div>
+              <div class="ev-body">
+                <span class="ev-kind meetup">线下 Meetup</span>
+                <div class="ev-name">AI 求职面对面交流会</div>
+                <div class="ev-city">悉尼 · Sydney</div>
+              </div>
+              <span class="ev-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+            <a class="event" href="/events">
+              <div class="ev-date"><div class="d">05</div><div class="m">JUL</div></div>
+              <div class="ev-body">
+                <span class="ev-kind hack">Hackathon</span>
+                <div class="ev-name">周末 AI App 共创 48 小时</div>
+                <div class="ev-city">墨尔本 · Melbourne</div>
+              </div>
+              <span class="ev-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+            <a class="event" href="/events">
+              <div class="ev-date"><div class="d">19</div><div class="m">JUL</div></div>
+              <div class="ev-body">
+                <span class="ev-kind fest">新生节</span>
+                <div class="ev-name">新同学开营见面 · 破冰</div>
+                <div class="ev-city">线上 · Online</div>
+              </div>
+              <span class="ev-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+            </a>
+          </div>
+          <a class="nb-btn accent" href="/events">查看全部活动
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hp-free">
+  <div class="hp-wrap">
+    <div class="hp-free__head">
+      <span class="hp-free__eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        免费学 AI 资源
+      </span>
+      <h2 class="hp-free__title">全球华人<span class="mk">学 AI 的入口</span></h2>
+      <p class="hp-free__lede">不用先报名。Wiki、路线图、速查表、教学视频、资源合集全部免费打开，先动手再决定怎么深入。</p>
+    </div>
+
+    <div class="hp-free__grid">
+      <a class="hp-free__card hp-free__card--wiki" href="/wiki">
+        <span class="hp-free__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </span>
+        <h3 class="hp-free__name">AI Wiki</h3>
+        <p class="hp-free__desc">概念、术语、工具用法查一查就懂，遇到不熟的词直接来这翻。</p>
+        <span class="hp-free__count">条目持续更新
+          <span class="hp-free__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="hp-free__card hp-free__card--map" href="/roadmaps">
+        <span class="hp-free__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+        </span>
+        <h3 class="hp-free__name">学习路线图</h3>
+        <p class="hp-free__desc">从入门到方向定位，每一步该学什么、学到哪算够，路线给你画好。</p>
+        <span class="hp-free__count">多条方向路线
+          <span class="hp-free__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="hp-free__card hp-free__card--sheet" href="/cheat-sheets">
+        <span class="hp-free__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg>
+        </span>
+        <h3 class="hp-free__name">速查表</h3>
+        <p class="hp-free__desc">Prompt 写法、常用命令、模型参数一页打包，写代码时摊开就用。</p>
+        <span class="hp-free__count">高频主题覆盖
+          <span class="hp-free__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="hp-free__card hp-free__card--video" href="/videos">
+        <span class="hp-free__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+        </span>
+        <h3 class="hp-free__name">教学视频</h3>
+        <p class="hp-free__desc">跟着实操做出第一个东西，看一遍就能照着敲，不用啃文档。</p>
+        <span class="hp-free__count">每周新增更新
+          <span class="hp-free__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="hp-free__card hp-free__card--res" href="/free-resources">
+        <span class="hp-free__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+        </span>
+        <h3 class="hp-free__name">免费资源合集</h3>
+        <p class="hp-free__desc">工具、数据集、开源项目、社区精选，挑好的攒在一起省你翻全网。</p>
+        <span class="hp-free__count">资源库持续扩充
+          <span class="hp-free__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="hp-membership">
+  <div class="hp-wrap">
+    <div class="mb-card">
+      <div class="mb-left">
+        <span class="mb-eyebrow">JR 会员</span>
+        <h2 class="mb-headline"><span class="mk">$8 一杯咖啡</span>，解锁全部权益</h2>
+        <p class="mb-sub">一个会员，<b>考证匠免费学</b>、<b>全部学习方向</b>、<b>所有 Lab 实操</b>全开。按月订阅，随时取消。</p>
+        <a class="mb-cta" href="/membership">成为会员
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="mb-tiers">
+        <div class="mb-tier">
+          <p class="mb-tier-name">Basic</p>
+          <div class="mb-tier-price"><span class="cur">$</span>8</div>
+          <span class="mb-tier-cycle">每月</span>
+        </div>
+        <div class="mb-tier is-feat">
+          <span class="mb-flag">最受欢迎</span>
+          <p class="mb-tier-name">Plus</p>
+          <div class="mb-tier-price"><span class="cur">$</span>19.90</div>
+          <span class="mb-tier-cycle">每月</span>
+        </div>
+        <div class="mb-tier">
+          <p class="mb-tier-name">Premium</p>
+          <div class="mb-tier-price"><span class="cur">$</span>88</div>
+          <span class="mb-tier-cycle">每月</span>
+        </div>
+      </div>
+      <img class="mb-mascot mascot-outline" src="assets/mascot/busts/bust-01-cheer-victory.png" alt="牛小匠" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<section class="hp-footer">
+  <!-- ① 深色大 CTA -->
+  <div class="hp-footer-cta">
+    <div class="hp-wrap hp-footer-cta-inner">
+      <div class="hp-footer-cta-copy">
+        <span class="hp-footer-cta-eyebrow">START HERE</span>
+        <h2 class="hp-footer-cta-title">准备好用 AI 改变未来了吗<span class="hl">?</span></h2>
+        <p class="hp-footer-cta-sub">从一节课、一个作品开始。免费内容随时学，本周又有多位学员把项目做进了简历——下一个轮到你动手。</p>
+        <a class="hp-footer-cta-btn" href="/learn">免费开始 →</a>
+      </div>
+      <img class="hp-footer-cta-mascot mascot-outline" src="assets/mascot/busts/bust-01-cheer-victory.png" alt="牛小匠 欢呼">
+    </div>
+  </div>
+
+  <!-- ② 页脚 -->
+  <div class="hp-footer-main">
+    <div class="hp-wrap">
+      <div class="hp-footer-grid">
+        <!-- 品牌 + newsletter -->
+        <div class="hp-footer-brand">
+          <img class="hp-footer-logo" src="assets/logo/logo-official-black.svg" alt="匠人学院">
+          <p class="hp-footer-tagline">学 AI 来匠人。全球华人学习 AI 的第一站。</p>
+          <p class="hp-footer-news-label">订阅更新</p>
+          <form class="hp-footer-news" onsubmit="return false">
+            <input type="email" placeholder="你的邮箱" aria-label="邮箱">
+            <button type="submit">订阅</button>
+          </form>
+        </div>
+
+        <!-- 学习 -->
+        <div class="hp-footer-col">
+          <h4>学习</h4>
+          <ul>
+            <li><a href="/learn">学习中心</a></li>
+            <li><a href="/bootcamp">Bootcamp</a></li>
+            <li><a href="/roadmaps">学习路径</a></li>
+          </ul>
+        </div>
+
+        <!-- 服务 -->
+        <div class="hp-footer-col">
+          <h4>服务</h4>
+          <ul>
+            <li><a href="/career-coaching">职业辅导</a></li>
+            <li><a href="/certifications">证书考试</a></li>
+            <li><a href="/job-interview/mock">模拟面试</a></li>
+          </ul>
+        </div>
+
+        <!-- 关于 + 资源合并到两列 -->
+        <div class="hp-footer-col">
+          <h4>关于</h4>
+          <ul>
+            <li><a href="/instructors">讲师团队</a></li>
+            <li><a href="/events">活动</a></li>
+          </ul>
+        </div>
+
+        <div class="hp-footer-col">
+          <h4>资源</h4>
+          <ul>
+            <li><a href="/wiki">Wiki</a></li>
+            <li><a href="/videos">视频</a></li>
+            <li><a href="/free-resources">免费资源</a></li>
+            <li><a href="/cheat-sheets">速查表</a></li>
+          </ul>
+        </div>
+
+        <!-- 二维码 -->
+        <div class="hp-footer-qr">
+          <div class="hp-footer-qr-box"><span>QR</span></div>
+          <p class="hp-footer-qr-cap">扫码关注</p>
+        </div>
+      </div>
+
+      <div class="hp-footer-bottom">
+        <p>© 2026 匠人学院 JR Academy</p>
+        <p>备案号 占位 · ICP 备案待补</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body></html>
