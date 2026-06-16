@@ -256,6 +256,36 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .quest .qb{background:#FFF4EC;border:1px solid #F7E4D4;border-radius:14px;padding:12px 15px;font-size:14px;line-height:1.7;color:#33302b}
 .quest .qb b{color:#F2542E;font-family:var(--jr-font-mono,monospace)}
 .quest .quser{align-self:flex-end;background:#7B61E8;color:#fff;border-radius:14px;padding:10px 14px;font-size:13.5px;font-family:var(--jr-font-mono,monospace);margin-left:auto}
+/* ── 学习中心 左中右三栏 ── */
+.study{display:grid;grid-template-columns:200px 1fr 230px}
+.study .nav{border-right:1px solid #EFE7D8;background:#FCFAF6;padding:16px 12px}
+.study .ct{font-family:var(--cn);font-weight:700;font-size:13px}
+.study .cmeta{font-size:11px;color:var(--muted);margin:3px 0 14px}
+.study .ch{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;font-size:12.5px;color:#5b5750;margin-bottom:2px}
+.study .ch.cur{background:#FFF0E9;color:#F2542E;font-weight:700}
+.study .ch.done{color:#1E8E5E}
+.study .ck{width:16px;height:16px;border-radius:50%;border:1.5px solid #d8d0c2;flex:none;display:grid;place-items:center;font-size:9px;color:#fff}
+.study .ch.done .ck{background:#1E8E5E;border-color:#1E8E5E}
+.study .ch.cur .ck{border-color:#F2542E;background:#F2542E}
+.study .main{padding:18px 22px;min-width:0}
+.study .ltitle{font-family:var(--cn);font-weight:800;font-size:18px;margin-bottom:3px}
+.study .lmeta{font-size:12px;color:var(--muted);margin-bottom:14px}
+.study .video{aspect-ratio:16/9;border-radius:12px;background:radial-gradient(circle at 30% 28%,#2c2654,#10162f);display:grid;place-items:center;margin-bottom:14px}
+.study .video .play{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:#F2542E;font-size:17px;padding-left:4px}
+.study .ltabs{display:flex;gap:20px;border-bottom:1px solid #EFE7D8;margin-bottom:12px}
+.study .ltabs span{padding:8px 0;font-weight:600;color:var(--muted);font-size:13px}
+.study .ltabs span.on{color:var(--ink);box-shadow:inset 0 -2px 0 #F2542E}
+.study .main p{font-size:13.5px;line-height:1.85;color:#4a463e;margin:0}
+.study .side{border-left:1px solid #EFE7D8;background:#FCFAF6;padding:16px 14px;display:flex;flex-direction:column;gap:18px}
+.study .sh{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:8px}
+.study .pbar{height:8px;border-radius:99px;background:#EDE6DA;overflow:hidden}
+.study .pbar i{display:block;height:100%;width:38%;background:linear-gradient(90deg,#FF9A6B,#F2542E);border-radius:99px}
+.study .aicard{background:#fff;border:1px solid #EFE7D8;border-radius:12px;padding:12px}
+.study .aicard .at{font-size:12.5px;font-weight:700;margin-bottom:8px}
+.study .aiin{border:1.5px solid #E7DFD0;border-radius:99px;padding:7px 12px;font-size:12px;color:var(--muted)}
+.study .res a{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#5b5750;padding:5px 0;cursor:pointer}
+.study .res a:hover{color:#F2542E}
+@media(max-width:780px){.study{grid-template-columns:1fr}.study .nav,.study .side{display:none}}
 .sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
 .sec-num.n1,.sec-num.n2,.sec-num.n3,.sec-num.n4,.sec-num.n5,.sec-num.n6{background:linear-gradient(135deg,#FF7E5A,#F2542E)}
 .sec-head h2{font-size:30px}
@@ -536,6 +566,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   <div class="demo-tabs">
     <span class="demo-tab on" data-d="prompt">💬 Prompt 实战</span>
     <span class="demo-tab" data-d="lab">🧪 互动 Lab</span>
+    <span class="demo-tab" data-d="study">🖥 学习中心</span>
     <span class="demo-tab" data-d="sheet">📋 速查表</span>
     <span class="demo-tab" data-d="wiki">📖 Wiki 知识库</span>
     <span class="demo-tab" data-d="quest">🤖 AI 带练</span>
@@ -575,6 +606,32 @@ print(m)  <span class="c"># 各月销售额一目了然</span></pre></div>
       <div class="pv"><div class="pvh">AWS 控制台 · S3 →</div><div class="pyout">my-lab-bucket　<span class="ok">● 已创建</span><br><br>区域：ap-southeast-2<br>公开访问：关闭<br>对象：index.html（1）</div></div>
       <div class="flab-foot"><button class="runbtn">▶ 运行</button><span class="passpill">✓ 资源创建成功</span></div>
     </div></div>
+  </div></div>
+  <div class="demo-panel" data-d="study"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">学习中心 · 我的课程</span><span class="prog">学习平台实景</span></div>
+    <div class="study">
+      <div class="nav">
+        <div class="ct">AI Engineer Bootcamp</div><div class="cmeta">12 周 · 进行到第 3 周</div>
+        <div class="ch done"><span class="ck">✓</span>大模型基础</div>
+        <div class="ch done"><span class="ck">✓</span>Prompt 工程实战</div>
+        <div class="ch cur"><span class="ck"></span>Lab：搭建第一个 RAG</div>
+        <div class="ch"><span class="ck"></span>向量数据库入门</div>
+        <div class="ch"><span class="ck"></span>Agent 开发</div>
+        <div class="ch"><span class="ck"></span>项目：知识库问答机器人</div>
+      </div>
+      <div class="main">
+        <div class="ltitle">Lab：搭建你的第一个 RAG</div>
+        <div class="lmeta">互动 Lab · 约 40 分钟 · 边做边校验</div>
+        <div class="video"><span class="play">▶</span></div>
+        <div class="ltabs"><span class="on">视频</span><span>笔记</span><span>作业</span><span>答疑</span></div>
+        <p>跟着把文档切片、入向量库、召回片段、拼进 Prompt 走一遍。右侧随时能问小花老师，本节配了速查表和起手代码，做完直接进下一节。</p>
+      </div>
+      <div class="side">
+        <div><div class="sh">本周进度</div><div class="pbar"><i></i></div><div style="font-size:11px;color:var(--muted);margin-top:6px">3 / 8 节 · 38%</div></div>
+        <div class="aicard"><div class="at">🤖 AI 助教 · 小花</div><div class="aiin">问问这节课…</div></div>
+        <div><div class="sh">本节资源</div><div class="res"><a>📋 RAG 速查表</a><a>💻 起手代码 starter.py</a><a>📖 Wiki：什么是向量库</a></div></div>
+      </div>
+    </div>
   </div></div>
   <div class="demo-panel" data-d="sheet"><div class="appwin">
     <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">速查表 · Git 命令</span><span class="prog">200+ 速查</span></div>
