@@ -321,6 +321,25 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .study .opt{border:1.5px solid #E7DFD0;border-radius:10px;padding:10px 13px;font-size:13px;margin-bottom:8px;color:#46423b}
 .study .opt.ok{border-color:#34B37E;background:#E9F8EF;color:#1E8E5E;font-weight:600}
 .study .wktitle{font-family:var(--cn);font-weight:700;font-size:14px;margin-bottom:4px}
+/* ── 学习中心 v2：左侧 lesson 按类型 ── */
+.study .les{display:flex;gap:9px;align-items:flex-start;padding:8px;border-radius:9px;cursor:pointer;margin-bottom:2px}
+.study .les:hover{background:#fff}
+.study .les.cur{background:#FFF0E9}
+.study .les .ico{font-size:15px;flex:none;line-height:1.55}
+.study .les .tp{font-size:10px;font-weight:700;color:var(--muted)}
+.study .les.cur .tp{color:#F2542E}
+.study .les .ti{font-size:12.5px;color:#46423b;line-height:1.35}
+.study .les.done .ti{color:#9b9384}
+.study .les .stk{margin-left:auto;font-size:11px;color:#34B37E;flex:none}
+.study .lview{display:none}
+.study .lview.on{display:block;animation:fadein .3s both}
+.study .lview h4{font-family:var(--cn);font-size:17px;margin:0 0 12px}
+.study .lview p{font-size:13.5px;line-height:1.85;color:#4a463e}
+.study .lbadge{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.study .lbadge.video{background:#EEEAFC;color:#5A43C0}.study .lbadge.info{background:#E5F0FC;color:#2D6FB8}.study .lbadge.lab{background:#FDE7EC;color:#C23A5A}.study .lbadge.live{background:#FFE9E0;color:#C0492E}.study .lbadge.quiz{background:#FFF3D6;color:#9a6a10}.study .lbadge.assign{background:#E9F8EF;color:#1E8E5E}
+.study .livecard{background:#FFF4EC;border:1px solid #F7E4D4;border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:14px}
+.study .lt-time{font-family:var(--jr-font-mono,monospace);font-size:13px;color:#C0492E;font-weight:700}
+.study .submit{border:2px dashed #d8d0c2;border-radius:12px;padding:22px;text-align:center;color:var(--muted);font-size:13px}
 .sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
 .sec-num.n1,.sec-num.n2,.sec-num.n3,.sec-num.n4,.sec-num.n5,.sec-num.n6{background:linear-gradient(135deg,#FF7E5A,#F2542E)}
 .sec-head h2{font-size:30px}
@@ -647,23 +666,22 @@ print(m)  <span class="c"># 各月销售额一目了然</span></pre></div>
     <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">学习中心 · 我的课程</span><span class="prog">学习平台实景</span></div>
     <div class="study">
       <div class="nav">
-        <div class="ct">AI Engineer Bootcamp</div><div class="cmeta">12 周 · 进行到第 3 周</div>
-        <div class="ch done"><span class="ck">✓</span>大模型基础</div>
-        <div class="ch done"><span class="ck">✓</span>Prompt 工程实战</div>
-        <div class="ch cur"><span class="ck"></span>Lab：搭建第一个 RAG</div>
-        <div class="ch"><span class="ck"></span>向量数据库入门</div>
-        <div class="ch"><span class="ck"></span>Agent 开发</div>
-        <div class="ch"><span class="ck"></span>项目：知识库问答机器人</div>
+        <div class="ct">AI Engineer Bootcamp</div><div class="cmeta">课程目录 · 每节课型不同</div>
+        <div class="les done" data-v="video"><span class="ico">📹</span><div><div class="tp">视频课程</div><div class="ti">大模型是怎么工作的</div></div><span class="stk">✓</span></div>
+        <div class="les done" data-v="info"><span class="ico">📖</span><div><div class="tp">图文</div><div class="ti">Prompt 四要素速览</div></div><span class="stk">✓</span></div>
+        <div class="les cur" data-v="lab"><span class="ico">🧪</span><div><div class="tp">互动实验 Lab</div><div class="ti">搭建你的第一个 RAG</div></div></div>
+        <div class="les" data-v="live"><span class="ico">🎤</span><div><div class="tp">直播课</div><div class="ti">RAG 实战答疑</div></div></div>
+        <div class="les" data-v="quiz"><span class="ico">✏️</span><div><div class="tp">测验</div><div class="ti">RAG 概念自测</div></div></div>
+        <div class="les" data-v="assign"><span class="ico">📝</span><div><div class="tp">作业</div><div class="ti">提交你的 RAG demo</div></div></div>
       </div>
       <div class="main">
-        <div class="ltitle">本节 · RAG 应用实战</div>
-        <div class="lmeta">一节课，多种学法 —— 点标签切换</div>
-        <div class="ltabs"><span class="lt on" data-s="video">🎬 视频</span><span class="lt" data-s="lab">🧪 Lab</span><span class="lt" data-s="wiki">📖 Wiki</span><span class="lt" data-s="tutor">🤖 助教</span><span class="lt" data-s="quiz">✏️ 作业</span></div>
-        <div class="sview on" data-s="video"><div class="video"><span class="play">▶</span></div><p>12 分钟讲透 RAG：为什么需要、三步流程、常见坑。看不懂的地方右侧随时问小花。</p></div>
-        <div class="sview" data-s="lab"><div class="mini-code"><span style="color:#7e879c"># 召回最相关片段，拼进 Prompt</span><br>ctx = retriever.invoke(q)<br>ans = llm.invoke(f<span style="color:#7ED957">"据此回答：{ctx}"</span>)</div><div class="mini-run"><button class="runbtn">▶ 运行</button><span class="passpill">✓ 校验通过</span></div></div>
-        <div class="sview" data-s="wiki"><div class="wktitle">向量数据库是什么？</div><p>把文本变成向量存起来，按"语义相似"而非关键词检索——能查到意思相近但用词不同的内容，是 RAG 召回的基础。</p></div>
-        <div class="sview" data-s="tutor"><div class="tut"><div class="tb ai">RAG 和微调有啥区别？一句话：<b>RAG 改数据不用重训</b>，微调要重训。</div><div class="tb u">那小项目用哪个？</div><div class="tb ai">先上 RAG，快、便宜、好调 👍</div></div></div>
-        <div class="sview" data-s="quiz"><p style="margin:0 0 12px;font-weight:600;font-size:13.5px">RAG 里"检索"这一步的作用是？</p><div class="opt">A. 让模型变得更大</div><div class="opt ok">B. 召回相关资料喂给模型 ✓</div><div class="opt">C. 加快模型训练</div></div>
+        <div class="lmeta" style="margin-bottom:14px">同一门课，每节是<b>不同课型的 lesson</b> —— 点左侧切换</div>
+        <div class="lview" data-v="video"><span class="lbadge video">📹 视频课程</span><h4>大模型是怎么工作的</h4><div class="video"><span class="play">▶</span></div><p>12 分钟动画讲透 Transformer、注意力、它为啥能"预测下一个词"。</p></div>
+        <div class="lview" data-v="info"><span class="lbadge info">📖 图文</span><h4>Prompt 四要素速览</h4><p>角色 / 任务 / 约束 / 输出格式——把这四样说清楚，AI 一次答到位。配速查图，3 分钟读完，随时回来查。</p></div>
+        <div class="lview on" data-v="lab"><span class="lbadge lab">🧪 互动实验 Lab</span><h4>搭建你的第一个 RAG</h4><div class="mini-code"><span style="color:#7e879c"># 召回片段，拼进 Prompt</span><br>ctx = retriever.invoke(q)<br>ans = llm.invoke(f<span style="color:#7ED957">"据此回答：{ctx}"</span>)</div><div class="mini-run"><button class="runbtn">▶ 运行</button><span class="passpill">✓ 校验通过</span></div></div>
+        <div class="lview" data-v="live"><span class="lbadge live">🎤 直播课</span><h4>RAG 实战答疑</h4><div class="livecard"><span style="font-size:28px">🎥</span><div><div class="lt-time">本周三 20:00</div><div style="font-size:12.5px;color:#5b5750;margin-top:4px">导师直播带做 + 实时答疑，错过有回放</div></div><button class="runbtn" style="margin-left:auto">预约</button></div></div>
+        <div class="lview" data-v="quiz"><span class="lbadge quiz">✏️ 测验</span><h4>RAG 概念自测</h4><p style="margin:0 0 12px;font-weight:600;font-size:13.5px">"检索"这一步的作用是？</p><div class="opt">A. 让模型变得更大</div><div class="opt ok">B. 召回相关资料喂给模型 ✓</div><div class="opt">C. 加快模型训练</div></div>
+        <div class="lview" data-v="assign"><span class="lbadge assign">📝 作业</span><h4>提交你的 RAG demo</h4><p style="margin:0 0 12px">把你做的知识库问答跑通，提交仓库链接 + 一段说明，导师批改给反馈。</p><div class="submit">⬆️ 拖入文件，或粘贴 GitHub 链接提交</div></div>
       </div>
       <div class="side">
         <div><div class="sh">本周进度</div><div class="pbar"><i></i></div><div style="font-size:11px;color:var(--muted);margin-top:6px">3 / 8 节 · 38%</div></div>
@@ -871,12 +889,11 @@ answer = llm.invoke(f"基于资料回答：{ctx}\n问题：{question}")</pre>
  });
 })();
 (function(){
- document.querySelectorAll('.study .ltabs').forEach(function(tb){
-  var main=tb.closest('.main');
-  tb.querySelectorAll('.lt').forEach(function(t){
-   t.addEventListener('click',function(){
-    tb.querySelectorAll('.lt').forEach(function(x){x.classList.remove('on')});t.classList.add('on');
-    main.querySelectorAll('.sview').forEach(function(v){v.classList.toggle('on',v.dataset.s===t.dataset.s)});
+ document.querySelectorAll('.study').forEach(function(st){
+  st.querySelectorAll('.nav .les').forEach(function(les){
+   les.addEventListener('click',function(){
+    st.querySelectorAll('.nav .les').forEach(function(x){x.classList.remove('cur')});les.classList.add('cur');
+    st.querySelectorAll('.main .lview').forEach(function(v){v.classList.toggle('on',v.dataset.v===les.dataset.v)});
    });
   });
  });
