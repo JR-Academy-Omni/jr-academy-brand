@@ -286,6 +286,41 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .study .res a{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#5b5750;padding:5px 0;cursor:pointer}
 .study .res a:hover{color:#F2542E}
 @media(max-width:780px){.study{grid-template-columns:1fr}.study .nav,.study .side{display:none}}
+/* ── 学习路线图 roadmap ── */
+.roadmap{padding:30px 26px}
+.rm-ctx{font-family:var(--cn);font-weight:700;font-size:14px;margin-bottom:6px}
+.rm-ctx span{color:var(--muted);font-weight:500;font-size:12px}
+.rm-track{position:relative;display:flex;justify-content:space-between;align-items:flex-start;margin:38px 4px 8px}
+.rm-track .line{position:absolute;left:23px;right:23px;top:23px;height:3px;background:#EDE6DA;border-radius:2px}
+.rm-track .line i{display:block;height:100%;width:58%;background:linear-gradient(90deg,#34B37E,#F2542E);border-radius:2px}
+.rm-node{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:9px;flex:1;min-width:0}
+.rm-dot{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;border:3px solid #fff;box-shadow:0 4px 10px rgba(28,27,34,.12)}
+.rm-node.done .rm-dot{background:#34B37E;color:#fff}
+.rm-node.cur .rm-dot{background:#F2542E;color:#fff;box-shadow:0 0 0 6px rgba(242,84,46,.18)}
+.rm-node.todo .rm-dot{background:#EDE6DA;color:#9b9384}
+.rm-lab{font-size:12.5px;font-weight:700;text-align:center;color:var(--ink);line-height:1.3}
+.rm-cnt{font-size:11px;color:var(--muted)}
+.rm-here{position:absolute;top:-28px;font-size:10px;font-weight:800;color:#fff;background:#F2542E;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.rm-here::after{content:"";position:absolute;left:50%;bottom:-3px;transform:translateX(-50%) rotate(45deg);width:7px;height:7px;background:#F2542E}
+.rm-legend{display:flex;gap:18px;margin-top:18px;font-size:12px;color:var(--muted)}
+.rm-legend i{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:-1px}
+@media(max-width:780px){.rm-track{flex-direction:column;gap:16px;align-items:stretch}.rm-track .line{display:none}.rm-node{flex-direction:row;gap:12px;align-items:center}.rm-lab,.rm-cnt{text-align:left}.rm-here{position:static;align-self:center}}
+/* ── 学习中心：中栏多学法切换 ── */
+.study .ltabs{flex-wrap:wrap;gap:14px}
+.study .ltabs span{cursor:pointer;white-space:nowrap}
+.study .sview{display:none}
+.study .sview.on{display:block;animation:fadein .3s both}
+.study .sview p{font-size:13px;line-height:1.8;color:#4a463e;margin:12px 0 0}
+.study .mini-code{background:#10162f;color:#e6e6ef;border-radius:10px;padding:13px 15px;font-family:var(--jr-font-mono,monospace);font-size:12px;line-height:1.85}
+.study .mini-run{margin-top:12px;display:flex;gap:10px;align-items:center}
+.study .tut{display:grid;gap:8px}
+.study .tut .tb{font-size:13px;line-height:1.65;padding:9px 13px;border-radius:12px;max-width:88%}
+.study .tut .tb.ai{background:#FFF4EC;border:1px solid #F7E4D4;color:#33302b}
+.study .tut .tb.u{background:#7B61E8;color:#fff;justify-self:end}
+.study .tut .tb b{color:#F2542E}
+.study .opt{border:1.5px solid #E7DFD0;border-radius:10px;padding:10px 13px;font-size:13px;margin-bottom:8px;color:#46423b}
+.study .opt.ok{border-color:#34B37E;background:#E9F8EF;color:#1E8E5E;font-weight:600}
+.study .wktitle{font-family:var(--cn);font-weight:700;font-size:14px;margin-bottom:4px}
 .sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
 .sec-num.n1,.sec-num.n2,.sec-num.n3,.sec-num.n4,.sec-num.n5,.sec-num.n6{background:linear-gradient(135deg,#FF7E5A,#F2542E)}
 .sec-head h2{font-size:30px}
@@ -567,6 +602,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
     <span class="demo-tab on" data-d="prompt">💬 Prompt 实战</span>
     <span class="demo-tab" data-d="lab">🧪 互动 Lab</span>
     <span class="demo-tab" data-d="study">🖥 学习中心</span>
+    <span class="demo-tab" data-d="road">🗺 路线图</span>
     <span class="demo-tab" data-d="sheet">📋 速查表</span>
     <span class="demo-tab" data-d="wiki">📖 Wiki 知识库</span>
     <span class="demo-tab" data-d="quest">🤖 AI 带练</span>
@@ -620,17 +656,36 @@ print(m)  <span class="c"># 各月销售额一目了然</span></pre></div>
         <div class="ch"><span class="ck"></span>项目：知识库问答机器人</div>
       </div>
       <div class="main">
-        <div class="ltitle">Lab：搭建你的第一个 RAG</div>
-        <div class="lmeta">互动 Lab · 约 40 分钟 · 边做边校验</div>
-        <div class="video"><span class="play">▶</span></div>
-        <div class="ltabs"><span class="on">视频</span><span>笔记</span><span>作业</span><span>答疑</span></div>
-        <p>跟着把文档切片、入向量库、召回片段、拼进 Prompt 走一遍。右侧随时能问小花老师，本节配了速查表和起手代码，做完直接进下一节。</p>
+        <div class="ltitle">本节 · RAG 应用实战</div>
+        <div class="lmeta">一节课，多种学法 —— 点标签切换</div>
+        <div class="ltabs"><span class="lt on" data-s="video">🎬 视频</span><span class="lt" data-s="lab">🧪 Lab</span><span class="lt" data-s="wiki">📖 Wiki</span><span class="lt" data-s="tutor">🤖 助教</span><span class="lt" data-s="quiz">✏️ 作业</span></div>
+        <div class="sview on" data-s="video"><div class="video"><span class="play">▶</span></div><p>12 分钟讲透 RAG：为什么需要、三步流程、常见坑。看不懂的地方右侧随时问小花。</p></div>
+        <div class="sview" data-s="lab"><div class="mini-code"><span style="color:#7e879c"># 召回最相关片段，拼进 Prompt</span><br>ctx = retriever.invoke(q)<br>ans = llm.invoke(f<span style="color:#7ED957">"据此回答：{ctx}"</span>)</div><div class="mini-run"><button class="runbtn">▶ 运行</button><span class="passpill">✓ 校验通过</span></div></div>
+        <div class="sview" data-s="wiki"><div class="wktitle">向量数据库是什么？</div><p>把文本变成向量存起来，按"语义相似"而非关键词检索——能查到意思相近但用词不同的内容，是 RAG 召回的基础。</p></div>
+        <div class="sview" data-s="tutor"><div class="tut"><div class="tb ai">RAG 和微调有啥区别？一句话：<b>RAG 改数据不用重训</b>，微调要重训。</div><div class="tb u">那小项目用哪个？</div><div class="tb ai">先上 RAG，快、便宜、好调 👍</div></div></div>
+        <div class="sview" data-s="quiz"><p style="margin:0 0 12px;font-weight:600;font-size:13.5px">RAG 里"检索"这一步的作用是？</p><div class="opt">A. 让模型变得更大</div><div class="opt ok">B. 召回相关资料喂给模型 ✓</div><div class="opt">C. 加快模型训练</div></div>
       </div>
       <div class="side">
         <div><div class="sh">本周进度</div><div class="pbar"><i></i></div><div style="font-size:11px;color:var(--muted);margin-top:6px">3 / 8 节 · 38%</div></div>
         <div class="aicard"><div class="at">🤖 AI 助教 · 小花</div><div class="aiin">问问这节课…</div></div>
         <div><div class="sh">本节资源</div><div class="res"><a>📋 RAG 速查表</a><a>💻 起手代码 starter.py</a><a>📖 Wiki：什么是向量库</a></div></div>
       </div>
+    </div>
+  </div></div>
+  <div class="demo-panel" data-d="road"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">学习路线图 · AI Engineer</span><span class="prog">可视化路径</span></div>
+    <div class="roadmap">
+      <div class="rm-ctx">AI 工程师成长路线 <span>· 6 站 · 跟着走不迷路</span></div>
+      <div class="rm-track">
+        <div class="line"><i></i></div>
+        <div class="rm-node done"><div class="rm-dot">✓</div><div class="rm-lab">编程基础</div><div class="rm-cnt">已完成</div></div>
+        <div class="rm-node done"><div class="rm-dot">✓</div><div class="rm-lab">大模型原理</div><div class="rm-cnt">已完成</div></div>
+        <div class="rm-node done"><div class="rm-dot">✓</div><div class="rm-lab">Prompt 工程</div><div class="rm-cnt">已完成</div></div>
+        <div class="rm-node cur"><div class="rm-here">你在这里</div><div class="rm-dot">4</div><div class="rm-lab">RAG 应用</div><div class="rm-cnt">进行中 · 3 节</div></div>
+        <div class="rm-node todo"><div class="rm-dot">5</div><div class="rm-lab">Agent 开发</div><div class="rm-cnt">待解锁</div></div>
+        <div class="rm-node todo"><div class="rm-dot">6</div><div class="rm-lab">上线项目</div><div class="rm-cnt">待解锁</div></div>
+      </div>
+      <div class="rm-legend"><span><i style="background:#34B37E"></i>已完成</span><span><i style="background:#F2542E"></i>进行中</span><span><i style="background:#EDE6DA"></i>待解锁</span></div>
     </div>
   </div></div>
   <div class="demo-panel" data-d="sheet"><div class="appwin">
@@ -811,6 +866,17 @@ answer = llm.invoke(f"基于资料回答：{ctx}\n问题：{question}")</pre>
     fam.querySelectorAll('.lf').forEach(function(x){x.classList.remove('on')});
     l.classList.add('on');
     win.querySelectorAll('.lab-view').forEach(function(v){v.classList.toggle('on',v.dataset.l===l.dataset.l)});
+   });
+  });
+ });
+})();
+(function(){
+ document.querySelectorAll('.study .ltabs').forEach(function(tb){
+  var main=tb.closest('.main');
+  tb.querySelectorAll('.lt').forEach(function(t){
+   t.addEventListener('click',function(){
+    tb.querySelectorAll('.lt').forEach(function(x){x.classList.remove('on')});t.classList.add('on');
+    main.querySelectorAll('.sview').forEach(function(v){v.classList.toggle('on',v.dataset.s===t.dataset.s)});
    });
   });
  });
