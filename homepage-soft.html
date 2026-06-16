@@ -181,6 +181,63 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .wikip p{font-size:14.5px;line-height:1.85;color:#4a463e;margin:0 0 12px}
 .wikip ul{margin:0;padding-left:20px;font-size:14px;line-height:1.95;color:#4a463e}
 .wikip b{color:var(--ink)}
+/* ── 高保真产品界面样例 ── */
+.appwin{border:1px solid #E7DFD0;border-radius:16px;overflow:hidden;box-shadow:var(--sh-lg);background:#fff;max-width:900px}
+.appbar{display:flex;align-items:center;gap:10px;padding:11px 16px;background:#FBF7F0;border-bottom:1px solid #EFE7D8}
+.appbar .dots{display:flex;gap:6px}
+.appbar .dots i{width:11px;height:11px;border-radius:50%;display:block}
+.appbar .dots i:nth-child(1){background:#FF5F57}.appbar .dots i:nth-child(2){background:#FEBC2E}.appbar .dots i:nth-child(3){background:#28C840}
+.appbar .ttl{font-family:var(--cn);font-weight:700;font-size:13px;margin-left:4px}
+.appbar .prog{margin-left:auto;font-size:12px;color:var(--muted);font-family:var(--jr-font-mono,monospace)}
+.runbtn{background:linear-gradient(120deg,#FF7A4D,#F2542E);color:#fff;border:0;border-radius:99px;padding:8px 18px;font-weight:700;font-size:13px;font-family:var(--cn);cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.passpill{display:inline-flex;align-items:center;gap:8px;background:#E9F8EF;color:#1E8E5E;font-weight:700;font-size:13px;padding:8px 14px;border-radius:99px}
+/* prompt lab */
+.plab{display:grid;grid-template-columns:.82fr 1.18fr}
+.plab .task{padding:18px 20px;border-right:1px solid #EFE7D8;background:#FCFAF6}
+.plab .task .lbl{font-size:11px;font-weight:700;color:#F2542E;letter-spacing:.04em;margin-bottom:8px}
+.plab .task h5{font-size:15px;margin:0 0 12px;font-family:var(--cn);line-height:1.45}
+.plab .task ul{margin:0;padding-left:18px;font-size:13px;line-height:1.95;color:#5b5750}
+.plab .work{padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.plab .field-lbl{font-size:11px;font-weight:700;color:var(--muted)}
+.plab .promptbox{border:2px solid #E7DFD0;border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.85;color:#33302b;background:#fff}
+.plab .promptbox b{color:#F2542E}
+.plab .runbtn{align-self:flex-start}
+.plab .out{border:1px solid #EFE7D8;border-radius:12px;background:#10162f;padding:12px 14px}
+.plab .out .oh{font-size:11px;color:#8b93a7;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.plab .out pre{margin:0;font-family:var(--jr-font-mono,monospace);font-size:12.5px;line-height:1.75;color:#e6e6ef;white-space:pre-wrap}
+.plab .out pre .c{color:#7e879c}.plab .out pre .s{color:#7ED957}
+/* frontend lab */
+.flab{display:grid;grid-template-columns:1.1fr .9fr}
+.flab .ed{background:#10162f;color:#e6e6ef;font-family:var(--jr-font-mono,monospace);font-size:12.5px;line-height:1.95;padding:14px 0}
+.flab .ed .ln{display:grid;grid-template-columns:32px 1fr}
+.flab .ed .ln>span:first-child{color:#4a5270;text-align:right;padding-right:12px}
+.flab .ed .k{color:#FF9A6B}.flab .ed .v{color:#86c5ff}.flab .ed .c{color:#7e879c}
+.flab .pv{display:flex;flex-direction:column;border-left:1px solid #1c2440}
+.flab .pv .pvh{font-size:11px;color:var(--muted);padding:9px 14px;border-bottom:1px solid #EFE7D8;background:#FBF7F0;font-family:var(--jr-font-mono,monospace)}
+.flab .pv .stage{flex:1;display:grid;place-items:center;padding:30px 20px;background:#fff;min-height:120px}
+.flab .demo-btn{background:#7B61E8;color:#fff;border:0;border-radius:10px;padding:13px 26px;font-weight:700;font-size:15px;cursor:pointer;transition:.2s}
+.flab .demo-btn:hover{background:#F2542E;transform:translateY(-2px);box-shadow:0 10px 22px rgba(242,84,46,.34)}
+.flab .flab-foot{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding:11px 16px;border-top:1px solid #EFE7D8;background:#FBF7F0}
+/* cheat sheet */
+.cs{padding:20px 22px}
+.cs .csbar{border:1.5px solid #E7DFD0;border-radius:99px;padding:9px 16px;color:var(--muted);font-size:13px;margin-bottom:18px}
+.cs .csgrp{margin-bottom:14px}
+.cs .csgrp h5{font-size:13px;font-family:var(--cn);margin:0 0 6px;color:#F2542E}
+.cs .csrow{display:grid;grid-template-columns:minmax(0,auto) 1fr;gap:14px;align-items:baseline;padding:7px 0;border-bottom:1px dashed #EFE7D8;font-size:13px}
+.cs .csrow code{font-family:var(--jr-font-mono,monospace);color:#33302b;background:#F5F0E8;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.cs .csrow span{color:#6b6358}
+/* wiki article */
+.wk{padding:24px 28px;max-width:740px}
+.wk .crumb{font-size:12px;color:var(--muted);margin-bottom:12px;font-family:var(--jr-font-mono,monospace)}
+.wk h1{font-size:24px;margin:0 0 8px;line-height:1.25}
+.wk .wmeta{font-size:12px;color:var(--muted);margin-bottom:18px;display:flex;gap:14px;flex-wrap:wrap}
+.wk h5{font-size:15px;margin:16px 0 8px;font-family:var(--cn)}
+.wk p{font-size:14.5px;line-height:1.9;color:#4a463e;margin:0 0 12px}
+.wk p b,.wk b{color:var(--ink)}
+.wk ul{margin:0 0 12px;padding-left:20px;font-size:14px;line-height:1.95;color:#4a463e}
+.wk pre{background:#10162f;color:#e6e6ef;border-radius:10px;padding:13px 15px;font-family:var(--jr-font-mono,monospace);font-size:12.5px;line-height:1.75;overflow:auto;margin:0 0 12px}
+.wk .callout{background:#FFF4EC;border:1px solid #F7E0CE;border-left:3px solid #F2542E;border-radius:10px;padding:12px 15px;font-size:13.5px;line-height:1.75;color:#5b4a3e}
+@media(max-width:780px){.plab,.flab{grid-template-columns:1fr}.flab .pv{border-left:0;border-top:1px solid #1c2440}}
 .sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
 .sec-num.n1,.sec-num.n2,.sec-num.n3,.sec-num.n4,.sec-num.n5,.sec-num.n6{background:linear-gradient(135deg,#FF7E5A,#F2542E)}
 .sec-head h2{font-size:30px}
@@ -464,32 +521,54 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
     <span class="demo-tab" data-d="sheet">📋 速查表</span>
     <span class="demo-tab" data-d="wiki">📖 Wiki 知识库</span>
   </div>
-  <div class="demo-panel on" data-d="prompt"><div class="demo-card"><div class="chat">
-    <div class="msg u"><span class="who u">你</span><div class="bub">我想让 AI 帮我写数据分析脚本，但它老是答非所问，怎么破？</div></div>
-    <div class="msg ai"><span class="who ai">匠</span><div class="bub">把模糊需求拆成<b>四要素</b>再问 👇<br><b>角色：</b>你是资深数据分析师<br><b>任务：</b>用 Python(pandas) 读 sales.csv，按月汇总销售额<br><b>约束：</b>只用 pandas，关键行加注释<br><b>输出：</b>完整可运行代码 + 一句话结论<br><br>同一个模型，换种问法结果天差地别——这就是 Prompt 工程要练的。</div></div>
-  </div></div></div>
-  <div class="demo-panel" data-d="lab"><div class="demo-card"><div class="labp">
-    <div class="step">互动 LAB · 步骤 2 / 5</div>
-    <h4>把模糊 Prompt 补成四要素</h4>
-    <div class="task">下面这条 Prompt 缺了「输出格式」，请补上：<br>「帮我总结这篇文章」</div>
-    <div class="answer">帮我用 <span class="add">3 条要点 + 一句话结论</span>总结这篇文章，每条不超过 20 字</div>
-    <span class="verify">✓ 即时校验通过：已包含明确输出格式</span>
-  </div></div></div>
-  <div class="demo-panel" data-d="sheet"><div class="demo-card macwin">
-    <div class="bar"><i></i><i></i><i></i><span>git-undo.cheatsheet</span></div>
-    <pre><span class="c"># Git 撤销 &amp; 回退 · 常用速查</span>
-git restore &lt;file&gt;          <span class="c"># 丢弃工作区改动</span>
-git restore <span class="k">--staged</span> &lt;file&gt;  <span class="c"># 取消暂存</span>
-git reset <span class="k">--soft</span> HEAD~1     <span class="c"># 撤销上次 commit，保留改动</span>
-git revert &lt;hash&gt;           <span class="c"># 反向提交，安全回滚已 push 的</span>
-git reflog                  <span class="c"># 找回"丢失"的提交</span></pre>
+  <div class="demo-panel on" data-d="prompt"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">Prompt 实验室 · Clear Task</span><span class="prog">第 3 / 8 关</span></div>
+    <div class="plab">
+      <div class="task"><div class="lbl">任务</div><h5>把模糊需求改写成"四要素" Prompt</h5><ul><li>含 角色 / 任务 / 约束 / 输出格式</li><li>让 AI 一次答到位，不反复改</li><li>对照右侧结果，达标即过关</li></ul></div>
+      <div class="work">
+        <div class="field-lbl">你的 Prompt</div>
+        <div class="promptbox"><b>角色</b>：资深数据分析师　<b>任务</b>：用 pandas 读 sales.csv 按月汇总销售额　<b>约束</b>：只用 pandas、关键行注释　<b>输出</b>：可运行代码 + 一句话结论</div>
+        <button class="runbtn">▶ 运行</button>
+        <div class="out"><div class="oh">⚡ AI 输出</div><pre><span class="c"># 按月汇总销售额</span>
+import pandas as pd
+df = pd.read_csv(<span class="s">"sales.csv"</span>)
+m = df.groupby(df.date.str[:7]).amount.sum()
+print(m)  <span class="c"># 各月销售额一目了然</span></pre></div>
+        <span class="passpill">✓ 过关：四要素齐全，AI 一次答对</span>
+      </div>
+    </div>
   </div></div>
-  <div class="demo-panel" data-d="wiki"><div class="demo-card"><div class="wikip">
-    <h4>什么是 RAG（检索增强生成）？</h4>
-    <div class="wmeta">AI Engineer · 知识库词条</div>
-    <p>RAG = <b>先检索、再生成</b>。模型回答前，先从你的知识库里查出相关片段，塞进上下文，再让大模型基于这些真实资料作答——少编造、能引用来源、能用上私有数据。</p>
-    <ul><li>三步：① 文档切片向量化入库 ② 用问题召回最相关片段 ③ 片段 + 问题一起喂模型生成</li><li>适合：企业知识库问答、客服、文档助手</li><li>对比微调：RAG 改数据不用重训，更新快、成本低</li></ul>
-  </div></div></div>
+  <div class="demo-panel" data-d="lab"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">前端实验室 · CSS Hover 动效</span><span class="prog">步骤 4 / 6</span></div>
+    <div class="flab">
+      <div class="ed"><div class="ln"><span>1</span><span><span class="k">.btn</span> {</span></div><div class="ln"><span>2</span><span>　background: <span class="v">#7B61E8</span>;</span></div><div class="ln"><span>3</span><span>　transition: <span class="v">.2s</span>;</span></div><div class="ln"><span>4</span><span>}</span></div><div class="ln"><span>5</span><span><span class="k">.btn:hover</span> {　<span class="c">/* 改这里 */</span></span></div><div class="ln"><span>6</span><span>　background: <span class="v">#F2542E</span>;</span></div><div class="ln"><span>7</span><span>　transform: <span class="v">translateY(-2px)</span>;</span></div><div class="ln"><span>8</span><span>}</span></div></div>
+      <div class="pv"><div class="pvh">实时预览 · 悬停按钮试试 →</div><div class="stage"><button class="demo-btn">开始学习</button></div></div>
+      <div class="flab-foot"><button class="runbtn">▶ 运行</button><span class="passpill">✓ 3 / 3 测试通过</span></div>
+    </div>
+  </div></div>
+  <div class="demo-panel" data-d="sheet"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">速查表 · Git 命令</span><span class="prog">200+ 速查</span></div>
+    <div class="cs">
+      <div class="csbar">🔍 搜命令…（如 reset / branch / stash）</div>
+      <div class="csgrp"><h5>撤销 &amp; 回退</h5><div class="csrow"><code>git restore &lt;file&gt;</code><span>丢弃工作区改动</span></div><div class="csrow"><code>git reset --soft HEAD~1</code><span>撤销上次 commit，保留改动</span></div><div class="csrow"><code>git revert &lt;hash&gt;</code><span>反向提交，安全回滚已 push</span></div></div>
+      <div class="csgrp"><h5>分支</h5><div class="csrow"><code>git switch -c feat</code><span>新建并切到 feat 分支</span></div><div class="csrow"><code>git merge --no-ff</code><span>保留分支合并记录</span></div></div>
+    </div>
+  </div></div>
+  <div class="demo-panel" data-d="wiki"><div class="appwin">
+    <div class="appbar"><span class="dots"><i></i><i></i><i></i></span><span class="ttl">Wiki 知识库</span><span class="prog">阅读约 4 分钟</span></div>
+    <div class="wk">
+      <div class="crumb">知识库 / AI Engineer / 检索增强生成</div>
+      <h1>什么是 RAG（检索增强生成）？</h1>
+      <div class="wmeta"><span>👤 匠人教研</span><span>🕐 更新于 2026-06</span><span>👁 12.4k 阅读</span></div>
+      <p>RAG = <b>先检索、再生成</b>。模型回答前，先从你的知识库查出相关片段塞进上下文，再让大模型基于真实资料作答——少编造、能引用来源、能用上私有数据。</p>
+      <h5>三步流程</h5>
+      <ul><li>① 文档切片 + 向量化入库</li><li>② 用问题召回最相关片段</li><li>③ 片段 + 问题一起喂模型生成</li></ul>
+      <pre>retriever = db.as_retriever(k=4)
+ctx = retriever.invoke(question)
+answer = llm.invoke(f"基于资料回答：{ctx}\n问题：{question}")</pre>
+      <div class="callout">💡 实践提示：召回质量 &gt; 模型大小。先把切片和检索调好，再谈换更大的模型。</div>
+    </div>
+  </div></div>
 </div></section>
 
 <section class="sec tint-warm"><img class="deco wm" src="assets/illustrations/career-impact/result-wave-rider.png" style="width:320px;right:-40px;bottom:-30px" alt=""/><div class="wrap">
