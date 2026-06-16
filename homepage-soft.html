@@ -95,7 +95,7 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 .qc .go{margin-top:6px;font-size:12px;font-weight:700;color:var(--red)}
 
 /* ── section ── */
-.sec{padding:68px 0 8px}
+.sec{padding:92px 0}
 .sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:14px}
 .sec-intro{max-width:720px;margin:0 0 30px;color:#6b6358;font-size:15px;line-height:1.85}
 .sec-intro b{color:var(--ink);font-weight:700}
@@ -134,6 +134,13 @@ h1,h2,h3,h4{font-family:var(--cn);font-weight:900;line-height:1.18;margin:0;lett
 @keyframes fadein{from{opacity:0;transform:translateY(6px)}}
 .picker .rec b{font-family:var(--cn);font-size:16px;color:var(--ink)}
 .picker .rec a{color:#F2542E;font-weight:700;white-space:nowrap}
+/* ── 区块底色交替 + 滚动入场动画 ── */
+.bg-peach{background:linear-gradient(180deg,#FFF3EB,#FFFCF6)}
+.bg-lav{background:linear-gradient(180deg,#F4F0FC,#FCFAFF)}
+.bg-sky{background:linear-gradient(180deg,#EDF4FA,#F9FCFE)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none}}
 .sec-num{font-family:var(--sans);font-weight:800;font-size:13px;color:#fff;background:var(--red);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;box-shadow:0 6px 14px rgba(28,27,34,.16)}
 .sec-num.n1,.sec-num.n2,.sec-num.n3,.sec-num.n4,.sec-num.n5,.sec-num.n6{background:linear-gradient(135deg,#FF7E5A,#F2542E)}
 .sec-head h2{font-size:30px}
@@ -397,7 +404,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   </div>
 </div></section>
 
-<section class="sec"><img class="deco wm" src="assets/illustrations/career-impact/result-old-map-holder.png" style="width:280px;left:-46px;bottom:30px;transform:rotate(-6deg)" alt=""/><div class="wrap">
+<section class="sec bg-peach"><img class="deco wm" src="assets/illustrations/career-impact/result-old-map-holder.png" style="width:280px;left:-46px;bottom:30px;transform:rotate(-6deg)" alt=""/><div class="wrap">
   <div class="sec-head"><span class="sec-num n2">02</span><div><h2>课程中心 · 近期开班</h2><p>从零基础到拿得出手的作品，按目标选课</p></div></div>
   <p class="sec-intro">训练营按你的目标拆开：<b>转行做 AI 工程师</b>、0 基础入行编程、用 AI 把想法做成产品、转型 AI 产品经理，各有体系化课程。每门都讲清楚适合谁、学多久、学完产出什么，<b>项目驱动、近期滚动开班</b>，不是看完录播就算结课。</p>
   <div class="course-grid">
@@ -420,7 +427,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   </div>
 </div></section>
 
-<section class="sec"><div class="wrap">
+<section class="sec bg-sky"><div class="wrap">
   <div class="sec-head"><span class="sec-num n4">04</span><div><h2>近期课程 &amp; 活动</h2><p>精选课程与活动，助你持续成长</p></div></div>
   <p class="sec-intro">除了课程，平台每天都在把外部世界的新机会带给你：最新 AI 能力直播解读、刚上线的实战新课、悉尼/墨尔本线下 Meetup 与 Hackathon、创作者分享会。多数免费或低门槛，跟着节奏持续接触一线 AI 动态。</p>
   <div class="act-grid">
@@ -454,7 +461,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
   </div>
 </div></section>
 
-<section class="sec"><div class="wrap">
+<section class="sec bg-lav"><div class="wrap">
   <div class="sec-head"><span class="sec-num n2">↗</span><div><h2>为什么现在开始学 AI</h2><p>趋势、机会与平台数据</p></div></div>
   <p class="sec-intro">会用 AI 工具的人和不会的人，在写代码、做内容、做分析上的效率差距越来越大。AI 不再是"加分项"，而是各行业的基础能力——越早系统地学、动手做出作品，越早把它变成自己的竞争力。</p>
   <div class="stats-grid">
@@ -465,7 +472,7 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
     <div class="stat-cards"><div class="stat"><b>10w+</b><span>累计学习者</span></div><div class="stat"><b>6</b><span>AI 学习方向</span></div><div class="stat"><b>200+</b><span>速查表 / 资源</span></div><div class="stat"><b>12w+</b><span>社区成员</span></div></div>
   </div>
 </div></section>
-<section class="sec faq-sec"><div class="wrap">
+<section class="sec faq-sec bg-lav"><div class="wrap">
   <div class="sec-head"><span class="sec-num n5">?</span><div><h2>常见问题</h2><p>报名前你可能想知道的</p></div></div>
   <div class="faq">
     <details><summary>零基础 / 非技术背景，能学 AI 吗？</summary><p>能。四大方向里，Prompt 大师和 AI 办公提效是专门为非技术背景设计的，从把 AI 当日常工具用起步；想往技术走，再循序进入 Vibe Coding 和 AI Engineer。每个方向都有互动 Lab 手把手带，不会一上来就丢代码给你。</p></details>
@@ -525,6 +532,11 @@ footer .copy{border-top:1px solid #2a2833;margin-top:36px;padding-top:20px;font-
    });
   });
  });
+})();
+(function(){
+ if(!('IntersectionObserver' in window))return;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+ document.querySelectorAll('.sec-head,.sec-intro,.dirs,.course-grid,.proof-grid,.act-grid,.ms-grid,.free-grid,.stats-grid,.faq,.picker,.member,.fcta,.quick .grid').forEach(function(el){el.classList.add('reveal');io.observe(el);});
 })();
 </script>
 </body></html>
