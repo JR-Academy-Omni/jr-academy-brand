@@ -69,6 +69,10 @@
 - 每节：**标题 + 一段具体描述正文**（带关键词、不写"在当今快速发展"模板腔）+ 卡片。
 - 加 **数据 chart**、**FAQ 折叠**、**互动工具**（目标选择器 / tab 切换）。
 - 「抢先看」**高保真产品界面**（app 窗口 + 真实 UI：Prompt 实验室 / 前端 Lab 代码+实时预览 / 学习中心左中右三栏按 lesson 课型切 / 路线图 / 速查表 / Wiki / AI 带练）—— 让访客不报名就看懂"是什么、怎么学"。⚠️ 高保真 = 套真实窗口外壳 + 真实布局，**不是简易 demo**。
+- 🚨 **做高保真还原前，必须先去读对应真实前端组件，按它真实的结构 / 配色 / 节点做，禁止凭印象画**（血泪：roadmap 没查前端、凭印象画成"横向里程碑线"，全错被打回；学习中心一开始也错做成"一节课内 tab"，实际是"左侧 lesson 各自不同 type"）。参考真实组件：
+  - **学习中心**：`jr-academy-web-zh/.../StudyPage/UniCourseStudyPage/UniCourseLeftSidebar·CenterContent·AISidebar`（左中右三栏）+ `src/constants/study.ts` 的 `LESSON_TYPE`（Video/Information/InteractiveLab/Lesson/Quiz/Assignment —— 学习方式多样性 = 左侧 lesson 按课型，不是一节课内 tab）
+  - **路线图**：`.../RoadmapPage/RoadmapFlow` + `nodes/TopicNode·SubtopicNode·SectionNode·CheckpointNode` + `RoadmapPage/types.ts` 的 `NODE_COLORS`/`STATUS_COLORS`（roadmap.sh 式节点图：neo 主干 topic + 两侧 subtopic 分支 + 状态色，不是横线）
+  - **Lab / 速查表 / Wiki**：各自前端组件为准
 
 #### A6 动效（克制、支持 reduced-motion）
 - 滚动入场 fade-up（IntersectionObserver）、柱状图生长、hover lift、hero 火花漂浮。
