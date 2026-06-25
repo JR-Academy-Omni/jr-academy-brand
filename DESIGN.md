@@ -160,6 +160,33 @@
 - 接入页面后用浏览器截图验证桌面/移动，以及资源错误。
 - 如果图里出现假字，直接弃用，不在官网里“将就用”。
 
+#### A13 Next.js 官网落地规则（2026-06-25）
+
+Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉，不是只给首页使用。以下页面族默认走 Register A：`/`、`/bootcamp`、`/program-course/*`、`/events`、`/events/*`、`/membership`、`/learn`、`/roadmaps`、`/career-community`、`/study-center`。
+
+**页面框架**
+- 普通营销页最大宽度用 `1200px`；marketplace / dashboard 类页面可用 `1440px`，但必须保留桌面 24–32px、移动 16–20px 边距。
+- Hero / 主工作台用 28–34px 大圆角、奶油底、柔阴影、右侧 soft 3D 或真实产品界面预览。不要用 3px 黑边 + offset shadow 做官网主容器。
+- 卡片默认 18–24px 圆角、1px 暖灰边、柔多层阴影。只有 campaign/deck 才允许 neo 硬边。
+
+**数据与互动**
+- 真实产品名、真实 CTA、真实统计数字必须来自 API / props / DOM 文案，不允许写在生成图里，也不允许用硬编码假数据填首屏。
+- 筛选、tab、分页、排序必须同步 URL query。没有后端支持的筛选要么明确是当前页预筛选，要么不要放出来。
+- 看起来可点击的按钮必须有真实动作：跳转、打开 modal、写本地收藏、触发分享/日历等；否则改成静态标签。
+
+**插画资产**
+- AI 生成图落到对应 app 的 `public/image/<page>/generated/` 或 brand 的 `assets/illustrations/generated/`，按用途命名。
+- 生成图只做氛围/抽象概念：无文字、无数字、无水印、无伪 logo、无可读 UI。真实 logo 和产品截图必须用真实资产或 DOM。
+- 每张新图接入后必须浏览器截图检查桌面 + 移动端资源 200、无遮挡、无假字。
+
+**动画**
+- 允许：hero 背景 drift、浮卡 breathe、路线 pulse、scroll reveal、hover lift。
+- 必须加 `prefers-reduced-motion` 降级；动画不能影响阅读和交互命中。
+
+**禁止**
+- 禁止在官网主页面大面积使用 Register B：3px 黑边、直角、`6px 6px 0 #000` 硬阴影、Bricolage 夸张标题、大片黄/红纯色块。
+- 禁止新增硬编码课程价格、活动数量、学习时长、报名人数、排名、完课数；已有硬编码要在改造时迁到真实 API 或删除。
+
 ---
 
 ### 0.1 当前品牌风格（register B · v5 = Neo-Brutalism）
