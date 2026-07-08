@@ -11,15 +11,15 @@
 > - `README.md` — 仓库使用说明
 > - `_source_design.md` — 原始设计研究稿（存档）
 >
-> Last updated: 2026-06-23 · **v5.2 — 补 Register A 首页 hero / 诊断到产品生态规范（§0.0A A10-A12）**；v5.0 = Neo-Brutalism（register B）
+> Last updated: 2026-07-08 · **v5.3 — 官网默认 Register A 精致软风，收紧 Neo-Brutalism 适用范围**；v5.0 = Neo-Brutalism（register B）
 >
-> 🚨 **数值唯一真相 = `tokens/tokens.css`**。本文是文字规范，任何 hex / 字号 / 圆角 / 阴影以 tokens.css 为准；两处冲突一律改本文对齐 tokens.css，不反向。
+> 🚨 **官网视觉判断以本文 register 分工为准**。`tokens/tokens.css` 目前包含大量 Register B / deck token，不能直接代表官网默认风格。做官网页面先按 §0.0/§0.0A 选 Register A，再使用页面内 Register A token 或 `HomeBrandLanding*` 里已经落地的 soft token。
 
 ---
 
 ## 0. AI Implementation Rules（所有 AI 写代码必须先读）
 
-`jr-academy-brand/index.html` 是当前视觉 source of truth。任何 AI / Codex / Claude / 设计实现，必须按这张 Brand Board 写 UI，不能再沿用旧 UI Kit。
+任何 AI / Codex / Claude / 设计实现，先读本节决定 register，再读对应范本。**不要只看到 `index.html` 或 `tokens.css` 的 3px 黑边硬阴影就套到官网**。
 
 ### 0.0 🚨 两个 register（先判断你在做哪种场景，别用错风格）
 
@@ -32,7 +32,15 @@
 
 > 判断：**对外要转化、要体面 → A 软风**；要个性、要冲击、教学/营销表达 → B neo。
 > 决策背景：neo 用在首页"一眼显糙、不够 AI"，软风 + AI 氛围更体面更像 AI 产品（用户验收 2026-06-15）。token 色板/字体两 register 可共用，差别在边框/圆角/阴影/质感。
-> ⬇️ 下面 §0.1～§16 描述的是 **register B（neo-brutalism）**。做 register A（首页/landing）看下面 §0.0A 完整规范 + 范本 `homepage-soft.html`。
+> ⬇️ 下面 §0.1～§16 多数历史内容描述的是 **register B（neo-brutalism）**。做官网 / landing / user-facing product UI 时，**不要继续往下套 neo 规则**，直接看 §0.0A + §0.0B + §A13。
+
+### 0.0B AI 执行算法（写官网前必须按这个顺序）
+
+1. 看 URL / 页面类型。只要落在 `/`、`/bootcamp`、`/program-course/*`、`/events`、`/events/*`、`/membership`、`/learn`、`/roadmaps`、`/career-community`、`/study-center` 或其他对外营销/产品页面，默认 **Register A**。
+2. 找现有 Register A 范本：`jr-academy-brand/homepage-soft.html`、`jr-academy-web-zh/src/components/Pages/HomePage/HomeBrandLanding*`、已经迁移过的 Study Center soft polished 页面。
+3. 只复用 soft token：`#FFFCF6` 奶油底、`#FB6A4A` 珊瑚、`#FF7A4D → #FF4F8F → #9B6BFF` 标志渐变、1px `#F1E8D8` 暖灰边、20-28px 圆角、多层柔阴影。
+4. 如果代码里出现 `3px solid #000`、`6px 6px 0 #000`、`border-radius: 0`、Bricolage 大标题、大片黄/红纯色块，先问：这是 deck/海报/campaign 吗？如果不是，改回 Register A。
+5. 不要从 `docs/UI_DESIGN_SYSTEM.md` 的旧色彩段、`tokens.css` 的 neo token、或旧 Bootcamp/Study Center 页面复制官网新 UI。
 
 ### 0.0A Register A · 精致软风 完整规范（对外页面照这个做，别做平了）
 
@@ -189,7 +197,7 @@ Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉
 
 ---
 
-### 0.1 当前品牌风格（register B · v5 = Neo-Brutalism）
+### 0.1 Register B 当前风格（Neo-Brutalism，仅用于表达/教学物料）
 
 **一句话**：黑 3px 粗边 + 直角 + 偏移硬阴影 + hover 位移，配 deck 暖底 + 六色 + Bricolage/DM Sans/Space Mono。和 `curriculum/` 讲课 deck（`ai-adoption-bootcamp/src/styles/theme.ts`）是**同一套语言**。
 
@@ -205,12 +213,12 @@ Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉
 | 字体 | 标题 **Bricolage Grotesque(800)**；正文 **DM Sans**；数据/标签/代码 **Space Mono**；中文统一 **思源黑体 / Noto Sans SC** |
 | 字号 | Display clamp(40-64); H1 clamp(32-48) Black; H2 24 Bold; H3 18 Semibold; Body 15; Caption 12（mono） |
 
-### 0.2 禁止继续使用的旧风格
+### 0.2 Register B 的旧风格禁用项（不要拿本节约束官网 Register A）
 
-- ❌ **禁止 v4.x 的「轻边框 + 8px 圆角 + 轻柔阴影」**——那套已被 v5 推翻；默认必须 3px 黑边 + 直角 + 偏移硬阴影。
-- ❌ 禁止给卡片/按钮/输入框加圆角（除圆形元素：头像/状态点/胶囊标签用 `999px`）。
-- ❌ 禁止冷灰蓝大底：`#F7F8FC`、`#F8FBFF`、`#FFFCF6` 纯冷白都不行，底色用暖 `#fff1e7`。
-- ❌ 禁止用柔阴影 `0 Npx Npx rgba(...)` 当卡片默认；卡片阴影一律偏移硬阴影 `Npx Npx 0 #000`。
+- ❌ **在 Register B 物料中**禁止 v4.x 的「轻边框 + 8px 圆角 + 轻柔阴影」——那套已被 v5 推翻；B 物料默认 3px 黑边 + 直角 + 偏移硬阴影。官网 Register A 恰恰需要轻边、圆角、柔阴影，不适用本条。
+- ❌ Register B 禁止给卡片/按钮/输入框加圆角（除圆形元素：头像/状态点/胶囊标签用 `999px`）。
+- ❌ Register B 禁止冷灰蓝大底：`#F7F8FC`、`#F8FBFF`、`#FFFCF6` 纯冷白都不行，底色用暖 `#fff1e7`。
+- ❌ Register B 禁止用柔阴影 `0 Npx Npx rgba(...)` 当卡片默认；卡片阴影一律偏移硬阴影 `Npx Npx 0 #000`。
 - ❌ 禁止把红 `#ff5757` 当大面积非 CTA 底色；红主要用于主 CTA / 编号 / 强调 / danger。
 - ❌ 禁止旧皇家蓝/旧蓝紫主调：`#5B4BFF`、`#6843FF`、`#6366F1`、`#7B61FF` 都不是主色；紫统一 deck `#CB6CE6`。
 
@@ -251,9 +259,9 @@ Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉
 
 深色页要点：底 `#10162f`，卡用白底或深 `#161d38`，强调/结论用黄 `--jr-yellow`，标签/边线用红/蓝/绿点缀。**牛小匠放深色背景上加 `.outline`（白描边）** —— 吉祥物本体偏黑，深底会糊；用 8 方向 `drop-shadow` 沿透明 PNG 剪影描白边（不改图片）。class：`.product-mascot.outline` / `.mascot-outline`。
 
-### 0.2d 表单控件 + 浮层（panel 22）
+### 0.2d Register B 表单控件 + 浮层（panel 22）
 
-之前只有 input/select/textarea，补齐常用控件，全 neo-brutalism（2px 黑边 + 直角 + 必要处硬阴影）：
+之前只有 input/select/textarea，补齐常用控件，全 neo-brutalism（2px 黑边 + 直角 + 必要处硬阴影）。**本节只用于 Register B 物料/特殊 campaign，不用于官网默认表单**：
 
 | 控件 | class | 要点 |
 |------|-------|------|
@@ -272,14 +280,22 @@ Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉
 
 ### 0.3 AI 写代码时的最小落地清单
 
+**官网 / landing / user-facing product UI（默认 Register A）**
+1. 不要从 `tokens/tokens.css` 直接套 `--jr-border` / `--jr-shadow-md` / `--jr-radius-0`。这些主要服务 Register B。
+2. 页面背景用 `#FFFCF6` / `#FFF7F1` / 浅 peach-lav-sky 渐变；主文字 `#1C1B22`；细边 `#F1E8D8`。
+3. 卡片 = 纯白底 + 1px 暖灰边 + 20-28px 圆角 + 柔多层阴影 `0 2px 6px rgba(28,27,34,.05), 0 16px 38px rgba(28,27,34,.09)`；hover `translateY(-4~6px)` + 阴影加深。
+4. 主 CTA = 珊瑚/品红/紫标志渐变或深色实底 + pill/大圆角 + 柔阴影；次 CTA = 白底 + 1px 暖灰边 + 柔阴影。
+5. 字体 = Inter + Noto Sans SC / 思源黑体；数据/代码可用 mono。不要用 Bricolage 做官网主标题。
+6. 每个卡片/section 尽量有真实插画、无字生成图、真实产品 UI 预览、数据 chart、FAQ 或互动工具；避免纯色块 + 图标。
+7. 修改后对照 `homepage-soft.html` 和 `HomeBrandLanding*`，不是对照 Brand Board 的黑边硬阴影 panel。
+
+**Deck / poster / zine / curriculum / campaign 物料（Register B）**
 1. 先 import/use `tokens/tokens.css` 或把等价 token 映射到项目 design tokens。
 2. 页面背景用 `--jr-surface-canvas`（暖底 `#fff1e7`）。
 3. 卡片 = 纯白底 + `--jr-border`（3px 黑）+ `--jr-radius-0`（直角）+ `--jr-shadow-md`（偏移硬阴影）；hover 阴影归零 + 位移 `--jr-press-shift`。
 4. 主 CTA 用深底 `--jr-black` 或彩色底 `--jr-button-accent-bg`（红），都要带黑边 + 硬阴影；次按钮黄底黑字。
-5. 标题用 `--jr-font-heading`(Bricolage)，正文 `--jr-font-sans`(DM Sans)，数据/标签/代码 `--jr-font-mono`(Space Mono)；网页须引 4 个 Google Fonts（见 tokens.css 注释）。
-6. 成功/完成 `--jr-green`，警告/成就 `--jr-yellow`，错误/强调/CTA `--jr-red`，信息/链接 `--jr-blue`，AI/学习 `--jr-purple`。
-7. **Icon 用 lucide 24×24 + 2px stroke + currentColor**，禁用 emoji 占位（详见 §15 Icon System）。
-8. 修改后打开 `jr-academy-brand/index.html` 对照 01-19 模块自检（所有面应是黑粗边 + 直角 + 硬阴影）。
+5. 标题用 `--jr-font-heading`(Bricolage)，正文 `--jr-font-sans`(DM Sans)，数据/标签/代码 `--jr-font-mono`(Space Mono)。
+6. **Icon 用 lucide 24×24 + 2px stroke + currentColor**，禁用 emoji 占位（详见 §15 Icon System）。
 
 ### 0.4 v4.1 → v4.2 Changelog（2026-05-24）
 
@@ -950,24 +966,21 @@ Toast 可搭配牛小匠小头像，提升亲和力 — **但不要在高频操�
 
 ### 11.1 视觉
 
-| ✅ Do | ❌ Don't |
-|-------|---------|
-| bg = 暖底 `#fff1e7`，深区块 `#1a1a2e` | bg 满屏 Red / 冷白 `#FAFAFA` |
-| 卡片/按钮 = 3px 黑边 + 直角 + 偏移硬阴影 | 圆角 / 柔阴影 / 无边框 |
-| 主 CTA = 深底或红/黄底 + 黑边 + 硬阴影 | 圆角胶囊 CTA / 无边无影的扁平按钮 |
-| 牛小匠红 JR 连帽衫 + 墨镜 + JR 胸标 | 缺任意一件 |
-| 一屏 ≤2 个牛小匠 | 满屏复读 |
-| hover = 阴影归零 + 位移 3-4px | hover 只改色不动 |
+| 场景 | ✅ Do | ❌ Don't |
+|------|------|----------|
+| 官网 Register A | 奶油底 `#FFFCF6` / 白卡 / 1px 暖灰边 / 20-28px 圆角 / 柔多层阴影 / 珊瑚主色 + AI 渐变 / 真实插画或产品预览 | 3px 黑边硬卡 / 直角 / `6px 6px 0 #000` / 大片红黄纯色块 / 纯图标色块卡 / Bricolage 大标题 |
+| 物料 Register B | 暖底 `#fff1e7` / 3px 黑边 / 直角 / 偏移硬阴影 / Bricolage + DM Sans + Space Mono / 高冲击标题 | 把 B 的黑边硬阴影套回官网主 UI；把 A 的柔卡做成 deck 主视觉导致不够有冲击 |
+| 内容厚度 | 每节有标题 + 具体描述 + 图/产品预览/数据/FAQ/互动 | 标题下面直接堆卡片；卡片只有一个 icon 和空泛短句 |
+| 生成图 | 无文字、无 logo、无假 UI 文案，只做氛围/抽象背景 | 把产品名、按钮文案、统计数字写进生成图 |
+| 牛小匠 | 红 JR 连帽衫 + 墨镜 + JR 胸标，一屏 ≤2 个 | 缺任意一件；满屏复读 |
 
 ### 11.2 字体
 
-| ✅ Do | ❌ Don't |
-|-------|---------|
-| 标题 Bricolage Grotesque + 中文思源黑体 | Inter / Plus Jakarta / 楷体 / 仿宋 |
-| 正文 DM Sans，数据/标签 Space Mono | 标题正文同一字体不分层 |
-| H1 clamp(32–48) Black | H1 用 Medium |
-| Body ≥ 14px | 中文正文 < 14px |
-| Caption 用 Medium | Caption 用 Bold（视觉过重） |
+| 场景 | ✅ Do | ❌ Don't |
+|------|------|----------|
+| 官网 Register A | 标题/正文用 Inter + Noto Sans SC / 思源黑体，中文标题 700-900，数据/代码可用 mono | Bricolage 做官网主标题；楷体 / 仿宋；标题正文完全不分层 |
+| 物料 Register B | 标题 Bricolage Grotesque + 中文思源黑体，正文 DM Sans，数据/标签 Space Mono | Inter/Plus Jakarta 替掉 Bricolage 导致 deck/海报失去品牌冲击 |
+| 通用字号 | H1 用重字重；Body ≥ 14px；Caption 用 Medium | H1 用 Medium；中文正文 < 14px；Caption 用 Bold（视觉过重） |
 
 ### 11.3 文案
 

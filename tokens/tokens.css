@@ -1,22 +1,51 @@
 /* =====================================================
-   JR Academy / 匠人学院 — Design Tokens (Master Brand · v5 · Neo-Brutalism)
+   JR Academy / 匠人学院 — Design Tokens (Master Brand)
    Tagline: 学 AI 来匠人 / STUDY AI AT JR ACADEMY
    Sub: 一起成为 AI 时代的匠人
    Mascot: 牛小匠 · 红 JR 连帽衫 + 墨镜
 
-   🚨 v5 设计语言 = Neo-Brutalism（回归 + 和讲课 deck 统一成一套）
-      - 边框: 3px solid #000（var --jr-border）
-      - 阴影: 偏移硬阴影 6px 6px 0 #000（var --jr-shadow-md），hover 阴影消失 + 位移
-      - 圆角: 0（直角）。只有圆形元素（头像/点/胶囊）用 --jr-radius-full
-      - 色板: 完全对齐 curriculum 讲课 deck theme.ts（red #ff5757 / dark #10162f / warmBg #fff1e7）
-      - 字体: Bricolage Grotesque(标题) + DM Sans(正文) + Space Mono(数据/标签) + Noto Sans SC(中文)
-      ⚠️ v4.2「禁止 neo-brutalism、暖白 + 8px 圆角 + 轻阴影」已废，以本文件为准。
-      ⚠️ DESIGN.md 是文字规范，数值真相唯一在本文件 tokens.css。
+   🚨 Register split（2026-07-08）
+      - 官网 / landing / user-facing product UI 默认 Register A · 精致软风。
+        参考 jr-academy-brand/DESIGN.md §0.0A/§0.0B 和
+        jr-academy-web-zh/src/components/Pages/HomePage/HomeBrandLanding*。
+      - 本文件现有 --jr-border / --jr-shadow-md / --jr-radius-0 等变量主要服务
+        Register B · Neo-Brutalism（讲课 deck / 海报 / zine / campaign 物料）。
+      - 不要把 3px 黑边、直角、6px offset 硬阴影直接套到官网主 UI。
+      - 官网 soft token 优先使用页面内落地变量：#FFFCF6 奶油底、
+        #FB6A4A 珊瑚、#F1E8D8 暖灰边、20-28px 圆角、
+        多层柔阴影，以及 #FF7A4D → #FF4F8F → #9B6BFF 标志渐变。
 
-   Source of truth: tokens.css（本文件）。对齐基准: curriculum/ai-adoption-bootcamp/src/styles/theme.ts
+   Register B 对齐基准: curriculum/ai-adoption-bootcamp/src/styles/theme.ts
    ===================================================== */
 
 :root {
+  /* —— Register A · Soft Polished（官网 / landing / user-facing product UI 默认）—— */
+  --jr-soft-cream: #FFFCF6;
+  --jr-soft-cream-warm: #FFF7F1;
+  --jr-soft-surface: #FFFFFF;
+  --jr-soft-ink: #1C1B22;
+  --jr-soft-muted: #7C766A;
+  --jr-soft-line: #F1E8D8;
+  --jr-soft-coral: #FB6A4A;
+  --jr-soft-coral-deep: #F2542E;
+  --jr-soft-purple: #7B61E8;
+  --jr-soft-blue: #3E8EE0;
+  --jr-soft-green: #34B37E;
+  --jr-soft-amber: #F5B43C;
+  --jr-soft-pink: #F0568C;
+  --jr-soft-gradient-ai: linear-gradient(100deg, #FF7A4D 0%, #FF4F8F 52%, #9B6BFF 100%);
+  --jr-soft-gradient-cta: linear-gradient(135deg, #FF7A4D 0%, #F2542E 100%);
+  --jr-soft-shadow-sm: 0 1px 2px rgba(28, 27, 34, 0.05);
+  --jr-soft-shadow-md: 0 2px 6px rgba(28, 27, 34, 0.05), 0 16px 38px rgba(28, 27, 34, 0.09);
+  --jr-soft-shadow-lg: 0 30px 64px rgba(28, 27, 34, 0.14);
+  --jr-soft-radius-sm: 16px;
+  --jr-soft-radius-md: 20px;
+  --jr-soft-radius-lg: 24px;
+  --jr-soft-radius-xl: 28px;
+  --jr-soft-radius-pill: 999px;
+  --jr-soft-font: Inter, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei',
+                  system-ui, -apple-system, sans-serif;
+
   /* —— Brand · Primary （主深色 v5：对齐 deck dark #10162f）—— */
   --jr-black:    #10162f;  /* 主深色 — 深色 slide / 主 CTA / Logo / 主标识（deck dark）*/
   --jr-ink-true: #000000;  /* 纯黑 — 仅用于边框 / 偏移硬阴影 */
