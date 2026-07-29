@@ -1,0 +1,45 @@
+schema_version: 1
+identity_id: jr-academy-presenter-amy-v1
+status: locked
+person_type: fictional_adult
+disclosure: AI-generated recurring brand presenter; not a real employee or instructor
+canonical_reference: jr-academy-virtual-presenter-master-v1.png
+default_voice:
+  provider: ElevenLabs
+  name: Amy
+  voice_id: bhJUNIXWQQ94l8eI2VUf
+immutable:
+  gender_expression: woman
+  apparent_age: approximately 30
+  ethnicity_expression: Chinese
+  face_shape: oval
+  eyes: dark brown almond-shaped
+  hair: straight shoulder-length black hair with a subtle side part
+  earrings: small silver studs
+  blazer: structured coral red
+  inner_top: ivory crew neck
+  visual_style: photorealistic commercial studio photography
+allowed_changes:
+  - pose
+  - hand gesture
+  - crop
+  - camera angle within front or three-quarter views
+  - scene background after compositing
+  - expression from neutral to a restrained friendly smile
+blocked_changes:
+  - generating without the canonical reference image
+  - changing the face, age, hair, blazer, or inner top
+  - using a male presenter with the Amy voice
+  - assigning a real name, employment history, credential, or biography
+  - presenting the fictional person as a real JR Academy employee
+selection_order:
+  - reuse an existing file from cutouts/
+  - crop or mirror an existing cutout when composition permits
+  - generate a new pose only when the library has no suitable asset
+new_pose_requirements:
+  - reference canonical_reference
+  - preserve every immutable field
+  - use a flat chroma background
+  - run build_cutouts.py
+  - add the output to ASSET_MANIFEST.md
+  - pass face, hand, alpha-edge, and composite-background review
