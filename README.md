@@ -1,6 +1,6 @@
 # JR Academy / 匠人学院 — Master Design System
 
-> **v5.3 Register System · 2026-07-08** — 官网默认 Register A 精致软风；Neo-Brutalism 收敛为 Register B 物料风格
+> **v5.4 Unified Application System · 2026-08-12** — 一个母系统统一管理官网、课程、deck、海报、活动 cover 与联名物料
 >
 > **学 AI 来匠人 · STUDY AI AT JR ACADEMY**
 > 一起成为 AI 时代的匠人 · Be an AI Craftsman.
@@ -18,7 +18,7 @@
 
 ## AI / Codex / Claude 必读
 
-先读 `DESIGN.md` §0.0 / §0.0A / §0.0B，再决定 register。不要只看 `index.html` 或 `tokens.css` 就把黑边硬阴影套到官网。
+先读 `APPLICATIONS.md` 确定交付物类型、品牌、Register 和覆盖优先级，再读 `DESIGN.md` 的品牌基础。海报/渠道图片必须读 `POSTER_DESIGN.md`，课程页/deck/lesson/课程营销资产必须读 `COURSE_DESIGN.md`。
 
 ### Register A · 精致软风（官网默认）
 
@@ -35,7 +35,7 @@
 
 ### Register B · Neo-Brutalism（物料）
 
-适用：讲课 deck、海报、zine、campaign 冲击物料、curriculum 课件。
+适用：讲课 deck、信息密度高的知识海报、zine、需要高冲击的 campaign 物料、curriculum 课件。海报不再因文件类型自动选 B；真人、城市、产品或联名主导的高级感物料按 `POSTER_DESIGN.md` 选 A-editorial。
 
 - 暖底 `#fff1e7`
 - 3px 黑边 + 直角 + `6px 6px 0 #000` offset 硬阴影
@@ -53,6 +53,10 @@ jr-academy-brand/
 ├── index.html              ← Register B Brand Board（deck / poster / campaign 物料参考）
 ├── assets.html             ← 完整图片资产库（按 assets/ 全量生成 132 个资产卡片）
 ├── DESIGN.md               ← 完整设计规范 + AI Implementation Rules
+├── APPLICATIONS.md         ← 全场景路由 + 冲突/覆盖优先级
+├── POSTER_DESIGN.md        ← 海报 / cover / 社媒卡 / 联名物料统一规范
+├── COURSE_DESIGN.md        ← 课程页 / Lesson UI / deck / 课程营销统一规范
+├── templates/              ← 局部 DESIGN.md 与海报 spec 模板
 ├── _source_design.md       ← 原始设计研究稿（存档）
 ├── tokens/
 │   ├── tokens.json         ← Design tokens 源数据（W3C 格式）
@@ -70,7 +74,7 @@ jr-academy-brand/
 ## 用法
 
 ### 看规范
-先读 `DESIGN.md` 的 register 分工。做官网页面看 `homepage-soft.html`；做 deck / poster / campaign 再看 `index.html`。
+先读 `APPLICATIONS.md` 做路由。做官网页面看 `DESIGN.md` + `homepage-soft.html`；做海报看 `POSTER_DESIGN.md`；做课程页/deck/lesson/课程营销看 `COURSE_DESIGN.md`；只有选定 Register B 时才把 `index.html` 当样式板。
 
 ### 读设计决策
 `DESIGN.md` — 完整 13 节规范，包含：
@@ -162,6 +166,12 @@ Front · Side · Back · Sitting · Laptop · Tablet · Wave · Like · Thinking
 - [x] `tokens.css` 新增 `--jr-soft-*` 官网 token
 - [x] README / DESIGN.md / 根项目 agent 规则统一 Register A 判断口径
 - [x] 明确 `index.html` 主要作为 Register B Brand Board，官网看 `homepage-soft.html`
+
+**v5.4 已完成（2026-08-12）**：
+- [x] 官网、课程、deck、海报、平台 cover、联名物料全部从 `APPLICATIONS.md` 统一路由
+- [x] 建立 `POSTER_DESIGN.md` 和 `COURSE_DESIGN.md`
+- [x] 明确局部 `DESIGN.md` 的覆盖合同，不再复制/分叉母品牌规范
+- [x] 取消“海报默认 Neo-Brutalism”，按主视觉证据和信息任务选 A-editorial / B
 
 **v4.2 已完成（2026-05-24）**：
 - [x] Brand Board 13 panel finalize（暖白底 + 红编号胶囊 + 黑色 CTA + 8px 圆角）

@@ -8,10 +8,13 @@
 > - `assets.html` — 完整图片资产库
 > - `tokens/tokens.json` — W3C Design Tokens 源数据
 > - `tokens/tokens.css` — `--jr-*` CSS 变量
+> - `APPLICATIONS.md` — 全场景路由、冲突优先级与局部规范合同
+> - `POSTER_DESIGN.md` — 活动/课程/联名海报与渠道图片统一规范
+> - `COURSE_DESIGN.md` — 课程页、Lesson UI、deck 与课程营销资产统一规范
 > - `README.md` — 仓库使用说明
 > - `_source_design.md` — 原始设计研究稿（存档）
 >
-> Last updated: 2026-07-08 · **v5.3 — 官网默认 Register A 精致软风，收紧 Neo-Brutalism 适用范围**；v5.0 = Neo-Brutalism（register B）
+> Last updated: 2026-08-12 · **v5.4 — 统一全场景路由，新增海报与课程应用系统**；v5.0 = Neo-Brutalism（register B）
 >
 > 🚨 **官网视觉判断以本文 register 分工为准**。`tokens/tokens.css` 目前包含大量 Register B / deck token，不能直接代表官网默认风格。做官网页面先按 §0.0/§0.0A 选 Register A，再使用页面内 Register A token 或 `HomeBrandLanding*` 里已经落地的 soft token。
 
@@ -21,16 +24,18 @@
 
 任何 AI / Codex / Claude / 设计实现，先读本节决定 register，再读对应范本。**不要只看到 `index.html` 或 `tokens.css` 的 3px 黑边硬阴影就套到官网**。
 
+**统一起点**：所有任务先读 `APPLICATIONS.md` 判定 surface、brand、register 和局部覆盖。海报/渠道图片再读 `POSTER_DESIGN.md`，课程页/deck/lesson/课程营销物料再读 `COURSE_DESIGN.md`。交付物目录的 `DESIGN.md` 是有界局部延伸，不是第二套母品牌真相。
+
 ### 0.0 🚨 两个 register（先判断你在做哪种场景，别用错风格）
 
 品牌**分两套表达 register，各管各场景，这是刻意的、不是两套真相**：
 
 | Register | 用在哪 | 风格 | 参考 SoT |
 |----------|--------|------|---------|
-| **A · 精致软风**（默认对外） | 官网首页 / landing / 营销页 / 面向用户的产品 UI | 奶油底 + 圆角 + 柔多层阴影 + 一主色珊瑚 + **标志渐变** + 真插画卡 + 背景装饰 + 内容厚度 + 动效（**完整配方见 §0.0A，别只做"暖底圆角"会很平**） | 范本 `homepage-soft.html` |
-| **B · Neo-Brutalism**（表达/教学） | 讲课 deck / 海报 / zine / campaign 冲击物料 | 3px 黑边 + 直角 + 偏移硬阴影（下面 §0.1 起全是这套） | Brand Board `index.html` + curriculum 讲课 deck |
+| **A · 精致软风**（默认对外） | 官网首页 / landing / 营销页 / 面向用户的产品 UI / 高级感人物、活动、课程或联名 editorial 物料 | 奶油底 + 圆角 + 柔多层阴影 + 一主色珊瑚 + **标志渐变** + 真插画/真人/真产品 + 内容厚度 | 范本 `homepage-soft.html` + `POSTER_DESIGN.md` |
+| **B · Neo-Brutalism**（表达/教学） | 讲课 deck / 信息密度高的知识海报 / zine / 需要高冲击的 campaign 物料 | 3px 黑边 + 直角 + 少量偏移硬阴影（下面 §0.1 起主要描述这套） | Brand Board `index.html` + `COURSE_DESIGN.md` |
 
-> 判断：**对外要转化、要体面 → A 软风**；要个性、要冲击、教学/营销表达 → B neo。
+> 判断：**对外要转化、要体面，或人物/场景/产品是主视觉 → A / A-editorial**；知识结构/数字/对比需要高冲击表达 → B。“是海报”不再自动等于 B。
 > 决策背景：neo 用在首页"一眼显糙、不够 AI"，软风 + AI 氛围更体面更像 AI 产品（用户验收 2026-06-15）。token 色板/字体两 register 可共用，差别在边框/圆角/阴影/质感。
 > ⬇️ 下面 §0.1～§16 多数历史内容描述的是 **register B（neo-brutalism）**。做官网 / landing / user-facing product UI 时，**不要继续往下套 neo 规则**，直接看 §0.0A + §0.0B + §A13。
 
@@ -1347,6 +1352,8 @@ design system/assets/mascot/{official,emojis,busts,lifestyle,working,outfits,var
 
 ```
 DESIGN.md  ←  最高（决策源头 / 设计意图）
+   ↓ 路由
+APPLICATIONS.md + POSTER_DESIGN.md + COURSE_DESIGN.md
    ↓ 落地
 tokens.json  ←  机器可读的真相
    ↓ 翻译
@@ -1362,9 +1369,10 @@ index.html  ←  视觉手册
 
 ---
 
-_v5.2 · 2026-06-23 · JR Academy 总品牌_
+_v5.4 · 2026-08-12 · JR Academy 统一设计系统_
 
 _Changelog_
+- **v5.4 (2026-08-12)**: 新增 `APPLICATIONS.md`、`POSTER_DESIGN.md`、`COURSE_DESIGN.md` 和局部/海报规格模板；统一官网、课程页、Lesson UI、deck、活动 cover、传播海报、课程海报、联名物料和社媒卡片的路由与覆盖优先级。取消“海报默认 B”的粗粒度判断，改为按用户任务、主视觉证据和信息密度选 A-editorial 或 B。本次不新增 token。
 - **v5.2 (2026-06-23)**: 补充 **Register A 首页 hero / 诊断到产品生态规范** —— 锁定 `homepage-soft.html` 当前版为 soft 首页金标准：沉浸式生成图背景 + 强主标题 + 路线指标 + AI 路线诊断浮层；新增诊断结果同步高亮产品卡和生态地图节点的规则；新增 `assets/illustrations/generated/` 生成配图治理（只允许无字、无 logo、无假 UI 文案的装饰图，真实产品名/logo/节点必须用 DOM 和真实资产）。本次不改 tokens：没有新增全局数值，只沉淀 Register A 组件和资产使用规则。
 - **v5.1 (2026-06-16)**: 新增 **§0.0A Register A 精致软风完整规范** —— 把首页 `homepage-soft.html` 一路调出来的"防平/防丑/防普通"配方文字化（A1 调色一主色+标志渐变 / A2 多层柔阴影深度 / A3 卡片必须有真插画禁纯色块 / A4 背景水印装饰 / A5 内容厚度+高保真预览 / A6 动效 / A7 AI 氛围 / A8 软风字体 / A9 自检）。原因：旧 DESIGN.md 主体全是 register B（neo），照它做对外页面会"又平又丑"。两 register 边界仍见 §0.0。
 - **v5.0 (2026-06-14)**: 🚨 **Neo-Brutalism 回归**，推翻 v4.x「轻边框 + 8px 圆角 + 柔阴影 + 暖白」。和 `curriculum/` 讲课 deck（`theme.ts`）统一成同一套语言：3px 黑边 + 直角 + 偏移硬阴影 `6px 6px 0 #000` + hover 位移；色板对齐 deck（red #ff5757 / dark #10162f / warmBg #fff1e7 / yellow #FFDE59 / green #7ED957 / blue #38B6FF / purple #CB6CE6）；字体换 Bricolage Grotesque(标题) + DM Sans(正文) + Space Mono(数据) + 思源黑体(中文)。改动落 `tokens/tokens.css`（数值真相）+ 本文 §0/§5/§11 + `index.html` board（19 panel 全 reskin）。判断依据：neo-brutalism 本身没问题（讲课 deck 验证有效），之前的「丑」是内容/执行问题。
