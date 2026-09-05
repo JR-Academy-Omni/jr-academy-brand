@@ -14,9 +14,41 @@
 > - `README.md` — 仓库使用说明
 > - `_source_design.md` — 原始设计研究稿（存档）
 >
-> Last updated: 2026-08-12 · **v5.4 — 统一全场景路由，新增海报与课程应用系统**；v5.0 = Neo-Brutalism（register B）
+> Last updated: 2026-09-04 · **v6.0 preview — JR Soft Craft 收敛为 Product / Editorial / Campaign 三档表达强度，并继承全场景应用路由**
 >
 > 🚨 **官网视觉判断以本文 register 分工为准**。`tokens/tokens.css` 目前包含大量 Register B / deck token，不能直接代表官网默认风格。做官网页面先按 §0.0/§0.0A 选 Register A，再使用页面内 Register A token 或 `HomeBrandLanding*` 里已经落地的 soft token。
+
+---
+
+## 2026-09-04 · v6 收敛方向：JR Soft Craft
+
+这次更新不再新增一套彼此割裂的视觉风格。Register A 与 Register B 收敛为同一组
+JR 品牌基因，通过 `Product / Editorial / Campaign` 三档表达强度适配不同场景。
+可交互视觉基准直接更新在 `index.html`；切换三档时，颜色、字体与品牌资产不变，
+只调整描边、圆角、阴影和色彩面积。
+
+**共同品牌基因**
+
+- 暖奶油画布、深墨色文字、JR 珊瑚到紫色的标志渐变；
+- 中文使用思源黑体，英文展示保留 Bricolage Grotesque，正文保留 DM Sans；
+- 内容卡使用真实插画或真实产品界面，颜色只帮助分层，不代替信息；
+- 圆角、阴影和描边存在统一强度关系，不允许页面自行发明第四档。
+
+| 强度 | 场景 | 圆角 | 描边与阴影 |
+|------|------|------|------------|
+| **Product** | 官网、报名、学习产品、Dashboard | 18–28px | 1px 暖边 + 柔和多层阴影 |
+| **Editorial** | 课程图解、知识卡、课件、社交内容 | 14–22px | 1–1.5px 深色边 + 彩色错位影 |
+| **Campaign** | 海报、活动主视觉、强传播封面 | 10–14px | 2px 深色边 + 硬偏移影 |
+
+**从 Airbotix 借鉴但不照搬**：采用暖纸底、充足圆角、品牌色柔影与贴纸标签；不采用
+儿童品牌的 Bubblegum/Mint 主色比例、Plus Jakarta 全局字体或角色密度。JR 继续以深墨、
+珊瑚和 AI 渐变表达成人职业学习的专业度。
+
+**稳定性规则**：未来新增视觉变化必须落入上述三档之一。不能再以“新版”为名新增并行
+HTML、第二套 token 或第四个 register。调整先修改本文件与 `index.html`，产品迁移需按页面
+逐步进行，不做全站一次性换皮。
+
+下方 v5 Register A / B 章节暂时保留为迁移对照；与本节冲突时，以 v6 三档强度规则为准。
 
 ---
 
@@ -199,6 +231,38 @@ Register A 是 `jr-academy-web-zh` 对外官网和学习产品页的默认视觉
 **禁止**
 - 禁止在官网主页面大面积使用 Register B：3px 黑边、直角、`6px 6px 0 #000` 硬阴影、Bricolage 夸张标题、大片黄/红纯色块。
 - 禁止新增硬编码课程价格、活动数量、学习时长、报名人数、排名、完课数；已有硬编码要在改造时迁到真实 API 或删除。
+
+---
+
+#### A14 AI Engineer 45 秒竖屏技术图解（2026-07-30）
+
+AI Engineer 45s 是**连续机制影片**，不是讲课 deck 的竖屏化。默认使用
+Register A 派生的技术系统视觉：深色控制空间 + 奶油证据面 + 珊瑚到紫的 AI 渐变，
+配 18–32px 圆角、1px 透光暖边和柔多层阴影。Register B 仍可用于真正的课程 deck、
+海报和 zine，但不能因为“这是知识内容”就自动套六张黑边硬卡。
+
+**叙事结构**
+
+- 一期只选一个具体工程对象做主角，例如 request、chunk、trace、job 或 token。
+- 主角沿一条连续状态/控制/数据路径运动；镜头变化来自对象进入新状态，不来自换页。
+- 至少展示一个可见失败分支和一个成功闭环。失败对象必须在路径上真实停止，
+  不能只换红色后继续流向成功节点。
+- 观众在关闭字幕时仍能看懂：谁提出、谁决定、哪里拒绝、何时执行、结果如何返回。
+
+**默认打回**
+
+- 六张同权重卡片依次出现；
+- 每 5–8 秒一页标题 + 一段说明；
+- 大面积 3px 黑边、直角和 offset hard shadow 抢过技术关系；
+- 绿勾、红叉和状态色与真实逻辑相反；
+- 多个主角同屏争抢注意力，或终局只有口号没有结果/trace。
+
+**设计放行**
+
+Remotion 实现前先冻结 `DESIGN_SPEC.md`，并用 2–3 张 styleframe 同时证明 hook、
+失败分支和结果闭环。字幕、SRT 和 transcript 覆盖每个实际发声的完整语义句；
+审批、执行、结果等画面状态必须与旁白同序。最终审美判断只认编码 MP4 抽帧，
+不以 Studio 预览或源码预期代替。
 
 ---
 
@@ -1369,10 +1433,12 @@ index.html  ←  视觉手册
 
 ---
 
-_v5.4 · 2026-08-12 · JR Academy 统一设计系统_
+_v6.0 preview · 2026-09-04 · JR Academy 总品牌_
 
 _Changelog_
+- **v6.0 preview (2026-09-04)**: 参考 Airbotix 的暖纸底、充足圆角、品牌色柔影与贴纸组件，把 Register A / B 收敛为 Product / Editorial / Campaign 三档表达强度；`index.html` 增加可交互切换并重做视觉基准。只更新母品牌规范和 token，不迁移线上产品。
 - **v5.4 (2026-08-12)**: 新增 `APPLICATIONS.md`、`POSTER_DESIGN.md`、`COURSE_DESIGN.md` 和局部/海报规格模板；统一官网、课程页、Lesson UI、deck、活动 cover、传播海报、课程海报、联名物料和社媒卡片的路由与覆盖优先级。取消“海报默认 B”的粗粒度判断，改为按用户任务、主视觉证据和信息密度选 A-editorial 或 B。本次不新增 token。
+- **2026-07-30**: 新增 **§A14 AI Engineer 45 秒竖屏技术图解**——默认采用一个工程对象贯穿连续机制、物理失败分支和结果闭环，禁止六卡片/六页 deck 冒充技术证明；锁定完整字幕与旁白状态同序、最终编码 MP4 终检。本次没有新增或修改 token，无需改 `tokens.json` / `tokens.css` / `index.html`。
 - **v5.2 (2026-06-23)**: 补充 **Register A 首页 hero / 诊断到产品生态规范** —— 锁定 `homepage-soft.html` 当前版为 soft 首页金标准：沉浸式生成图背景 + 强主标题 + 路线指标 + AI 路线诊断浮层；新增诊断结果同步高亮产品卡和生态地图节点的规则；新增 `assets/illustrations/generated/` 生成配图治理（只允许无字、无 logo、无假 UI 文案的装饰图，真实产品名/logo/节点必须用 DOM 和真实资产）。本次不改 tokens：没有新增全局数值，只沉淀 Register A 组件和资产使用规则。
 - **v5.1 (2026-06-16)**: 新增 **§0.0A Register A 精致软风完整规范** —— 把首页 `homepage-soft.html` 一路调出来的"防平/防丑/防普通"配方文字化（A1 调色一主色+标志渐变 / A2 多层柔阴影深度 / A3 卡片必须有真插画禁纯色块 / A4 背景水印装饰 / A5 内容厚度+高保真预览 / A6 动效 / A7 AI 氛围 / A8 软风字体 / A9 自检）。原因：旧 DESIGN.md 主体全是 register B（neo），照它做对外页面会"又平又丑"。两 register 边界仍见 §0.0。
 - **v5.0 (2026-06-14)**: 🚨 **Neo-Brutalism 回归**，推翻 v4.x「轻边框 + 8px 圆角 + 柔阴影 + 暖白」。和 `curriculum/` 讲课 deck（`theme.ts`）统一成同一套语言：3px 黑边 + 直角 + 偏移硬阴影 `6px 6px 0 #000` + hover 位移；色板对齐 deck（red #ff5757 / dark #10162f / warmBg #fff1e7 / yellow #FFDE59 / green #7ED957 / blue #38B6FF / purple #CB6CE6）；字体换 Bricolage Grotesque(标题) + DM Sans(正文) + Space Mono(数据) + 思源黑体(中文)。改动落 `tokens/tokens.css`（数值真相）+ 本文 §0/§5/§11 + `index.html` board（19 panel 全 reskin）。判断依据：neo-brutalism 本身没问题（讲课 deck 验证有效），之前的「丑」是内容/执行问题。

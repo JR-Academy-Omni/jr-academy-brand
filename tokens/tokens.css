@@ -4,29 +4,47 @@
    Sub: 一起成为 AI 时代的匠人
    Mascot: 牛小匠 · 红 JR 连帽衫 + 墨镜
 
-   🚨 Register split（2026-07-08）
-      - 官网 / landing / user-facing product UI 默认 Register A · 精致软风。
-        参考 jr-academy-brand/DESIGN.md §0.0A/§0.0B 和
-        jr-academy-web-zh/src/components/Pages/HomePage/HomeBrandLanding*。
-      - 本文件现有 --jr-border / --jr-shadow-md / --jr-radius-0 等变量主要服务
-        Register B · Neo-Brutalism（讲课 deck / 海报 / zine / campaign 物料）。
-      - 不要把 3px 黑边、直角、6px offset 硬阴影直接套到官网主 UI。
-      - 官网 soft token 优先使用页面内落地变量：#FFFCF6 奶油底、
-        #FB6A4A 珊瑚、#F1E8D8 暖灰边、20-28px 圆角、
-        多层柔阴影，以及 #FF7A4D → #FF4F8F → #9B6BFF 标志渐变。
+   🚨 v6 convergence（2026-09-04）
+      - 一个 JR 身份，按 Product / Editorial / Campaign 调整表达强度。
+      - 颜色、字体与资产不随档位变化；只调整描边、圆角、阴影和色彩面积。
+      - 旧 --jr-border / --jr-shadow-md / --jr-radius-0 保留给尚未迁移的 v5 deck。
+        新实现从 --jr-craft-* 与对应 expression token 开始。
 
    Register B 对齐基准: curriculum/ai-adoption-bootcamp/src/styles/theme.ts
    ===================================================== */
 
 :root {
+  /* —— v6 · JR Soft Craft canonical core —— */
+  --jr-craft-canvas: #FFFAF2;
+  --jr-craft-surface: #FFFFFF;
+  --jr-craft-ink: #17182F;
+  --jr-craft-muted: #676273;
+  --jr-craft-line: #E9DFD2;
+  --jr-craft-coral: #FF6854;
+  --jr-craft-pink: #F78FB4;
+  --jr-craft-yellow: #FFD65A;
+  --jr-craft-lime: #B9E74B;
+  --jr-craft-sky: #69BFF0;
+  --jr-craft-violet: #9A88EA;
+  --jr-craft-gradient-ai: linear-gradient(100deg, #FF734F 0%, #F45279 52%, #8A6CE5 100%);
+  --jr-craft-radius-product: 24px;
+  --jr-craft-radius-editorial: 18px;
+  --jr-craft-radius-campaign: 12px;
+  --jr-craft-shadow-product: 0 2px 8px rgba(23,24,47,.05), 0 18px 46px rgba(23,24,47,.09);
+  --jr-craft-shadow-editorial: 5px 6px 0 rgba(105,191,240,.72), 0 14px 34px rgba(23,24,47,.07);
+  --jr-craft-shadow-campaign: 7px 8px 0 #17182F;
+  --jr-craft-border-product: 1px solid #E9DFD2;
+  --jr-craft-border-editorial: 1.5px solid rgba(23,24,47,.34);
+  --jr-craft-border-campaign: 2px solid #17182F;
+
   /* —— Register A · Soft Polished（官网 / landing / user-facing product UI 默认）—— */
-  --jr-soft-cream: #FFFCF6;
+  --jr-soft-cream: var(--jr-craft-canvas);
   --jr-soft-cream-warm: #FFF7F1;
   --jr-soft-surface: #FFFFFF;
-  --jr-soft-ink: #1C1B22;
-  --jr-soft-muted: #7C766A;
-  --jr-soft-line: #F1E8D8;
-  --jr-soft-coral: #FB6A4A;
+  --jr-soft-ink: var(--jr-craft-ink);
+  --jr-soft-muted: var(--jr-craft-muted);
+  --jr-soft-line: var(--jr-craft-line);
+  --jr-soft-coral: var(--jr-craft-coral);
   --jr-soft-coral-deep: #F2542E;
   --jr-soft-purple: #7B61E8;
   --jr-soft-blue: #3E8EE0;
@@ -36,7 +54,7 @@
   --jr-soft-gradient-ai: linear-gradient(100deg, #FF7A4D 0%, #FF4F8F 52%, #9B6BFF 100%);
   --jr-soft-gradient-cta: linear-gradient(135deg, #FF7A4D 0%, #F2542E 100%);
   --jr-soft-shadow-sm: 0 1px 2px rgba(28, 27, 34, 0.05);
-  --jr-soft-shadow-md: 0 2px 6px rgba(28, 27, 34, 0.05), 0 16px 38px rgba(28, 27, 34, 0.09);
+  --jr-soft-shadow-md: var(--jr-craft-shadow-product);
   --jr-soft-shadow-lg: 0 30px 64px rgba(28, 27, 34, 0.14);
   --jr-soft-radius-sm: 16px;
   --jr-soft-radius-md: 20px;
