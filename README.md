@@ -18,6 +18,8 @@
 
 ## AI / Codex / Claude 必读
 
+先读 `APPLICATIONS.md` 确定交付物类型、品牌、Register 和覆盖优先级，再读 `DESIGN.md` 的品牌基础。海报/渠道图片必须读 `POSTER_DESIGN.md`，课程页/deck/lesson/课程营销资产必须读 `COURSE_DESIGN.md`。
+
 先读 `DESIGN.md` 的 v6 与学习中心章节，再选择表达强度。下方 v5 Register A / B 数值只作历史迁移对照，不覆盖 v6 决策。
 
 ### 当前学习产品基准 · Product
@@ -42,7 +44,7 @@
 
 ### v5 迁移对照 · Register B Neo-Brutalism（物料）
 
-适用：讲课 deck、海报、zine、campaign 冲击物料、curriculum 课件。
+适用：讲课 deck、信息密度高的知识海报、zine、需要高冲击的 campaign 物料、curriculum 课件。海报不再因文件类型自动选 B；真人、城市、产品或联名主导的高级感物料按 `POSTER_DESIGN.md` 选 A-editorial。
 
 - 暖底 `#fff1e7`
 - 3px 黑边 + 直角 + `6px 6px 0 #000` offset 硬阴影
@@ -60,6 +62,10 @@ jr-academy-brand/
 ├── index.html              ← Soft Craft 三档交互手册＋Product 学习工作区规范
 ├── assets.html             ← 完整图片资产库（按 assets/ 全量生成 132 个资产卡片）
 ├── DESIGN.md               ← 完整设计规范 + AI Implementation Rules
+├── APPLICATIONS.md         ← 全场景路由 + 冲突/覆盖优先级
+├── POSTER_DESIGN.md        ← 海报 / cover / 社媒卡 / 联名物料统一规范
+├── COURSE_DESIGN.md        ← 课程页 / Lesson UI / deck / 课程营销统一规范
+├── templates/              ← 局部 DESIGN.md 与海报 spec 模板
 ├── _source_design.md       ← 原始设计研究稿（存档）
 ├── tokens/
 │   ├── tokens.json         ← Design tokens 源数据（W3C 格式）
@@ -78,6 +84,7 @@ jr-academy-brand/
 
 ### 看规范
 先读 `DESIGN.md` 的 v6 分工。学习产品看 `index.html#learning-workspace`；其他场景通过 `index.html` 的三档切换选择，旧首页范本仅作对应营销场景参考。
+海报与渠道图片另读 `POSTER_DESIGN.md`，课程与课件另读 `COURSE_DESIGN.md`；交付物路由见 `APPLICATIONS.md`。
 
 ### 读设计决策
 `DESIGN.md` — 完整 13 节规范，包含：
@@ -169,6 +176,12 @@ Front · Side · Back · Sitting · Laptop · Tablet · Wave · Like · Thinking
 - [x] `tokens.css` 新增 `--jr-soft-*` 官网 token
 - [x] README / DESIGN.md / 根项目 agent 规则统一 Register A 判断口径
 - [x] 明确 `index.html` 主要作为 Register B Brand Board，官网看 `homepage-soft.html`
+
+**v5.4 已完成（2026-08-12）**：
+- [x] 官网、课程、deck、海报、平台 cover、联名物料全部从 `APPLICATIONS.md` 统一路由
+- [x] 建立 `POSTER_DESIGN.md` 和 `COURSE_DESIGN.md`
+- [x] 明确局部 `DESIGN.md` 的覆盖合同，不再复制/分叉母品牌规范
+- [x] 取消“海报默认 Neo-Brutalism”，按主视觉证据和信息任务选 A-editorial / B
 
 **v4.2 已完成（2026-05-24）**：
 - [x] Brand Board 13 panel finalize（暖白底 + 红编号胶囊 + 黑色 CTA + 8px 圆角）
