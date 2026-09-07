@@ -14,6 +14,16 @@
    ===================================================== */
 
 :root {
+  /* Product learning workspace — DESIGN.md 2026-09-07; scoped semantic tokens. */
+  --jr-learning-canvas: var(--jr-craft-surface);
+  --jr-learning-schedule: #F3F8FC;
+  --jr-learning-focus: var(--jr-craft-ink);
+  --jr-learning-explore: #FFF6D9;
+  --jr-learning-journey: #EDF7F0;
+  --jr-learning-action: var(--jr-craft-coral);
+  --jr-learning-action-text: var(--jr-craft-ink);
+  --jr-learning-nav-active: var(--jr-craft-ink);
+  --jr-learning-nav-active-text: var(--jr-craft-surface);
   /* —— v6 · JR Soft Craft canonical core —— */
   --jr-craft-canvas: #FFFAF2;
   --jr-craft-surface: #FFFFFF;

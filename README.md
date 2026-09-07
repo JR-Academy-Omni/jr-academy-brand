@@ -1,6 +1,6 @@
 # JR Academy / 匠人学院 — Master Design System
 
-> **v5.3 Register System · 2026-07-08** — 官网默认 Register A 精致软风；Neo-Brutalism 收敛为 Register B 物料风格
+> **Soft Craft v6 · 2026-09-07** — Product / Editorial / Campaign；新增用户认可的学习中心白底工作区规范（本地，未发布）
 >
 > **学 AI 来匠人 · STUDY AI AT JR ACADEMY**
 > 一起成为 AI 时代的匠人 · Be an AI Craftsman.
@@ -18,9 +18,16 @@
 
 ## AI / Codex / Claude 必读
 
-先读 `DESIGN.md` §0.0 / §0.0A / §0.0B，再决定 register。不要只看 `index.html` 或 `tokens.css` 就把黑边硬阴影套到官网。
+先读 `DESIGN.md` 的 v6 与学习中心章节，再选择表达强度。下方 v5 Register A / B 数值只作历史迁移对照，不覆盖 v6 决策。
 
-### Register A · 精致软风（官网默认）
+### 当前学习产品基准 · Product
+
+- 可视化规范：[`index.html#learning-workspace`](index.html#learning-workspace)。白底、深墨标题、珊瑚按钮、官方牛小匠，桌面与手机共用五项底部导航。
+- 课表 / 课程封面 / 实验室 / 资料目录 / 学习记录采用不同内容布局，不能全部堆相同卡片。
+- 语义变量：`tokens/tokens.json` 的 `learning` 与 CSS `--jr-learning-*`；不改变营销页面的默认奶油画布，不增加第四档。
+- 产品实现参考：`jr-academy-web-zh/src/components/Pages/StudyCenterPage/StudySpace/`。保留现有 URL 和真实数据，认可视觉不代表全流程验收或已部署。
+
+### v5 迁移对照 · Register A 精致软风
 
 适用：官网首页、landing、营销页、学习产品页、面向用户的产品 UI。
 
@@ -33,7 +40,7 @@
 - 必须有真实/无字生成插画、高保真产品预览、具体正文、数据/FAQ/互动工具等内容厚度
 - 参考：`homepage-soft.html`、`jr-academy-web-zh/src/components/Pages/HomePage/HomeBrandLanding*`
 
-### Register B · Neo-Brutalism（物料）
+### v5 迁移对照 · Register B Neo-Brutalism（物料）
 
 适用：讲课 deck、海报、zine、campaign 冲击物料、curriculum 课件。
 
@@ -50,7 +57,7 @@
 
 ```
 jr-academy-brand/
-├── index.html              ← Register B Brand Board（deck / poster / campaign 物料参考）
+├── index.html              ← Soft Craft 三档交互手册＋Product 学习工作区规范
 ├── assets.html             ← 完整图片资产库（按 assets/ 全量生成 132 个资产卡片）
 ├── DESIGN.md               ← 完整设计规范 + AI Implementation Rules
 ├── _source_design.md       ← 原始设计研究稿（存档）
@@ -70,7 +77,7 @@ jr-academy-brand/
 ## 用法
 
 ### 看规范
-先读 `DESIGN.md` 的 register 分工。做官网页面看 `homepage-soft.html`；做 deck / poster / campaign 再看 `index.html`。
+先读 `DESIGN.md` 的 v6 分工。学习产品看 `index.html#learning-workspace`；其他场景通过 `index.html` 的三档切换选择，旧首页范本仅作对应营销场景参考。
 
 ### 读设计决策
 `DESIGN.md` — 完整 13 节规范，包含：
