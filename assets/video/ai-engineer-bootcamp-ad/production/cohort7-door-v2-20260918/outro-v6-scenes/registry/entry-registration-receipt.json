@@ -1,0 +1,48 @@
+{
+  "registeredAt": "2026-09-18T03:38:13.615Z",
+  "backend": "https://api.jiangren.com.au",
+  "entry": {
+    "id": "ai-engineer-cohort7:2026-09-18:internal-review:door-v2-landscape",
+    "episodeId": "ai-engineer-cohort7:2026-09-18:door-v2",
+    "series": "ai-engineer-cohort7-ad",
+    "seriesLabel": "AI Engineer 第七期宣传",
+    "platform": "internal-review",
+    "date": "2026-09-18",
+    "title": "门还在，锁换了｜AI Engineer 第七期 · 五场景课程全景版",
+    "description": "38秒内部审片版。前30秒保留原剧情；最后8秒为Remotion五场景课程动画：带你从AI Coding开始，一步步做出企业级AI项目。依照第七期正式大纲；含Multi-Agent理论与Lab、Harness与LLM Routing实践。ElevenLabs Amy eleven_v3配音。三年打磨为课程方提供信息。未获社媒发布授权。",
+    "durationSeconds": 38,
+    "status": "verified_internal",
+    "verifiedAt": "2026-09-18T03:37:35.510912+00:00",
+    "videoUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/AI-Engineer-Cohort-7-curriculum-scenes-v6.mp4",
+    "coverUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/cover.jpg"
+  },
+  "assets": {
+    "video": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/AI-Engineer-Cohort-7-curriculum-scenes-v6.mp4",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/AI-Engineer-Cohort-7-curriculum-scenes-v6.mp4",
+      "sha256": "4598050d21d2a10bffbdf72e8137a1b44788b30b843b7a541d9086dd25c4d57c",
+      "contentType": "video/mp4",
+      "contentLength": 16855436,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    },
+    "cover": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/cover.jpg",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v6-scenes/cover.jpg",
+      "sha256": "41c421baff86655474037e5a5689416adb748227634dde147a31f011a2712888",
+      "contentType": "image/jpeg",
+      "contentLength": 98146,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    }
+  },
+  "registry": {
+    "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/index.json",
+    "previousCount": 167,
+    "nextCount": 167,
+    "readBackStatus": 200,
+    "sha256": "cc7389cdcdd31c2b7ff4da40a2045c8f989fbf0f934b0102348a8558f91ec3c1"
+  }
+}

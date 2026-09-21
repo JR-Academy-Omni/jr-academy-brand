@@ -1,0 +1,29 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "mode": "generation",
+  "task_count": 1,
+  "output_count": 1,
+  "prompt_file": "PROMPT.txt",
+  "inputs": [],
+  "parameters": {
+    "duration": 30,
+    "ratio": "16:9",
+    "resolution": "1080p",
+    "generate_audio": true,
+    "watermark": false
+  },
+  "price": {
+    "status": "available",
+    "source": "2026-09-18 live arkcli pricing models doubao-seedance-2-5",
+    "unit_price": 0.077,
+    "unit": "CNY per 1000 output tokens NV2V1080Completion",
+    "total_estimate": "unavailable; output token count not returned until generation"
+  },
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/generated",
+  "source_of_truth": [
+    "User-approved concept in this conversation",
+    "../cohort-7-seedance-assets/cohort-7-storyboard-shot-list.md"
+  ],
+  "authorization": "User explicitly requested Seedance remake in current turn; one task, no automatic retry."
+}

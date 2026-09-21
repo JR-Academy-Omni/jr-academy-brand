@@ -1,0 +1,25 @@
+{
+  "taskId": "cgt-20260724203855-j894g",
+  "model": "doubao-seedance-2-0-260128",
+  "raw": {
+    "file": "jr-academy-seedance-raw-v2.mp4",
+    "resolution": "720x1280",
+    "fps": 24,
+    "durationSeconds": 5.041667,
+    "generateAudio": false,
+    "watermark": false,
+    "sha256": "5b1057ff4daa49eb89bd7e9e23eab87be93f142c6c16dcb2026484d2e17b6ba4"
+  },
+  "delivery": {
+    "file": "jr-academy-brand-intro-v2.mp4",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "durationSeconds": 1.5,
+    "audio": "AAC stereo 48kHz",
+    "integratedLoudnessLufs": -14.49,
+    "truePeakDbtp": -1.65,
+    "subtitles": false,
+    "sha256": "d6019d0d6df3a21839b45d21044748f740f3efb5507a1c422de36f7e1acc1a44"
+  },
+  "prompt": "Vertical 9:16, a single continuous premium macro product-film shot, grounded in real photographed materials rather than science-fiction CGI. Begin extremely close inside a dark architectural corridor made from thick coral-red lacquered metal panels, matte charcoal edges, tiny realistic machining marks and warm cream reflections. The camera surges forward at high speed while four red panels slide and hinge into a compact upright rectangular box silhouette around the center, driven by believable mechanical inertia. At the midpoint the box silhouette aligns cleanly for a brief visual impact, with a clear empty central face reserved for a logo to be composited later. Immediately continue the camera move: rush straight through the central face as it opens like an aperture, ending in a warm cream-white light field suitable for transitioning into a news card. High-end physical product cinematography, 35mm macro lens, crisp focus, restrained coral and charcoal palette, strong directional light, subtle natural motion blur, no bloom haze, no depth-of-field blur on the central object. One camera move, no cuts. No people, no robot, no mascot, no letters, no words, no numbers, no logos, no symbols, no subtitles, no interface, no neon, no purple-blue cyberpunk, no floating particles."
+}

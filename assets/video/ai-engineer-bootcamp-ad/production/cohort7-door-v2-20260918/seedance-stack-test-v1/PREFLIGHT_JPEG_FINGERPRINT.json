@@ -1,0 +1,92 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "inputs": [
+    {
+      "bytes": 187900,
+      "index": 0,
+      "media": {
+        "probe": {
+          "format": {
+            "duration": "0.040000",
+            "format_name": "image2"
+          },
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "height": 720,
+              "r_frame_rate": "25/1",
+              "width": 1280
+            }
+          ]
+        },
+        "status": "ok"
+      },
+      "path": "first.jpg",
+      "provenance": "User-approved concept derived standalone first frame; generated this turn",
+      "provider_url": "unavailable",
+      "role": "first_frame",
+      "same_scene_id": "unavailable",
+      "sha256": "eb83ee3be467152f56f792938b90d77d8d857bc30d669cdac403fa2217d45b52"
+    },
+    {
+      "bytes": 217162,
+      "index": 1,
+      "media": {
+        "probe": {
+          "format": {
+            "duration": "0.040000",
+            "format_name": "image2"
+          },
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "height": 720,
+              "r_frame_rate": "25/1",
+              "width": 1280
+            }
+          ]
+        },
+        "status": "ok"
+      },
+      "path": "last-three.jpg",
+      "provenance": "Generated from first frame this turn; visually verified three layers",
+      "provider_url": "unavailable",
+      "role": "last_frame",
+      "same_scene_id": "unavailable",
+      "sha256": "5c62117b9deafcc18f8f1dcab787f21bde8193e1e723abdb065524e28b1e8e08"
+    }
+  ],
+  "mode": "first_last_frame",
+  "output_count": 1,
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-test-v1/generated",
+  "package_sha256": "4d921e8332eea03e4db30d0b174b72d8c794bbdd157e802f2a61cae247568b73",
+  "parameters": {
+    "duration": 8,
+    "generate_audio": true,
+    "ratio": "adaptive",
+    "resolution": "1080p",
+    "watermark": false
+  },
+  "price": {
+    "account_flag": "IsOverdue=false; State=Available; price-refreshed.json",
+    "source": "live arkcli pricing models --model doubao-seedance-2-5 2026-09-18",
+    "status": "available",
+    "total_estimate": "unavailable",
+    "unit": "CNY/1000 tokens NV2V1080Completion",
+    "unit_price": 0.077
+  },
+  "prompt": {
+    "bytes": 1483,
+    "path": "PROMPT.txt",
+    "sha256": "265041d49b73063b4833c2ed645891776c61b4ca3b10c99561ffda47fbe68932"
+  },
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "schema_version": "seedance-preflight-fingerprint.v2",
+  "task_count": 1
+}

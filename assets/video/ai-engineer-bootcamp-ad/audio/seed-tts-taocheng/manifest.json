@@ -1,0 +1,97 @@
+{
+  "provider": "Volcengine Seed-TTS 2.0",
+  "resourceId": "seed-tts-2.0",
+  "speaker": "zh_male_taocheng_uranus_bigtts",
+  "sampleRate": 24000,
+  "generatedAt": "2026-07-24T02:42:05.380Z",
+  "lines": [
+    {
+      "id": "01",
+      "text": "用户看到的，只是一句回答。",
+      "start": 0.2,
+      "end": 2.55,
+      "speechRate": -5,
+      "deliveryTempo": 1.1,
+      "filename": "01.mp3",
+      "bytes": 20589,
+      "sha256": "4c21284c0367c0d84d8169fe37115e921384a5c9fc83ab2e058d9a1a4dbe3394"
+    },
+    {
+      "id": "02",
+      "text": "但在它背后，是一整套正在运行的 AI 系统。",
+      "start": 3,
+      "end": 6.45,
+      "speechRate": -5,
+      "deliveryTempo": 1.12,
+      "filename": "02.mp3",
+      "bytes": 30765,
+      "sha256": "21881f5618c8321f76d0ec8debcec4e27e84541461cd6a15068779df20c8e72c"
+    },
+    {
+      "id": "03",
+      "text": "模型要理解 Context，RAG 要找到证据，Agent 要调用正确的工具。",
+      "start": 8,
+      "end": 12.8,
+      "speechRate": -5,
+      "deliveryTempo": 1.3,
+      "filename": "03.mp3",
+      "bytes": 49389,
+      "sha256": "c0d027ba913143d75935181fe627ab5361b129eb09e92c90c9de0fc3f2aa6fac"
+    },
+    {
+      "id": "04",
+      "text": "而负责把模型、数据和工具变成产品的岗位，叫 AI Engineer。",
+      "start": 15,
+      "end": 19.75,
+      "speechRate": -5,
+      "deliveryTempo": 1.22,
+      "filename": "04.mp3",
+      "bytes": 45933,
+      "sha256": "3aa27a61b19d6b35068cac8619c7df9e8435308a69e2c6e226056f7ab71a48e2"
+    },
+    {
+      "id": "05",
+      "text": "会调用 API，只是起点。能把 AI 做成稳定、可信、可以交付的产品，才是真正的工程能力。",
+      "start": 20,
+      "end": 26.05,
+      "speechRate": 15,
+      "deliveryTempo": 1.08,
+      "filename": "05.mp3",
+      "bytes": 51885,
+      "sha256": "88a37064afe769de541c4af6292d03e7941bce2b595f35c12c4712d3a0a02762"
+    },
+    {
+      "id": "06",
+      "text": "在匠人学院，用三个月，从 Context、RAG、MCP，一路做到 Agent、Multi-Agent 与 Evals。",
+      "start": 26,
+      "end": 33.55,
+      "speechRate": 10,
+      "deliveryTempo": 1,
+      "filename": "06.mp3",
+      "bytes": 60141,
+      "sha256": "7a7308bad814ec907561edc97697c283a5c414c70c61edae4ec14a6fa85c727d"
+    },
+    {
+      "id": "07",
+      "text": "如果你已经会写代码，下一步，就让自己具备 AI Engineer 的完整能力。",
+      "start": 34,
+      "end": 38,
+      "speechRate": 20,
+      "deliveryTempo": 1.07,
+      "filename": "07.mp3",
+      "bytes": 33837,
+      "sha256": "0a9c76af5eca9d521b2c0803285ce34616d5f7354f3eefbcd2526f72e4352d97"
+    },
+    {
+      "id": "08",
+      "text": "匠人学院 AI Engineer Bootcamp。",
+      "start": 38,
+      "end": 40,
+      "speechRate": 15,
+      "deliveryTempo": 1.18,
+      "filename": "08.mp3",
+      "bytes": 18669,
+      "sha256": "6fd941ce4610c890a18b1d1d5812939ec32f5a74a7025ae34e3f96d45ad2dd16"
+    }
+  ]
+}

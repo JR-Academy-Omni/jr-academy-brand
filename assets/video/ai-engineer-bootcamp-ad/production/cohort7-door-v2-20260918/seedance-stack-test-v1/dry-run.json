@@ -1,0 +1,66 @@
+{
+  "schema_version": "preview.v1",
+  "dry_run": true,
+  "mode": "client_preview",
+  "command": "arkcli +gen",
+  "product": "volc",
+  "scope": {},
+  "effects": {
+    "network": "blocked",
+    "filesystem": "read_only",
+    "subprocess": "blocked"
+  },
+  "steps": [
+    {
+      "index": 1,
+      "kind": "api_request",
+      "name": "CreateContentsGenerationsTasks",
+      "plane": "data",
+      "protocol": "arkruntime",
+      "target": "CreateContentsGenerationsTasks",
+      "endpoint": "/contents/generations/tasks",
+      "method": "POST",
+      "payload": {
+        "content": [
+          {
+            "text": "8秒电影级三维动效广告，16:9。严格按照首帧与尾帧：从一个珊瑚玻璃金属圆角方形模块，到三个独立模块沿中央轴叠起。圆形底座不算一层。无文字无数字无字幕无Logo。保持同一晨光建筑环境、同一玻璃金属材料、同一圆形机械底座、同一朝向。不是楼房施工，不是静态图片缩放，不是变形长出楼层。所有模块保持刚性，作为独立物体运动。\n0–1.5秒：首帧唯一的珊瑚模块缓缓下落至底座接口，机械锁定，保留模块与底座连接形态。\n1.5–3.5秒：第二个玫瑰色模块从画面上方进入，向下减速落位在第一层上方，中央支柱连接，保持明显空气间隙。第一层始终保留，不融化、不分裂。\n3.5–5.5秒：第三个紫色模块从上方进入，减速落在第二层上方，完成三个独立平台。每个模块同样大小和厚度，圆形底座不计入平台数。\n同时摄影机真实向上升起并向后退，保持前方圆角为主角；玻璃反射随视角变化，有真实背景视差，流畅重量感，精致商业CG质感。切勿突然转到另一侧。\n5.5–8秒：镜头减速稳定到尾帧构图，展示清楚三个完整平台及底座，定格呼吸。最终恰好三个平台，无额外平台，整段无跳切。\n音频仅精致机械落位低频声、金属连接轻响、柔和空气移动声，无人声、无音乐。后期统一叠加课程旁白与配乐。",
+            "type": "text"
+          },
+          {
+            "reference": "first:@/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-test-v1/first.png",
+            "type": "asset_reference"
+          },
+          {
+            "reference": "last:@/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-test-v1/last-three.png",
+            "type": "asset_reference"
+          }
+        ],
+        "duration": 8,
+        "generate_audio": true,
+        "model": "ep-20260812221158-hb576",
+        "ratio": "adaptive",
+        "resolution": "1080p",
+        "watermark": false
+      },
+      "fidelity": "partial"
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "steps[0].payload.content",
+      "reason": "execution parses roles and materializes asset references into image_url/video_url/audio_url content items",
+      "source": "input"
+    },
+    {
+      "path": "scope.data_plane",
+      "reason": "execution resolves profile, API key, base URL, and endpoint routing without exposing credentials",
+      "source": "profile"
+    }
+  ],
+  "summary": {
+    "modality": "video",
+    "modality_source": "explicit",
+    "model": "ep-20260812221158-hb576",
+    "prompt": "8秒电影级三维动效广告，16:9。严格按照首帧与尾帧：从一个珊瑚玻璃金属圆角方形模块，到三个独立模块沿中央轴叠起。圆形底座不算一层。无文字无数字无字幕无Logo。保持同一晨光建筑环境、同一玻璃金属材料、同一圆形机械底座、同一朝向。不是楼房施工，不是静态图片缩放，不是变形长出楼层。所有模块保持刚性，作为独立物体运动。\n0–1.5秒：首帧唯一的珊瑚模块缓缓下落至底座接口，机械锁定，保留模块与底座连接形态。\n1.5–3.5秒：第二个玫瑰色模块从画面上方进入，向下减速落位在第一层上方，中央支柱连接，保持明显空气间隙。第一层始终保留，不融化、不分裂。\n3.5–5.5秒：第三个紫色模块从上方进入，减速落在第二层上方，完成三个独立平台。每个模块同样大小和厚度，圆形底座不计入平台数。\n同时摄影机真实向上升起并向后退，保持前方圆角为主角；玻璃反射随视角变化，有真实背景视差，流畅重量感，精致商业CG质感。切勿突然转到另一侧。\n5.5–8秒：镜头减速稳定到尾帧构图，展示清楚三个完整平台及底座，定格呼吸。最终恰好三个平台，无额外平台，整段无跳切。\n音频仅精致机械落位低频声、金属连接轻响、柔和空气移动声，无人声、无音乐。后期统一叠加课程旁白与配乐。"
+  }
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "00-sydney-descent",
+    "task_id": "cgt-20260728123639-vcdcd",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/00-sydney-descent.mp4",
+    "last_frame": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/00-sydney-descent-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue seamlessly from the supplied high aerial Sydney Harbour first frame. One unbroken cinematic camera dive follows the subtle coral-red light thread from above the Opera House and Harbour Bridge toward Circular Quay. Maintain real Sydney geography, blue-gold sunrise, grand atmospheric depth and fast but controlled forward descent. Skim above rooftops and move toward the single warm illuminated studio window indicated by the coral path. End with that dark glass window filling almost the entire frame, reflecting the harbour and sunrise, ready for the camera to pass through. Premium global technology brand film, strong parallax, no cut, no drone visible, no people close-up, no text, no letters, no logo, no watermark, no spaceship, no generic city."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260728123639-vcdcd",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521340030700000000000000000000ffffac1813c9ded702.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521340030700000000000000000000ffffac1813c9ded702_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 108900,
+        "total_tokens": 108900
+      },
+      "created_at": 1785213400,
+      "updated_at": 1785213577,
+      "seed": 91437,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "01-enter-room-open-box",
+    "task_id": "cgt-20260728124241-dpzjx",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/01-enter-room-open-box.mp4",
+    "last_frame": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/01-enter-room-open-box-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue from the exact prior last frame and arrive precisely at the supplied target last frame. The camera passes physically through the Sydney window reflection into the same warm harbour apartment without a cut and finds the same young Chinese male learner from behind at his desk. Preserve the Opera House and Harbour Bridge outside. Push toward the premium physical JR Box on the desk: black and white cube faces with restrained coral and violet edge light. Its top and side panels begin separating with precise mechanical weight, revealing a midnight-blue interior filled with tiny square pixels. Preserve the JR mascot exactly as the human-faced character visible in the target frame: smooth white human-like face mask, black hair silhouette, small horns, black sunglasses and red JR tracksuit; absolutely no cow muzzle, animal snout, nostrils or realistic bull head. End exactly on the supplied room-and-box target composition. No cut, no extra character, no generated words, no fake UI text, no watermark."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "first_frame"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "last_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260728124241-dpzjx",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521377124300000000000000000000ffffac181cdfa888d0.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521377124300000000000000000000ffffac181cdfa888d0_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 108900,
+        "total_tokens": 108900
+      },
+      "created_at": 1785213771,
+      "updated_at": 1785213951,
+      "seed": 92951,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "02-box-to-ai-cosmos",
+    "task_id": "cgt-20260728124723-cmlwx",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/02-box-to-ai-cosmos.mp4",
+    "last_frame": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-opening/02-box-to-ai-cosmos-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue from the exact room-and-JR-Box frame and arrive precisely at the supplied AI-cosmos target last frame. The JR Box panels finish opening with precise mechanical weight and the camera dives into its midnight-blue interior in one continuous zoom-through. Box panels stretch into a geometric tunnel, then dissolve into blue, white and coral square pixels and a vast AI cosmos. Preserve forward direction and form the same coral-red route. The same young Chinese learner and human-faced JR mascot become small silhouettes ahead; retain black hair, small horns, sunglasses, red tracksuit and smooth white face mask, never a cow muzzle or animal face. End exactly on the target wide coral path, star field and bright horizon so the existing learning-route clip continues naturally. No cut, no readable text, no extra logo, no watermark, no camera reversal."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521377124300000000000000000000ffffac181cdfa888d0_last-frame.png"
+          },
+          "role": "first_frame"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "last_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260728124723-cmlwx",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521405124900000000000000000000ffffac181cdf51fc54.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521405124900000000000000000000ffffac181cdf51fc54_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 108900,
+        "total_tokens": 108900
+      },
+      "created_at": 1785214051,
+      "updated_at": 1785214277,
+      "seed": 7194,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  }
+]

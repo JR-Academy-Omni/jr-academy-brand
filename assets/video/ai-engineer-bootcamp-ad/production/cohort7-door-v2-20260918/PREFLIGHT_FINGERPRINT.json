@@ -1,0 +1,30 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "inputs": [],
+  "mode": "generation",
+  "output_count": 1,
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/generated",
+  "package_sha256": "bb726f6a48f77d09e841804cc32b99e1a59da6f0347eb9934c1421819e5c39e9",
+  "parameters": {
+    "duration": 30,
+    "generate_audio": true,
+    "ratio": "16:9",
+    "resolution": "1080p",
+    "watermark": false
+  },
+  "price": {
+    "source": "2026-09-18 live arkcli pricing models doubao-seedance-2-5",
+    "status": "available",
+    "total_estimate": "unavailable; output token count not returned until generation",
+    "unit": "CNY per 1000 output tokens NV2V1080Completion",
+    "unit_price": 0.077
+  },
+  "prompt": {
+    "bytes": 5394,
+    "path": "PROMPT.txt",
+    "sha256": "5c277ba4cefb1164b3d828eef4f4164b06ee5db48aa2453275b1b0051f76d586"
+  },
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "schema_version": "seedance-preflight-fingerprint.v2",
+  "task_count": 1
+}

@@ -1,0 +1,30 @@
+{
+  "action": "publish_now",
+  "brandKey": "jr-academy",
+  "channelId": "UCanQu2BJniNfGViaF23dJgw",
+  "completedAt": "2026-09-18T13:48:39.178Z",
+  "credentialAlias": "youtube-jr-academy",
+  "errorCode": "PROVIDER_OUTCOME_UNKNOWN",
+  "expiresAt": 1821275309,
+  "idempotencyKey": "jr-ai-engineer-cohort7-door-20260918-youtube-paced-v13",
+  "mediaAssets": [
+    {
+      "mimeType": "video/mp4",
+      "originalUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+      "kind": "video",
+      "checksumSha256": "a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b",
+      "sizeBytes": 23206959,
+      "ownedUrl": "https://d100udtuki04xa.cloudfront.net/media/jr-academy/a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b.mp4"
+    }
+  ],
+  "providerFailure": {
+    "kind": "outcome_unknown"
+  },
+  "providerPostId": "",
+  "providerStatus": "not_called",
+  "requestHash": "a2118d604746fd774c6fbab9498471426e736cb72002b92fc0bf0b928beca6b7",
+  "startedAt": "2026-09-18T13:48:29.112Z",
+  "status": "unknown_provider_outcome",
+  "subjectId": "airbotix-publisher",
+  "subjectType": "service"
+}

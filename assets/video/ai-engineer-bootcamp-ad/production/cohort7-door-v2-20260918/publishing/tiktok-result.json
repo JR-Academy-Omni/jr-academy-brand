@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"expiresAt\":1821269668,\"mediaAssets\":[{\"originalUrl\":\"https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4\",\"ownedUrl\":\"https://d100udtuki04xa.cloudfront.net/media/jr-academy/a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b.mp4\",\"mimeType\":\"video/mp4\",\"kind\":\"video\",\"sizeBytes\":23206959,\"checksumSha256\":\"a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b\"}],\"action\":\"publish_now\",\"idempotencyKey\":\"jr-ai-engineer-cohort7-door-20260918-tiktok-paced-v13\",\"publicUrl\":\"https://tiktok.com/@jracademy_au/video/7686847695688011028\",\"brandKey\":\"jr-academy\",\"startedAt\":\"2026-09-18T12:14:28.070Z\",\"providerError\":null,\"credentialAlias\":\"buffer-tiktok\",\"subjectId\":\"airbotix-publisher\",\"completedAt\":\"2026-09-18T12:14:53.227Z\",\"channelId\":\"6aa69147ea19ca0bde344a89\",\"requestHash\":\"a7a3ab3f2ab774af68bb59f5bc5dd5be6348afe96cb28fe4e953f63ec5e62d51\",\"dueAt\":\"2026-09-18T12:14:42.868Z\",\"providerStatus\":\"published\",\"providerPostId\":\"6aad2b325c5a5e3eefd5f05f\",\"sentAt\":\"2026-09-18T12:16:31.204Z\",\"subjectType\":\"service\",\"status\":\"completed\",\"lastProviderSyncAt\":\"2026-09-18T12:17:33.550Z\"}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "expiresAt": 1821269668,
+      "mediaAssets": [
+        {
+          "originalUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+          "ownedUrl": "https://d100udtuki04xa.cloudfront.net/media/jr-academy/a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b.mp4",
+          "mimeType": "video/mp4",
+          "kind": "video",
+          "sizeBytes": 23206959,
+          "checksumSha256": "a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b"
+        }
+      ],
+      "action": "publish_now",
+      "idempotencyKey": "jr-ai-engineer-cohort7-door-20260918-tiktok-paced-v13",
+      "publicUrl": "https://tiktok.com/@jracademy_au/video/7686847695688011028",
+      "brandKey": "jr-academy",
+      "startedAt": "2026-09-18T12:14:28.070Z",
+      "providerError": null,
+      "credentialAlias": "buffer-tiktok",
+      "subjectId": "airbotix-publisher",
+      "completedAt": "2026-09-18T12:14:53.227Z",
+      "channelId": "6aa69147ea19ca0bde344a89",
+      "requestHash": "a7a3ab3f2ab774af68bb59f5bc5dd5be6348afe96cb28fe4e953f63ec5e62d51",
+      "dueAt": "2026-09-18T12:14:42.868Z",
+      "providerStatus": "published",
+      "providerPostId": "6aad2b325c5a5e3eefd5f05f",
+      "sentAt": "2026-09-18T12:16:31.204Z",
+      "subjectType": "service",
+      "status": "completed",
+      "lastProviderSyncAt": "2026-09-18T12:17:33.550Z"
+    }
+  }
+}

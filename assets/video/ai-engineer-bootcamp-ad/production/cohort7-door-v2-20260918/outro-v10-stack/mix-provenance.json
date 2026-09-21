@@ -1,0 +1,37 @@
+{
+  "time": "2026-09-18T05:03:40.561836+00:00",
+  "narration": "backend TtsService, ElevenLabs eleven_v3 amy; volume0.8 delay150ms; no tempo change",
+  "music": "existing approved Seedance bed; volume0.22 with fades",
+  "timing": {
+    "stack": [
+      38,
+      44
+    ],
+    "overseas": [
+      44,
+      51.5
+    ]
+  },
+  "files": [
+    {
+      "file": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/outro-v10-stack/script.json",
+      "sha256": "b5bc2b396cd713d31f6615ed76fc05ef7d6941504f3099f5743447cc3b7a3ea7"
+    },
+    {
+      "file": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/outro-v10-stack/segments/stack.mp3",
+      "sha256": "0ccabbe516f3172c1c168e8a619a164258d4f9f8f6d6aa5387b1ce6450dfe83a"
+    },
+    {
+      "file": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/remotion/public/shotcraft/stack.wav",
+      "sha256": "b5262dcbca278d25b232ce274d4d17215c3dcb6c99cf3d6cb4285c8eed79fea9"
+    },
+    {
+      "file": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/remotion/public/shotcraft/bed.wav",
+      "sha256": "5647ac452764efbdf74ff7884f5225a82cacc86e7e4327c7b27bfe7e40bae909"
+    },
+    {
+      "file": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/remotion/public/stack-poster-v7.png",
+      "sha256": "51d074030943c5b21c6098f4176507685a6b810e3adf55ed446deaac39e2e717"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "page_number": 1,
+  "page_size": 50,
+  "total_count": 1,
+  "items": [
+    {
+      "FoundationModelName": "doubao-seedance-2-5",
+      "State": "Available",
+      "ChargeItems": [
+        {
+          "Price": 1,
+          "UnitCode": "千tokens",
+          "Type": "Inference",
+          "OriginalPrice": 1,
+          "DiscountPriceStartTime": "",
+          "DiscountPriceEndTime": ""
+        },
+        {
+          "Price": 0.077,
+          "UnitCode": "千tokens",
+          "Type": "NV2V1080Completion",
+          "OriginalPrice": 0.077,
+          "DiscountPriceStartTime": "",
+          "DiscountPriceEndTime": ""
+        },
+        {
+          "Price": 0.07,
+          "UnitCode": "千tokens",
+          "Type": "NV2VCompletion",
+          "OriginalPrice": 0.07,
+          "DiscountPriceStartTime": "",
+          "DiscountPriceEndTime": ""
+        },
+        {
+          "Price": 0.046,
+          "UnitCode": "千tokens",
+          "Type": "V2V1080Completion",
+          "OriginalPrice": 0.046,
+          "DiscountPriceStartTime": "",
+          "DiscountPriceEndTime": ""
+        },
+        {
+          "Price": 0.042,
+          "UnitCode": "千tokens",
+          "Type": "V2VCompletion",
+          "OriginalPrice": 0.042,
+          "DiscountPriceStartTime": "",
+          "DiscountPriceEndTime": ""
+        }
+      ],
+      "VendorName": "字节跳动",
+      "DisplayName": "Doubao-Seedance-2.5",
+      "ProductType": 1,
+      "CommonBuyCode": "ark_bd",
+      "InferenceFreeUsage": null,
+      "Instruction": "https://www.volcengine.com/docs/82379/1520757",
+      "FeaturedImage": {
+        "BucketName": "ark-auto-2100466578-cn-beijing-default",
+        "ObjectKey": "/model_cardvtlaSR2nWs.png",
+        "Url": ""
+      },
+      "IsOverdue": false,
+      "ResourcePackItems": null,
+      "SubServices": [
+        {
+          "SubService": "base",
+          "Status": "Available"
+        }
+      ],
+      "MultiChargeItems": [
+        {
+          "ChargeItems": [
+            {
+              "Price": 0.07,
+              "UnitCode": "千tokens",
+              "Type": "NV2VCompletion",
+              "OriginalPrice": 0.07,
+              "DiscountPriceStartTime": "",
+              "DiscountPriceEndTime": ""
+            },
+            {
+              "Price": 0.077,
+              "UnitCode": "千tokens",
+              "Type": "NV2V1080Completion",
+              "OriginalPrice": 0.077,
+              "DiscountPriceStartTime": "",
+              "DiscountPriceEndTime": ""
+            },
+            {
+              "Price": 0.042,
+              "UnitCode": "千tokens",
+              "Type": "V2VCompletion",
+              "OriginalPrice": 0.042,
+              "DiscountPriceStartTime": "",
+              "DiscountPriceEndTime": ""
+            },
+            {
+              "Price": 0.046,
+              "UnitCode": "千tokens",
+              "Type": "V2V1080Completion",
+              "OriginalPrice": 0.046,
+              "DiscountPriceStartTime": "",
+              "DiscountPriceEndTime": ""
+            }
+          ],
+          "MaxPromptTokens": 0,
+          "MaxCompletionTokens": 0,
+          "Name": "",
+          "Description": ""
+        }
+      ],
+      "AllowOpenAfter": "",
+      "IsLimitedActivation": false
+    }
+  ]
+}

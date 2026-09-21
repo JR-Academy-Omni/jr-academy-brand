@@ -1,0 +1,10 @@
+{
+  "export": "/Users/lightman/Downloads/JR Academy - AI Engineer 第七期 - Remotion动态片尾 - 38秒审片版.mp4",
+  "sha256": "9e57603843c033d0287a4e38a3a4d2edcdedf733a6be84ca726f67f0a21b0e79",
+  "originalFirst30sFramesPreserved": true,
+  "duration": 38,
+  "outro": 8,
+  "voiceProvider": "elevenlabs-tts",
+  "voiceModel": "eleven_v3",
+  "cueHash": "05628fd08119e47492347a8a93c9c1bc4e24c91e055761c0dced39248014e153"
+}

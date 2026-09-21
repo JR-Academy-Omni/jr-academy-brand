@@ -1,0 +1,24 @@
+{
+  "name": "jr-ai-engineer-agent-memory-short",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "voice": "node production/generate-elevenlabs-narration.mjs",
+    "render:bgm": "remotion render src/index.ts AgentMemory out/master-bgm-raw.mp4 --props='{\"withBgm\":true}'",
+    "render:no-bgm": "remotion render src/index.ts AgentMemory out/master-no-bgm-raw.mp4 --props='{\"withBgm\":false}'",
+    "still": "remotion still src/index.ts AgentMemory out/cover.png --frame=90 --props='{\"withBgm\":false}'"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "@remotion/google-fonts": "^4.0.484",
+    "@remotion/media": "4.0.484",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "typescript": "^6.0.3"
+  }
+}

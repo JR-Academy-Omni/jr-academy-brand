@@ -1,0 +1,10 @@
+{
+  "source": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/outro-v12-seedance/AI-Engineer-Cohort-7-seedance-v12.mp4",
+  "introSourceSeconds": 30,
+  "introSpeed": 1.2,
+  "introOutputSeconds": 25,
+  "tailSpeed": 1,
+  "durationSeconds": 48.5,
+  "audio": "atempo=1.2, preserves pitch",
+  "newGeneration": false
+}

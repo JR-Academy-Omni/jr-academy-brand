@@ -1,0 +1,29 @@
+[Script Info]
+Title: JR Academy AI Engineer Bootcamp Ad
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,PingFang SC,46,&H00FFFFFF,&H00FFFFFF,&H6A10162F,&H9610162F,-1,0,0,0,100,100,0,0,3,1.2,0,2,150,150,64,1
+Style: Engineer,Inter,86,&H00FFFFFF,&H00FFFFFF,&H0010162F,&H0010162F,-1,0,0,0,100,100,2,0,1,2.4,0,7,112,112,120,1
+Style: EngineerSub,PingFang SC,34,&H00FFFFFF,&H00FFFFFF,&H0010162F,&H0010162F,-1,0,0,0,100,100,0,0,1,1.8,0,7,116,116,226,1
+Style: EndTitle,Inter,64,&H0010162F,&H0010162F,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,1,0,1,0,0,5,100,100,0,1
+Style: EndCTA,PingFang SC,34,&H004A3AFB,&H004A3AFB,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,0,0,5,100,100,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.20,0:00:02.55,Caption,,0,0,0,,用户看到的，只是一句回答。
+Dialogue: 0,0:00:03.00,0:00:07.40,Caption,,0,0,0,,但真正决定它能不能成为产品的，\N是屏幕后面整套 AI 系统。
+Dialogue: 0,0:00:08.00,0:00:14.25,Caption,,0,0,0,,Context 要装得准确，RAG 要找到证据，\NAgent 必须在关键时刻，调用正确的工具。
+Dialogue: 1,0:00:15.00,0:00:19.75,Engineer,,0,0,0,,AI ENGINEER
+Dialogue: 1,0:00:15.15,0:00:19.75,EngineerSub,,0,0,0,,把模型、数据和工具变成产品
+Dialogue: 0,0:00:15.00,0:00:19.75,Caption,,0,0,0,,而把模型、数据和工具真正变成产品的人——\N就是 AI Engineer。
+Dialogue: 0,0:00:20.00,0:00:25.80,Caption,,0,0,0,,会调用 API，只是开始。\N让 AI 稳定、可信、真正交付，才是这个时代稀缺的工程能力。
+Dialogue: 0,0:00:26.00,0:00:33.55,Caption,,0,0,0,,在匠人学院，用三个月、上百节课和真实项目，\N从 Context、RAG、MCP，一路做到 Agent、Multi-Agent 与 Evals。
+Dialogue: 0,0:00:34.00,0:00:38.00,Caption,,0,0,0,,如果你已经会写代码，别只做 AI 的使用者。\N成为把 AI 做成产品的人。
+Dialogue: 2,0:00:38.00,0:00:40.00,EndTitle,,0,0,0,,{\pos(960,655)}AI ENGINEER BOOTCAMP
+Dialogue: 2,0:00:38.00,0:00:40.00,EndCTA,,0,0,0,,{\pos(960,735)}三个月 · 真实项目 · 把 AI 做成产品

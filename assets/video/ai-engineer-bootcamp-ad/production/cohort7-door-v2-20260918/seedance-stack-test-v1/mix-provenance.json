@@ -1,0 +1,13 @@
+{
+  "providerTask": "cgt-20260918140026-ale4c",
+  "sfx": "Seedance raw gain0.6",
+  "voice": {
+    "file": "../remotion/public/shotcraft/stack.wav",
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speaker": "amy",
+    "receipt": "../outro-v10-stack/voice-receipt.json"
+  },
+  "music": "../remotion/public/shotcraft/bed.wav gain0.18 with fades",
+  "masterSha256": "c2c9fd7a61bef691678440ef7675b8149b52b79b44aa3693cb8699d3fce1d00a"
+}

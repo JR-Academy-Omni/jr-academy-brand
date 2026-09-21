@@ -1,0 +1,6 @@
+file 'part0.mp4'
+duration 38
+file 'part1.mp4'
+duration 8
+file 'part2.mp4'
+duration 7.5

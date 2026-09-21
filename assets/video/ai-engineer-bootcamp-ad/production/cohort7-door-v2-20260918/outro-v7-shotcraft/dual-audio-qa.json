@@ -1,0 +1,24 @@
+{
+  "matchingDecodedVideoFrames": 192,
+  "bgmToggle": "same Remotion composition input prop",
+  "voiceSource": "outro-v5-guided/segments/outro-short.mp3",
+  "voiceProvider": "elevenlabs-tts",
+  "voiceModel": "eleven_v3",
+  "soundEvents": [
+    {
+      "frame": 72,
+      "source": "Mixkit1490",
+      "volume": 0.18
+    },
+    {
+      "frame": 120,
+      "source": "Mixkit1490",
+      "volume": 0.14
+    },
+    {
+      "frame": 156,
+      "source": "Mixkit2908",
+      "volume": 0.11
+    }
+  ]
+}

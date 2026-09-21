@@ -1,0 +1,109 @@
+version: 2
+content_id: 2026-07-29-agent-memory
+format: short_video
+production_state: independent-review-passed
+
+files:
+  master_bgm:
+    path: out/master-bgm.mp4
+    sha256: 677c0a4c53d49683a76ef99217d250abc2f23d074f5c7f9867f9ae701300220e
+  master_no_bgm:
+    path: out/master-no-bgm.mp4
+    sha256: 22de3e7798ded0005690193a8f77086eae7f62af771862ca2510261b02496107
+  thumbnail:
+    path: out/cover.png
+    sha256: 4a2df6263086fc57766203ba9d8828e79074be06d52d43d61a9c8d91c4c76f3a
+  captions_sidecar: out/captions.zh-CN.srt
+  transcript: public/narration.txt
+
+video:
+  width: 1080
+  height: 1920
+  aspect_ratio: "9:16"
+  timeline_seconds: 49.0
+  container_duration_seconds_bgm: 49.1
+  container_duration_seconds_no_bgm: 49.0
+  total_frames: 1470
+  fps: 30
+  codec: h264
+
+audio:
+  sample_rate_hz: 96000
+  channels: 2
+  codec: aac
+  final_mix:
+    integrated_lufs_bgm: -13.9
+    integrated_lufs_no_bgm: -13.9
+    true_peak_dbfs_bgm: -2.0
+    true_peak_dbfs_no_bgm: -2.0
+  voice:
+    provider: ElevenLabs
+    voice_name: Amy
+    voice_id: bhJUNIXWQQ94l8eI2VUf
+    model: eleven_v3
+    settings:
+      stability: 0.72
+      similarity_boost: 0.86
+      style: 0.16
+      use_speaker_boost: true
+      tempo: 1.05
+    source_path: public/audio/narration-elevenlabs.wav
+    segments_manifest: public/audio/elevenlabs/manifest.json
+    duration_seconds: 47.713292
+    sha256: faca88955ee95e38a07a915108755609e1aac4a88d5a61510e7a43907a06d22e
+    pronunciation_dictionary:
+      name: JR AI Engineer English Terms v1
+      source_path: production/english-tech-terms.pls
+      sha256: ca615f3df2a768da069ad15d20642474f5b1ad2d02089d0cd25f1d04484e8942
+      controlled_terms:
+        - Agent
+        - Agent Memory
+        - Thread
+        - Context
+        - Context Window
+        - Memory
+        - TypeScript
+        - ID
+    credential_source: JR Academy admin AI Settings
+    system_tts_fallback_allowed: false
+  music:
+    title: AI News Original Cinematic Technology Bed
+    provider: Volcengine Audio Generation 1.0
+    model: seed-audio-1.0-multilingual
+    source: public/audio/music-ai-news-49.mp3
+    derivation: AI News original 42s master stretched to 49s with fades
+    license: JR Academy commissioned original generation
+    local_rights_evidence: /Users/lightman/Documents/sites/jr-academy-ai/output/ai-news/2026-07-29/sources/music-provenance.json
+    sha256: 92d2e5c4077a88c3e140b2022d8ba70c7765f465dace1499077b2f4346008504
+  sfx:
+    source: Mixkit
+    license: Mixkit SFX Free License
+    local_rights_evidence: /Users/lightman/.codex/skills/video-shotcraft/assets/audio/ATTRIBUTION.md
+    files:
+      - sweep-short.mp3
+      - glitch-electric-small.mp3
+      - switch-click-quick.mp3
+      - typewriter-hit-single.mp3
+      - data-scan.mp3
+      - bass-hit-short.mp3
+
+qa:
+  typecheck: passed
+  black_frame_detection: passed
+  bgm_and_no_bgm_video_frames_identical: true
+  frame_md5_digest: d98598f97e9f727141c59a0ac52f5bd892fab905a6e1a18c20c1dc13451cf81b
+  pronunciation_transcript:
+    provider: ElevenLabs Scribe v2
+    path: qa/pronunciation-transcript.json
+    sha256: dbbdb5924bc0a4604ce781d183702082b9b9267d5f64769f9d82945e32e15c15
+    english_terms_recognized: true
+  technical_report: qa/technical-qa.md
+  contact_sheet: qa/v6-pron-contact-sheet.png
+  independent_review: qa/independent-review.md
+  independent_review_state: passed_v6
+  approved_by: null
+
+publishing:
+  scheduled: false
+  published: false
+  public_url_verified: false

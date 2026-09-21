@@ -1,0 +1,18 @@
+{
+  "revision": "door-v4-progressive-project-cards",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "outro",
+      "start": 0.15,
+      "end": 7.85,
+      "text": "从 AI Coding 起步，循序渐进，把项目做成企业级 AI 产品。AI Engineer，第七期。"
+    }
+  ]
+}

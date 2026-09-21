@@ -1,0 +1,18 @@
+{
+  "revision": "door-v3-remotion-outro",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "outro",
+      "start": 0.25,
+      "end": 7.8,
+      "text": "三年打磨，系统学 RAG、Agent，到企业级交付。AI Engineer，第七期。"
+    }
+  ]
+}

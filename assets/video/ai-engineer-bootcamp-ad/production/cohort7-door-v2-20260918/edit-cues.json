@@ -1,0 +1,49 @@
+{
+  "revision": "door-v2-20260918",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "graduate",
+      "start": 1,
+      "end": 6.2,
+      "text": "刚毕业，岗位要两年经验。"
+    },
+    {
+      "id": "worker",
+      "start": 7,
+      "end": 12.8,
+      "text": "工作五年，岗位问：做过企业级AI吗？"
+    },
+    {
+      "id": "recognition",
+      "start": 14,
+      "end": 18.6,
+      "text": "原来，大家都卡在门口。"
+    },
+    {
+      "id": "turn",
+      "start": 19.5,
+      "end": 23.6,
+      "text": "门还在，锁换了。"
+    },
+    {
+      "id": "practice",
+      "start": 24,
+      "end": 31.8,
+      "text": "把需求、权限、评测，做成能交付的项目。"
+    },
+    {
+      "id": "brand",
+      "start": 30.5,
+      "end": 38,
+      "text": "匠人学院，AI Engineer第七期。积累企业级AI实战经验。"
+    }
+  ],
+  "finalDuration": 38
+}

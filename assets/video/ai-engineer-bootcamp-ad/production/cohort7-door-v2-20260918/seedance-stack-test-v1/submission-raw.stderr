@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "error": {
+    "type": "error",
+    "message": "arkruntime: API error: The parameter `content[1]` specified in the request is not valid: invalid image format (detected format); received: \"\". Request id: 0217897108938808d3e4b01d6ad52cd92e5ce15c4762460da0220"
+  }
+}

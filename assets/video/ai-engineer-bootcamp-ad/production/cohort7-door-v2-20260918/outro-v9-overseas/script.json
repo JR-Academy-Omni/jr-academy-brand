@@ -1,0 +1,18 @@
+{
+  "revision": "door-v9-overseas-r1",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "overseas",
+      "start": 0.15,
+      "end": 7,
+      "text": "澳洲、美国、新加坡、马来西亚、日本、韩国，海外华人，都可以上课。"
+    }
+  ]
+}

@@ -45,6 +45,7 @@
 | 联名/赞助商/礼品海报 | A 的 editorial 变体 | `POSTER_DESIGN.md` + 当期局部 `DESIGN.md` | Logo 和商品图必须是真实资产 |
 | 小红书首图/信息卡 | 账号品牌决定 | `POSTER_DESIGN.md` + 账号 Profile | JR 官号才直接套 JR 母品牌 |
 | 电子书 / zine / 招生季专题 | A 或 B 的 zine 表达层 | `DESIGN.md` §16 | zine 是表达层，不是新 token 系统 |
+| 真实新闻 / 采访 / 发布会中文重剪 | A-editorial | `DESIGN.md` §A15 + `hybrid-news-recut` Skill | 真人动态与证据主导；9:16 和 16:9 分别构图；发布另走 `new-media-manager` |
 
 ## 4. Register 选择记录
 

@@ -1,0 +1,13 @@
+Does replaying every chat give an AI agent memory? No. It only gives the model more current context.
+
+Switch threads, or trim the context window, and those details disappear.
+
+Production memory needs three layers: current task state, short-term thread memory, and long-term cross-session memory.
+
+Suppose a developer says, all my projects use TypeScript. Replaying one hundred and twenty-seven messages wastes tokens and buries the preference.
+
+Store one structured record instead, keyed to the user.
+
+On the next task, retrieve that preference only when it is relevant, then inject it into context.
+
+Chat history is raw material. Agent memory is the system that decides what to write, retrieve, update, and delete.

@@ -1,0 +1,92 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "inputs": [
+    {
+      "bytes": 163643,
+      "index": 0,
+      "media": {
+        "probe": {
+          "format": {
+            "duration": "0.040000",
+            "format_name": "image2"
+          },
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "height": 720,
+              "r_frame_rate": "25/1",
+              "width": 1280
+            }
+          ]
+        },
+        "status": "ok"
+      },
+      "path": "first.jpg",
+      "provenance": "Decoded actual finalframe192 of cgt-20260918140026-ale4c; JPEG transport conversion",
+      "provider_url": "unavailable",
+      "role": "first_frame",
+      "same_scene_id": "unavailable",
+      "sha256": "cda877a09ad81ea77cceaf8a9749260d65c2aab05777715c660e44feefd797d7"
+    },
+    {
+      "bytes": 201697,
+      "index": 1,
+      "media": {
+        "probe": {
+          "format": {
+            "duration": "0.040000",
+            "format_name": "image2"
+          },
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "height": 720,
+              "r_frame_rate": "25/1",
+              "width": 1280
+            }
+          ]
+        },
+        "status": "ok"
+      },
+      "path": "last-ten.jpg",
+      "provenance": "Generated same-design ten-layer target, counted8violet+pink+orange",
+      "provider_url": "unavailable",
+      "role": "last_frame",
+      "same_scene_id": "unavailable",
+      "sha256": "153e5692561419c6d1ed965195d75f9638dcebf6ed32431170a1983acc2e0e40"
+    }
+  ],
+  "mode": "first_last_frame",
+  "output_count": 1,
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-finish-v1/generated",
+  "package_sha256": "1ab999a5d817ee5b74cea3e32c155480232355d08d1d5853170de1d369681806",
+  "parameters": {
+    "duration": 5,
+    "generate_audio": true,
+    "ratio": "adaptive",
+    "resolution": "1080p",
+    "watermark": false
+  },
+  "price": {
+    "account_flag": "IsOverdue=false; State=Available; price-refreshed.json",
+    "source": "price-refreshed.json current live lookup",
+    "status": "available",
+    "total_estimate": "unavailable",
+    "unit": "CNY/1000 tokens NV2V1080Completion",
+    "unit_price": 0.077
+  },
+  "prompt": {
+    "bytes": 1046,
+    "path": "PROMPT.txt",
+    "sha256": "b4b76c6da06bcd2d1c263c5e1193dd3b16b33a51f4d0357d09e88f18c89a30fb"
+  },
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "schema_version": "seedance-preflight-fingerprint.v2",
+  "task_count": 1
+}

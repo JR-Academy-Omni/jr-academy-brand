@@ -1,0 +1,42 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "mode": "first_last_frame",
+  "task_count": 1,
+  "output_count": 1,
+  "prompt_file": "PROMPT.txt",
+  "inputs": [
+    {
+      "path": "first.jpg",
+      "role": "first_frame",
+      "provenance": "Decoded actual finalframe192 of cgt-20260918140026-ale4c; JPEG transport conversion"
+    },
+    {
+      "path": "last-ten.jpg",
+      "role": "last_frame",
+      "provenance": "Generated same-design ten-layer target, counted8violet+pink+orange"
+    }
+  ],
+  "parameters": {
+    "duration": 5,
+    "ratio": "adaptive",
+    "resolution": "1080p",
+    "generate_audio": true,
+    "watermark": false
+  },
+  "price": {
+    "status": "available",
+    "source": "price-refreshed.json current live lookup",
+    "unit_price": 0.077,
+    "unit": "CNY/1000 tokens NV2V1080Completion",
+    "total_estimate": "unavailable",
+    "account_flag": "IsOverdue=false; State=Available; price-refreshed.json"
+  },
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-finish-v1/generated",
+  "authorization": "User explicitly requested remaining5seconds finished in one generation and local playback speed adjustment.",
+  "source_of_truth": [
+    "DESIGN.md",
+    "User approved cinematic concept and existing3-layerclip"
+  ],
+  "submission_status": "prepared"
+}

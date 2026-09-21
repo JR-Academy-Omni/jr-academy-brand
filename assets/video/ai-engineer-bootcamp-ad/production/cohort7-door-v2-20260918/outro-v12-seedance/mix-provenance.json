@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    "cgt-20260918140026-ale4c",
+    "cgt-20260918142751-wnruo"
+  ],
+  "newGenerationRequestedSeconds": 5,
+  "edit": {
+    "existingClipSourceSeconds": 8,
+    "existingClipOutputSeconds": 3,
+    "existingClipRate": 2.6666666666666665,
+    "newClipOutputSeconds": 5,
+    "combinedSeconds": 8,
+    "fullMasterSeconds": 53.5
+  },
+  "narration": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speaker": "amy",
+    "receipt": "../outro-v10-stack/voice-receipt.json",
+    "rate": 1
+  },
+  "music": {
+    "source": "../remotion/public/shotcraft/bed.wav",
+    "volume": 0.18,
+    "rate": 1
+  },
+  "sfx": {
+    "source": "../remotion/public/shotcraft/stack-assembly-sfx.wav",
+    "volume": 0.55
+  },
+  "sha256": {
+    "stack-page.mp4": "7a90ff2d38de30a01464dc27ada04d8fba50efe40c12f9da2f4cfea11867a9d2",
+    "AI-Engineer-Cohort-7-seedance-v12.mp4": "6725639bf3fb939d958b297e64f39a6bcd61cd181bb8001e6cd88d087dc07403",
+    "stack-assembly-sfx.wav": "7b5441bd6ad56057f6a19573e2de0e1cfc1d660da63304fde3baafdd72f47673"
+  }
+}

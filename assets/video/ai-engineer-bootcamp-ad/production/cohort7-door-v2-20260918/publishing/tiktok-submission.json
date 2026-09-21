@@ -1,0 +1,36 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"completedAt\":\"2026-09-18T12:14:53.227Z\",\"expiresAt\":1821269668,\"startedAt\":\"2026-09-18T12:14:28.070Z\",\"subjectId\":\"airbotix-publisher\",\"action\":\"publish_now\",\"idempotencyKey\":\"jr-ai-engineer-cohort7-door-20260918-tiktok-paced-v13\",\"status\":\"completed\",\"providerPostId\":\"6aad2b325c5a5e3eefd5f05f\",\"subjectType\":\"service\",\"requestHash\":\"a7a3ab3f2ab774af68bb59f5bc5dd5be6348afe96cb28fe4e953f63ec5e62d51\",\"brandKey\":\"jr-academy\",\"credentialAlias\":\"buffer-tiktok\",\"mediaAssets\":[{\"sizeBytes\":23206959,\"ownedUrl\":\"https://d100udtuki04xa.cloudfront.net/media/jr-academy/a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b.mp4\",\"checksumSha256\":\"a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b\",\"mimeType\":\"video/mp4\",\"originalUrl\":\"https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4\",\"kind\":\"video\"}],\"channelId\":\"6aa69147ea19ca0bde344a89\",\"providerStatus\":\"publishing\"}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "completedAt": "2026-09-18T12:14:53.227Z",
+      "expiresAt": 1821269668,
+      "startedAt": "2026-09-18T12:14:28.070Z",
+      "subjectId": "airbotix-publisher",
+      "action": "publish_now",
+      "idempotencyKey": "jr-ai-engineer-cohort7-door-20260918-tiktok-paced-v13",
+      "status": "completed",
+      "providerPostId": "6aad2b325c5a5e3eefd5f05f",
+      "subjectType": "service",
+      "requestHash": "a7a3ab3f2ab774af68bb59f5bc5dd5be6348afe96cb28fe4e953f63ec5e62d51",
+      "brandKey": "jr-academy",
+      "credentialAlias": "buffer-tiktok",
+      "mediaAssets": [
+        {
+          "sizeBytes": 23206959,
+          "ownedUrl": "https://d100udtuki04xa.cloudfront.net/media/jr-academy/a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b.mp4",
+          "checksumSha256": "a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b",
+          "mimeType": "video/mp4",
+          "originalUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+          "kind": "video"
+        }
+      ],
+      "channelId": "6aa69147ea19ca0bde344a89",
+      "providerStatus": "publishing"
+    }
+  }
+}

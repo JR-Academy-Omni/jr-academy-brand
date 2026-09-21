@@ -1,0 +1,52 @@
+{
+  "provider": "ElevenLabs",
+  "voice": {
+    "name": "Amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "model": "eleven_v3",
+    "languageCode": "zh",
+    "stability": 0.72,
+    "similarityBoost": 0.86,
+    "style": 0.16,
+    "useSpeakerBoost": true,
+    "tempo": 1.05
+  },
+  "segments": [
+    {
+      "id": "01-hook",
+      "text": "把聊天记录全塞给 Agent，它就有记忆了吗？不一定。它只是能看到刚才的对话。聊天历史只是当前会话的 Context，不是一套完整的 Memory 系统。",
+      "direction": "自然中文口语；Agent、Context、Memory 使用发音词典的标准英语读音。",
+      "pauseAfterSeconds": 0.16
+    },
+    {
+      "id": "02-thread",
+      "text": "换一个 Thread，或者 Context 被裁剪，历史信息就可能消失。这不是记忆故障，而是没有设计好 Memory 的边界。",
+      "direction": "语速稍快；Thread、Context、Memory 使用标准英语读音并自然落音。",
+      "pauseAfterSeconds": 0.18
+    },
+    {
+      "id": "03-layers",
+      "text": "工程上至少分三层：当前任务状态、线程内短期记忆、跨会话长期记忆。",
+      "direction": "三层逐级强调，最后一层落稳。",
+      "pauseAfterSeconds": 0.18
+    },
+    {
+      "id": "04-compare",
+      "text": "比如用户说：我的项目都用 TypeScript。重放聊天历史，要带上一百多条消息，还会占用 Context Window。Memory 只需要保存一条结构化的用户喜好。",
+      "direction": "例子自然；TypeScript、Context Window、Memory 使用标准英语读音；一百多条与一条形成清晰反差。",
+      "pauseAfterSeconds": 0.18
+    },
+    {
+      "id": "05-retrieve",
+      "text": "下次执行任务时，Agent 按用户 ID 检索，需要时再把这条用户喜好放进 Context，而不是每次重放整段聊天。",
+      "direction": "像解释生产数据流；Agent、ID、Context 使用标准英语读音。",
+      "pauseAfterSeconds": 0.2
+    },
+    {
+      "id": "06-close",
+      "text": "记住：聊天历史是原料；Agent Memory，才是管理写入、检索和删除的系统。",
+      "direction": "前半句停顿；Agent Memory 使用标准英语读音，后半句像结论而不是广告。",
+      "pauseAfterSeconds": 0
+    }
+  ]
+}

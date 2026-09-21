@@ -1,0 +1,36 @@
+{
+  "voiceReusedWithoutRegeneration": true,
+  "voiceReceipt": "voice-receipt.json",
+  "assets": {
+    "whoosh.mp3": "b88fd5d484251930efd6eca78c4340339908ea29d1e69bd24fb5191a10da4f78",
+    "bed.wav": "5647ac452764efbdf74ff7884f5225a82cacc86e7e4327c7b27bfe7e40bae909",
+    "impact.mp3": "b38888dcdfb4d5c3b13988308b430a0172846dcaa0ccde2feedc8ed4d1d911c2",
+    "voice.wav": "435f30807c4162ec4cfbf30c6f8937b89c403b380153af3eec74a0df786d95fc"
+  },
+  "audioCues": [
+    {
+      "frame": 72,
+      "durationFrames": 14,
+      "asset": "whoosh.mp3",
+      "volume": 0.18,
+      "sourceTrimFrames": 16
+    },
+    {
+      "frame": 120,
+      "durationFrames": 14,
+      "asset": "whoosh.mp3",
+      "volume": 0.14,
+      "sourceTrimFrames": 16
+    },
+    {
+      "frame": 156,
+      "durationFrames": 36,
+      "asset": "impact.mp3",
+      "volume": 0.11,
+      "sourceTrimFrames": 21
+    }
+  ],
+  "bgmGain": 0.22,
+  "voiceTempo": 1.04,
+  "sourcePeakCompensation": "Measured whoosh peak 0.71283s and impact peak0.92523s. Trim16/21frames respectively at24fps, leaving attack peaks ~1.1frames after shot boundary."
+}

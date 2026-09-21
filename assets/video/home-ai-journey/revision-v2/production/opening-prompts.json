@@ -1,0 +1,19 @@
+[
+  {
+    "id": "00-sydney-descent",
+    "duration": 5,
+    "prompt": "Continue seamlessly from the supplied high aerial Sydney Harbour first frame. One unbroken cinematic camera dive follows the subtle coral-red light thread from above the Opera House and Harbour Bridge toward Circular Quay. Maintain real Sydney geography, blue-gold sunrise, grand atmospheric depth and fast but controlled forward descent. Skim above rooftops and move toward the single warm illuminated studio window indicated by the coral path. End with that dark glass window filling almost the entire frame, reflecting the harbour and sunrise, ready for the camera to pass through. Premium global technology brand film, strong parallax, no cut, no drone visible, no people close-up, no text, no letters, no logo, no watermark, no spaceship, no generic city."
+  },
+  {
+    "id": "01-enter-room-open-box",
+    "duration": 5,
+    "last_frame_image": "../references/shot-01-room-jr-box.png",
+    "prompt": "Continue from the exact prior last frame and arrive precisely at the supplied target last frame. The camera passes physically through the Sydney window reflection into the same warm harbour apartment without a cut and finds the same young Chinese male learner from behind at his desk. Preserve the Opera House and Harbour Bridge outside. Push toward the premium physical JR Box on the desk: black and white cube faces with restrained coral and violet edge light. Its top and side panels begin separating with precise mechanical weight, revealing a midnight-blue interior filled with tiny square pixels. Preserve the JR mascot exactly as the human-faced character visible in the target frame: smooth white human-like face mask, black hair silhouette, small horns, black sunglasses and red JR tracksuit; absolutely no cow muzzle, animal snout, nostrils or realistic bull head. End exactly on the supplied room-and-box target composition. No cut, no extra character, no generated words, no fake UI text, no watermark."
+  },
+  {
+    "id": "02-box-to-ai-cosmos",
+    "duration": 5,
+    "last_frame_image": "../references/existing-shot-02-first.png",
+    "prompt": "Continue from the exact room-and-JR-Box frame and arrive precisely at the supplied AI-cosmos target last frame. The JR Box panels finish opening with precise mechanical weight and the camera dives into its midnight-blue interior in one continuous zoom-through. Box panels stretch into a geometric tunnel, then dissolve into blue, white and coral square pixels and a vast AI cosmos. Preserve forward direction and form the same coral-red route. The same young Chinese learner and human-faced JR mascot become small silhouettes ahead; retain black hair, small horns, sunglasses, red tracksuit and smooth white face mask, never a cow muzzle or animal face. End exactly on the target wide coral path, star field and bright horizon so the existing learning-route clip continues naturally. No cut, no readable text, no extra logo, no watermark, no camera reversal."
+  }
+]

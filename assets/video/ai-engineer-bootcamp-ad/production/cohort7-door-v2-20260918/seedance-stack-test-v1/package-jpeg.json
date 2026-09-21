@@ -1,0 +1,43 @@
+{
+  "endpoint": "ep-20260812221158-hb576",
+  "resolved_model": "doubao-seedance-2-5-260628",
+  "mode": "first_last_frame",
+  "task_count": 1,
+  "output_count": 1,
+  "prompt_file": "PROMPT.txt",
+  "inputs": [
+    {
+      "path": "first.jpg",
+      "role": "first_frame",
+      "provenance": "User-approved concept derived standalone first frame; generated this turn"
+    },
+    {
+      "path": "last-three.jpg",
+      "role": "last_frame",
+      "provenance": "Generated from first frame this turn; visually verified three layers"
+    }
+  ],
+  "parameters": {
+    "duration": 8,
+    "ratio": "adaptive",
+    "resolution": "1080p",
+    "generate_audio": true,
+    "watermark": false
+  },
+  "price": {
+    "status": "available",
+    "source": "live arkcli pricing models --model doubao-seedance-2-5 2026-09-18",
+    "unit_price": 0.077,
+    "unit": "CNY/1000 tokens NV2V1080Completion",
+    "total_estimate": "unavailable",
+    "account_flag": "IsOverdue=false; State=Available; price-refreshed.json"
+  },
+  "output_directory": "/Users/lightman/Documents/sites/jr-academy-ai/jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/cohort7-door-v2-20260918/seedance-stack-test-v1/generated",
+  "authorization": "User explicitly approved first-layer assembly Seedance test this turn; one task; no automatic retries.",
+  "source_of_truth": [
+    "DESIGN.md",
+    "Current conversation approved storyboard"
+  ],
+  "submission_status": "transport_recovery_no_created_task",
+  "transport_recovery": "PNG URL rejected by provider format detection in precreate validation. Convert to standard JPEG, inline small images, same creative. No generated tasks/output. Prior raw error stored."
+}

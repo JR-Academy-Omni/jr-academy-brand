@@ -1,0 +1,24 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-5/2129380310/Video/mra51-34000181906202-tgc_e204ed312471caffff00000000000000000000434348696987120/cgt-20260918100043-15arm.mp4?X-Tos-Algorithm=TOS4-HMAC-SHA256&X-Tos-Credential=AKLTYWJkZTExNjA1ZDUyNDc3YzhjNTM5OGIyNjBhNDcyOTQ%2F20260918%2Fcn-beijing%2Ftos%2Frequest&X-Tos-Date=20260918T020513Z&X-Tos-Expires=86400&X-Tos-Max-Requests=100&X-Tos-Signature=d7816d4db7d1dd3edad6cecc5a4ac9e1c9aeafe993329feea249c054e7a3f226&X-Tos-SignedHeaders=host"
+      },
+      "created_at": 1789696843,
+      "execution_expires_after": 172800,
+      "framespersecond": 24,
+      "generate_audio": true,
+      "id": "cgt-20260918100043-15arm",
+      "model": "doubao-seedance-2-5-260628",
+      "seed": 96259,
+      "service_tier": "default",
+      "status": "succeeded",
+      "updated_at": 1789697113,
+      "usage": {
+        "completion_tokens": 1460025,
+        "total_tokens": 1460025
+      }
+    }
+  ]
+}

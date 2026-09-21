@@ -1,0 +1,117 @@
+[
+  {
+    "id": "05-hero-identities",
+    "task_id": "cgt-20260728125349-6f4l2",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-closing/05-hero-identities.mp4",
+    "last_frame": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-closing/05-hero-identities-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue from the exact prior last frame of the monumental voxel ecosystem corridor and arrive precisely at the supplied cinematic hero-world target last frame. Preserve forward camera direction, coral runway, cool-white portal and warm-copper portal. The corridor opens into three layered AI capability worlds connected in depth. Preserve one same young Chinese male learner throughout as his wardrobe evolves continuously without changing face, age or hairstyle: an AI filmmaker in a sculptural dark-red creator jacket controlling volumetric light and camera rigs, an AI engineer in a refined graphite utility suit beside elegant robotics, then an AI founder-presenter in a tailored cream-and-black futuristic coat before a global projection. Original heroic archetypes with dramatically varied silhouettes, posture and costume, inspired only by premium ensemble cinema; do not resemble or copy Marvel, DC, anime or game characters. Preserve the small JR mascot exactly as the human-faced holographic guide in the target frame: smooth white face mask, black hair, small horns, sunglasses, red JR tracksuit, no cow muzzle, snout, nostrils or realistic bull head. End exactly on the supplied layered hero-world composition. Strong parallax, no cuts, no office boardroom, no stock-photo people, no weapons, no capes, no text, no logo, no watermark."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "first_frame"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "last_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260728125349-6f4l2",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521443015500000000000000000000ffffac1919e9ae5c4c.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521443015500000000000000000000ffffac1919e9ae5c4c_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 108900,
+        "total_tokens": 108900
+      },
+      "created_at": 1785214430,
+      "updated_at": 1785214702,
+      "seed": 1498,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "06-sydney-outcome-box-close",
+    "task_id": "cgt-20260728130342-wv6ck",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-closing/06-sydney-outcome-box-close.mp4",
+    "last_frame": "jr-academy-brand/assets/video/home-ai-journey/revision-v2/raw-closing/06-sydney-outcome-box-close-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue from the exact cinematic hero-world last frame in one seamless forward move. Keep the same young Chinese male hero visible in his distinctive dark-red technical creator jacket and do not change his face, age or hairstyle. The layered capability worlds fold into an unmistakable Sydney Harbour creative space at golden-blue hour, with the Opera House and Harbour Bridge outside. Reveal purposefully different silhouettes doing real work: a Black female creative director in sculptural cobalt clothing operating a physical light-and-camera installation, a South Asian female scientist in an elegant utility coat working with a compact robotic prototype, and an older Australian maker-educator in warm workwear guiding a mixed-reality learning table. They never become generic office staff sitting around laptops and never pose for a stock photo. Keep the JR mascot only as the same small flat holographic human-faced guide already present in the first frame: smooth white human-like face mask, black hair silhouette, small horns, sunglasses and red JR tracksuit; absolutely no cow muzzle, animal snout, nostrils or realistic bull face. Coral and blue pixels converge toward a small blank dark plinth in the center foreground, reserved for an official JR Box closing overlay in post. End stable with the left third dark and calm for official headline and CTA. No readable UI, no text, no generated logo, no watermark, no stock-photo smiles."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "<local-reference-image-redacted>"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260728130342-wv6ck",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521502761800000000000000000000ffffac193b0020c75e.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178521502761800000000000000000000ffffac193b0020c75e_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 108900,
+        "total_tokens": 108900
+      },
+      "created_at": 1785215027,
+      "updated_at": 1785215237,
+      "seed": 25516,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 5,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  }
+]

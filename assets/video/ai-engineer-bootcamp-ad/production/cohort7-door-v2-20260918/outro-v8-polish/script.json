@@ -1,0 +1,18 @@
+{
+  "revision": "door-v5-guided-project-r1",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "outro-short",
+      "start": 0.15,
+      "end": 7.85,
+      "text": "从 AI Coding 开始，带你一步步做出企业级 AI 项目。AI Engineer，第七期。"
+    }
+  ]
+}

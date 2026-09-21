@@ -1,0 +1,31 @@
+{
+  "endpoint": "ep-20260722120442-whqf6",
+  "inputs": [],
+  "mode": "text-to-video-chain",
+  "output_count": 5,
+  "output_directory": "../raw/cohort-7-seedance",
+  "package_sha256": "14c2dcf7673827855783719ae7ae288a06fb890e31a4416cace4c3d0ce252adf",
+  "parameters": {
+    "chain": "task 1 is text-only; each succeeded last frame becomes the next task's first frame",
+    "duration": 8,
+    "generate_audio": false,
+    "ratio": "16:9",
+    "reference_images": "none",
+    "resolution": "720p",
+    "return_last_frame": true,
+    "watermark": false
+  },
+  "price": {
+    "reason": "Exact charge item will remain unresolved until provider response identifies the billed modality",
+    "source": "arkcli pricing models --model doubao-seedance-2-0 returned charge items but no unambiguous text-to-video chain mapping for this request",
+    "status": "unavailable"
+  },
+  "prompt": {
+    "bytes": 4983,
+    "path": "cohort-7-prompts.json",
+    "sha256": "6a7aa42bf953847bac8a0cd00f55a2a49f4c3a9eb9630753fbe21d8fd4b02085"
+  },
+  "resolved_model": "doubao-seedance-2-0-260128",
+  "schema_version": "seedance-preflight-fingerprint.v2",
+  "task_count": 5
+}

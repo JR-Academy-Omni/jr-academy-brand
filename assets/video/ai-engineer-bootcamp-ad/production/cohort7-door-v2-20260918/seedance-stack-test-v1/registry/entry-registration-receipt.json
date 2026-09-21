@@ -1,0 +1,48 @@
+{
+  "registeredAt": "2026-09-18T06:12:32.417Z",
+  "backend": "https://api.jiangren.com.au",
+  "entry": {
+    "id": "ai-engineer-cohort7:2026-09-18:internal-review:stack-seedance-proof",
+    "episodeId": "ai-engineer-cohort7:2026-09-18:door-v2",
+    "series": "ai-engineer-cohort7-ad",
+    "seriesLabel": "AI Engineer 第七期宣传",
+    "platform": "internal-review",
+    "date": "2026-09-18",
+    "title": "AI Engineer 第七期｜Seedance 一层到三层动作试片",
+    "description": "8秒技术动作验证，非完整十层广告。独立模块依次落位，首尾帧约束一层到三层。采用Seedance主体动画与机械音效，叠加已批准ElevenLabs Amy课程旁白及广告配乐。镜头上升幅度较克制，待用户评估视觉方向；不替换现有广告母版，未发布社媒。",
+    "durationSeconds": 8,
+    "status": "verified_internal",
+    "verifiedAt": "2026-09-18T06:07:36.667137+00:00",
+    "videoUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/Seedance-stack-motion-test.mp4",
+    "coverUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/cover.jpg"
+  },
+  "assets": {
+    "video": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/Seedance-stack-motion-test.mp4",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/Seedance-stack-motion-test.mp4",
+      "sha256": "c2c9fd7a61bef691678440ef7675b8149b52b79b44aa3693cb8699d3fce1d00a",
+      "contentType": "video/mp4",
+      "contentLength": 19449292,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    },
+    "cover": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/cover.jpg",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-stack-seedance-proof/cover.jpg",
+      "sha256": "e48da22c21164c96049380b7f7dc9aa91c51c29bfc64b4c96e058e8917eb8929",
+      "contentType": "image/jpeg",
+      "contentLength": 127713,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    }
+  },
+  "registry": {
+    "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/index.json",
+    "previousCount": 167,
+    "nextCount": 168,
+    "readBackStatus": 200,
+    "sha256": "4dee15675f93aa3bb731396c6d01b82abc0c08bdb42adce63b892bdf2b86619f"
+  }
+}

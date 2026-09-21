@@ -1,0 +1,48 @@
+{
+  "registeredAt": "2026-09-18T03:02:16.707Z",
+  "backend": "https://api.jiangren.com.au",
+  "entry": {
+    "id": "ai-engineer-cohort7:2026-09-18:internal-review:door-v2-landscape",
+    "episodeId": "ai-engineer-cohort7:2026-09-18:door-v2",
+    "series": "ai-engineer-cohort7-ad",
+    "seriesLabel": "AI Engineer 第七期宣传",
+    "platform": "internal-review",
+    "date": "2026-09-18",
+    "title": "门还在，锁换了｜AI Engineer 第七期 · Remotion片尾",
+    "description": "内部审片版，38秒横版。前30秒保留原剧情，最后8秒改为Remotion动态课程路径：RAG、Agent/MCP、评测治理与企业级交付。ElevenLabs Amy eleven_v3新旁白。三年打磨为课程方提供的信息；未采用未经独立核实的全球唯一表述。尚未批准社媒发布。",
+    "durationSeconds": 38,
+    "status": "verified_internal",
+    "verifiedAt": "2026-09-18T03:02:07.106830+00:00",
+    "videoUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/AI-Engineer-Cohort-7-Remotion-outro-v3.mp4",
+    "coverUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/cover.jpg"
+  },
+  "assets": {
+    "video": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/AI-Engineer-Cohort-7-Remotion-outro-v3.mp4",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/AI-Engineer-Cohort-7-Remotion-outro-v3.mp4",
+      "sha256": "9e57603843c033d0287a4e38a3a4d2edcdedf733a6be84ca726f67f0a21b0e79",
+      "contentType": "video/mp4",
+      "contentLength": 14962323,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    },
+    "cover": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/cover.jpg",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v3-remotion/cover.jpg",
+      "sha256": "fd66655ace5fede7d750e0c6881e053472886b065cef5abce041cc393698064f",
+      "contentType": "image/jpeg",
+      "contentLength": 72429,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    }
+  },
+  "registry": {
+    "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/index.json",
+    "previousCount": 167,
+    "nextCount": 167,
+    "readBackStatus": 200,
+    "sha256": "5847a7cdce4f5a9e64827d2f7aad35b62718bb5caf837dc1e66910e5fe9a3e95"
+  }
+}

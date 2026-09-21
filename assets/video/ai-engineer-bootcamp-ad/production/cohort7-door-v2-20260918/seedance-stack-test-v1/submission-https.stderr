@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "error": {
+    "type": "error",
+    "message": "arkruntime.create_content_generation_task: arkruntime: API error: The parameter `content[0]` specified in the request is not valid: invalid image format (detected format); received: \"\". Request id: 02178971059496791b94d62e219899eaebadcce7b395a23dd2cdf"
+  }
+}

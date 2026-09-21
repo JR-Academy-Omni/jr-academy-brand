@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cohort-7-01-lobby-entry",
+    "task_id": "cgt-20260917145752-69fq4",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-01-lobby-entry.mp4",
+    "last_frame": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-01-lobby-entry-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Text-to-video opening shot for a premium live-action feature-film recruitment commercial. A recent graduate in a cream shirt with a black backpack and olive folder containing a rolled diploma walks on the left; an experienced software engineer in a charcoal jacket carries a cardboard box with a worn employee badge, coffee mug and small wilted plant on the right. They enter a modern employment lobby at rainy dawn. Make a slow forward dolly between them across wet floor reflections toward two brushed-steel self-service recruitment gates. Keep both people full-size in the architecture and let the props tell the story. End with the diploma and worn badge moving toward separate scanners, ready for the next shot. Grounded 28mm commercial cinematography, restrained acting, cold blue-gray light, realistic rain and glass. No dialogue, no music, no logos, no captions, no readable generated text, no holograms, no neon cyberpunk, no camera reversal, no new foreground people."
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260917145752-69fq4",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962827322000000000000000000000ffffac1446b2b61c02.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962827322000000000000000000000ffffac1446b2b61c02_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1789628273,
+      "updated_at": 1789628545,
+      "seed": 93470,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0,
+      "output_format": "mp4"
+    }
+  },
+  {
+    "id": "cohort-7-02-rejected-gates",
+    "task_id": "cgt-20260917150254-wd8t9",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-02-rejected-gates.mp4",
+    "last_frame": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-02-rejected-gates-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue the established two characters and rainy employment lobby as one seamless live-action shot. At two brushed-steel recruitment gates, the graduate places his rolled diploma on the left scanner and a restrained red failure light appears; the experienced engineer places his worn employee badge on the right scanner and another red failure light appears. Use brief tactile inserts of paper fibers, the scratched badge, the cardboard box and their controlled, almost embarrassed reactions. Track laterally from the gates toward a cold metal door ahead. End with both standing before the closed door and a small red lock indicator. Dry comedy through silence and timing. High-end realistic 50mm commercial cinematography, no dialogue, no music, no logos, no captions, no readable generated text, no exaggerated sadness, no sci-fi effects, no new characters."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962827322000000000000000000000ffffac1446b2b61c02_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260917150254-wd8t9",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962857530900000000000000000000ffffac1926adc52c2a.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962857530900000000000000000000ffffac1926adc52c2a_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1789628575,
+      "updated_at": 1789628862,
+      "seed": 28898,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0,
+      "output_format": "mp4"
+    }
+  },
+  {
+    "id": "cohort-7-03-hidden-door",
+    "task_id": "cgt-20260917150805-b8htt",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-03-hidden-door.mp4",
+    "last_frame": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-03-hidden-door-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue from the same locked metal door and the same two characters in the same employment lobby. Hold the silence for one beat. A calm female building attendant enters from the side, takes out a small brass key and unlocks an understated frosted-glass door hidden beside the cold metal door. Push slowly toward the turning key, then pass through the opening as warm amber light spills into the blue-gray lobby. Preserve the graduate's cream shirt, black backpack and olive folder; preserve the engineer's charcoal jacket and cardboard box. End at the threshold with a warm corridor visible beyond. No readable generated text, no logos, no captions, no dialogue, no holograms, no portal, no neon, no camera reversal, no architecture change."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962857530900000000000000000000ffffac1926adc52c2a_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260917150805-b8htt",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962888629200000000000000000000ffffac1742e832d018.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962888629200000000000000000000ffffac1742e832d018_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1789628886,
+      "updated_at": 1789629108,
+      "seed": 91989,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0,
+      "output_format": "mp4"
+    }
+  },
+  {
+    "id": "cohort-7-04-project-training",
+    "task_id": "cgt-20260917151233-6vjxk",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-04-project-training.mp4",
+    "last_frame": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-04-project-training-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue seamlessly through the supplied warm doorway frame. Enter the same compact project training room and preserve the same two characters, the same attendant only if already visible, and coherent architecture. Show grounded enterprise AI project work without making a screen the subject: the graduate writes a concrete business requirement on a whiteboard; the engineer lays out a printed access-control matrix, source-evidence cards and a small evaluation checklist; a red-clipped failed test sheet is stopped; they revise the retrieval and approval flow on paper, replace the red clip with a green verification stamp and file an audit record marked for staging. Keep any laptop or monitor small, ordinary and softly out of focus with no readable UI. Use tactile over-shoulder and macro inserts of hands, marker, paper, binder tabs, evidence cards and desk lamp. Camera glides forward with rising confidence, warm amber and coral practical light, realistic collaboration, no lecture pose, no robots, no holograms, no giant screens, no logos, no captions, no readable generated text."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962888629200000000000000000000ffffac1742e832d018_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260917151233-6vjxk",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962915418500000000000000000000ffffac1906315f6965.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962915418500000000000000000000ffffac1906315f6965_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1789629154,
+      "updated_at": 1789629354,
+      "seed": 74090,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0,
+      "output_format": "mp4"
+    }
+  },
+  {
+    "id": "cohort-7-05-verified-exit",
+    "task_id": "cgt-20260917151612-pfhn6",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-05-verified-exit.mp4",
+    "last_frame": "jr-academy-brand/assets/video/ai-engineer-bootcamp-ad/production/raw/cohort-7-seedance/cohort-7-05-verified-exit-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue seamlessly from the supplied final training frame. Return through the same warm corridor into the same employment lobby at early sunrise, preserving the exact graduate, engineer, wardrobe, props and architecture. They carry a slim project binder containing the approved requirement, access matrix and green evaluation sheet; no laptop display is shown. They arrive at the same two turnstiles. The green status lights activate one after another. The camera settles into a stable backlit wide shot as they walk together through the glass entrance toward warm daylight and the city beyond. Leave clean negative space in the upper center and end on a stable neutral frame for deterministic brand and CTA compositing. No readable text, no logos, no captions, no dialogue, no music, no new people, no camera reversal, no cyberpunk, no fake Chinese characters, no giant screens, no watermark."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962915418500000000000000000000ffffac1906315f6965_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260917151612-pfhn6",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962937288900000000000000000000ffffac174213323c9b.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178962937288900000000000000000000ffffac174213323c9b_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1789629372,
+      "updated_at": 1789629537,
+      "seed": 62763,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0,
+      "output_format": "mp4"
+    }
+  }
+]

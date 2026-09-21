@@ -1,0 +1,113 @@
+{
+  "provider": "Volcengine Seed-TTS 2.0",
+  "resourceId": "seed-tts-2.0",
+  "speaker": "zh_male_taocheng_uranus_bigtts",
+  "sampleRate": 24000,
+  "generatedAt": "2026-07-24T02:51:41.464Z",
+  "lines": [
+    {
+      "id": "01",
+      "text": "用户看到的，只是一句回答。",
+      "start": 0.2,
+      "end": 2.55,
+      "speechRate": -8,
+      "loudnessRate": -5,
+      "deliveryTempo": 1.1,
+      "direction": "用克制、神秘、略带悬念的广告旁白语气。前半句轻，最后“一句回答”落稳。",
+      "filename": "01.mp3",
+      "bytes": 21165,
+      "sha256": "f031fdf32ac78f15dc690e9f1f69551f08571bd89b201ecc7ad49c74d17404b0"
+    },
+    {
+      "id": "02",
+      "text": "但在它背后，是一整套正在运行的 AI 系统。",
+      "start": 3,
+      "end": 6.45,
+      "speechRate": -2,
+      "loudnessRate": 0,
+      "deliveryTempo": 1.12,
+      "direction": "语气逐渐打开，强调“背后”和“整套 AI 系统”，像发现隐藏在屏幕后面的世界。",
+      "filename": "02.mp3",
+      "bytes": 26541,
+      "sha256": "a00f597fcd3cd56e2bed79d08623b2c764568a172ffab01c6fbd92000d4d5dbd"
+    },
+    {
+      "id": "03",
+      "text": "模型要理解 Context，RAG 要找到证据，Agent 要调用正确的工具。",
+      "start": 8,
+      "end": 12.8,
+      "speechRate": 8,
+      "loudnessRate": 3,
+      "deliveryTempo": 1.3,
+      "direction": "有清晰的推进感。Context、RAG、Agent 三个词分别加重，像系统一层一层启动。",
+      "filename": "03.mp3",
+      "bytes": 43629,
+      "sha256": "5d3c91b5f984edb31bef8691ebecfcc197fb82f1d577b1030e4c232b40c80fbb"
+    },
+    {
+      "id": "04",
+      "text": "而负责把模型、数据和工具变成产品的岗位，叫 AI Engineer。",
+      "start": 15,
+      "end": 19.75,
+      "speechRate": 0,
+      "loudnessRate": 6,
+      "deliveryTempo": 1.22,
+      "direction": "坚定、有揭示感。前半句蓄力，明显强调最后的岗位名称“AI Engineer”。",
+      "filename": "04.mp3",
+      "bytes": 41901,
+      "sha256": "272a89ba316c8825939d85bc7868e5858a2cfc9e3d144e4692bea26b8e8968df"
+    },
+    {
+      "id": "05",
+      "text": "会调用 API，只是起点。能把 AI 做成稳定、可信、可以交付的产品，才是真正的工程能力。",
+      "start": 20,
+      "end": 26.05,
+      "speechRate": 15,
+      "loudnessRate": 5,
+      "deliveryTempo": 1.08,
+      "direction": "专业、有力量。“只是起点”短促停顿；后半句逐层加强，强调“稳定、可信、可以交付”。",
+      "filename": "05.mp3",
+      "bytes": 49197,
+      "sha256": "8ef4515f999d421b7f5f4949dcefbfdc09b4cff874c6d1ae7924694802762703"
+    },
+    {
+      "id": "06",
+      "text": "在匠人学院，用三个月，从 Context、RAG、MCP，一路做到 Agent、Multi-Agent 与 Evals。",
+      "start": 26,
+      "end": 33.55,
+      "speechRate": 10,
+      "loudnessRate": 5,
+      "deliveryTempo": 1,
+      "direction": "明亮、自信，像课程正式发布。技术名词逐个清晰念出，结尾 Evals 有向上的收束感。",
+      "filename": "06.mp3",
+      "bytes": 61485,
+      "sha256": "3f0c21c8168349cac97253bd7b1aa5a9580eba5fc3c5bb7a3b382a500ccefc72"
+    },
+    {
+      "id": "07",
+      "text": "如果你已经会写代码，下一步，就让自己具备 AI Engineer 的完整能力。",
+      "start": 34,
+      "end": 38,
+      "speechRate": 20,
+      "loudnessRate": 10,
+      "deliveryTempo": 1.07,
+      "direction": "直接对听众发出行动号召。前半句诚恳，“下一步”之后明显抬升，结尾有推动力。",
+      "filename": "07.mp3",
+      "bytes": 31149,
+      "sha256": "c60c90de2b8964877d36f977265206dbf75b12f111e398ed5f24b5797757006c"
+    },
+    {
+      "id": "08",
+      "text": "匠人学院 AI Engineer Bootcamp。",
+      "start": 38,
+      "end": 40,
+      "speechRate": 15,
+      "loudnessRate": 8,
+      "deliveryTempo": 1.18,
+      "direction": "品牌收束，沉稳有力。分别强调“匠人学院”和“AI Engineer Bootcamp”，结尾干净坚定。",
+      "filename": "08.mp3",
+      "bytes": 18669,
+      "sha256": "c612f758829b76e8442494b4035355bafb882030628e7f49f2658f8b4844ff34"
+    }
+  ]
+}

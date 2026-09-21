@@ -1,0 +1,10 @@
+{
+  "provider": "elevenlabs-tts",
+  "model": "eleven_v3",
+  "voiceGain": 1.2,
+  "delayMs": 150,
+  "pageDurationSeconds": 7.5,
+  "sourceVoiceReceipt": "voice-receipt.json",
+  "processedVoiceSha256": "695a228d9afc073b5887790ff1c5cc8b7fb3b0ecb38f34e3e46d5d6af72ecdaf",
+  "previousMaster": "outro-v8-polish/AI-Engineer-Cohort-7-polish-v8.mp4"
+}

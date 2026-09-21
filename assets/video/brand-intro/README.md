@@ -1,5 +1,22 @@
 # JR Academy brand intro
 
+- `jr-academy-brand-intro-v2.mp4`: 1.50-second vertical delivery cut,
+  1080×1920, 30fps, H.264/AAC 48kHz. This is the reusable AI news opener.
+- `jr-academy-seedance-raw-v2.mp4`: 5.04-second vertical Seedance 2.0 source
+  generation at 720×1280/24fps.
+- Seedance task: `cgt-20260724203855-j894g`
+- Model: `doubao-seedance-2-0-260128`
+- V2 direction: a coral-red lacquered metal tunnel resolves around the official
+  JR box, then becomes a portal into the first news card. Seedance supplies only
+  the text-free material and camera move; the official JR box is composited in
+  Remotion.
+- V2 final SHA256:
+  `d6019d0d6df3a21839b45d21044748f740f3efb5507a1c422de36f7e1acc1a44`
+- V2 raw SHA256:
+  `5b1057ff4daa49eb89bd7e9e23eab87be93f142c6c16dcb2026484d2e17b6ba4`
+
+## Legacy V1
+
 - `jr-academy-brand-intro-v1.mp4`: 1.63-second delivery cut, 1280×720, H.264/AAC.
 - `jr-academy-seedance-raw-v1.mp4`: 5.09-second Seedance 2.0 source generation.
 - Seedance task: `cgt-20260723102744-zm7r2`

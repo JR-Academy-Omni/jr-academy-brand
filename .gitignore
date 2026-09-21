@@ -15,3 +15,15 @@ dist/
 .cache/
 __pycache__/
 *.pyc
+
+# 视频制作中间产物不入库（1.8GB 教训）——成品走 S3，仓库只留 README/manifest/脚本
+assets/video/**/*.mp4
+assets/video/**/*.mov
+assets/video/**/*.wav
+assets/video/**/*.mp3
+assets/video/**/*.aiff
+assets/video/**/*.m4a
+assets/video/**/*.png
+assets/video/**/*.jpg
+assets/video/**/*.jpeg
+assets/video/**/*.zip

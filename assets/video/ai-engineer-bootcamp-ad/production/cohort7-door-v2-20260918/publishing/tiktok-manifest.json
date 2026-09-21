@@ -1,0 +1,42 @@
+{
+  "platform": "tiktok",
+  "link_policy": {
+    "account_key": "tiktok--jr-academy",
+    "platform": "tiktok",
+    "passed": true,
+    "detected_links": [],
+    "checked_at": "2026-09-18T12:14:01.437792+00:00",
+    "checked_by": "Codex: Vision OCR + barcode detection at 1fps and cover; approved scripts inspected",
+    "surfaces": {
+      "frame_ocr": {
+        "passed": true,
+        "detected_links": []
+      },
+      "cover_ocr": {
+        "passed": true,
+        "detected_links": []
+      },
+      "subtitles": {
+        "passed": true,
+        "detected_links": []
+      },
+      "transcript": {
+        "passed": true,
+        "detected_links": []
+      },
+      "end_card": {
+        "passed": true,
+        "detected_links": []
+      },
+      "qr_codes": {
+        "passed": true,
+        "detected_links": []
+      }
+    }
+  },
+  "video": "../outro-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+  "approval": "explicit user request to publish this reviewed Chinese landscape ad",
+  "audio": "existing ElevenLabs Amy eleven_v3; original generated music",
+  "qa_scope": "Prior decode/visual checks and user reviewed edit; current 1fps OCR and barcode scan, not frame exhaustive",
+  "cover": "Video frame offset 17000ms; separate generated cover retained as supporting asset"
+}

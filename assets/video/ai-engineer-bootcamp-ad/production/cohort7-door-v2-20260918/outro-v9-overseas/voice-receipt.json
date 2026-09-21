@@ -1,0 +1,19 @@
+{
+  "provider": "elevenlabs-tts",
+  "model": "eleven_v3",
+  "speakerKey": "amy",
+  "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+  "scriptRevision": "door-v9-overseas-r1",
+  "scriptSha256": "fa77a2a44126329bdd545aa80ef7b9830e6890fee2c8675d9bba2acd2d395b4f",
+  "generatedThrough": "backend TtsService with real AiSettingsService and database model",
+  "generatedAt": "2026-09-18T04:50:02.550Z",
+  "usageRights": "JR Academy original advertising narration under configured ElevenLabs account",
+  "segments": [
+    {
+      "id": "overseas",
+      "audioSha256": "b7640bbef841849d78aac8cfef767bc51650f0b67ed3a4aef9e6739ac8e29cf9",
+      "textSha256": "ab33b59f754684c8a2e53dee0e7033697f11f1b7eeddfff65d74b1eafcf658da",
+      "bytes": 108713
+    }
+  ]
+}

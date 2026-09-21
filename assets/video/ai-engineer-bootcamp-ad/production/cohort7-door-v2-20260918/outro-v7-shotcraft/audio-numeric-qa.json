@@ -1,0 +1,18 @@
+{
+  "finalPeakDBFS": -2.2858059406280518,
+  "noBgmPeakDBFS": -2.2876639366149902,
+  "bothAudioPresent": true,
+  "bgmChangesAudio": true,
+  "sourceSFX": [
+    {
+      "file": "whoosh.mp3",
+      "peakOffsetSeconds": 0.7128333333333333,
+      "peakDBFS": -3.053971290588379
+    },
+    {
+      "file": "impact.mp3",
+      "peakOffsetSeconds": 0.9252291666666667,
+      "peakDBFS": 2.201509714126587
+    }
+  ]
+}

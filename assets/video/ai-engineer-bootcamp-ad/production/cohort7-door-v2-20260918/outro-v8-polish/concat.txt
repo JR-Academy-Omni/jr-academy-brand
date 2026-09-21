@@ -1,0 +1,4 @@
+file 'body-video.mp4'
+duration 30
+file 'outro-normalized.mp4'
+duration 8

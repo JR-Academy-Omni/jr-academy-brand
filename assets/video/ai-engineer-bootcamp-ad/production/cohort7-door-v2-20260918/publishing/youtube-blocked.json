@@ -1,0 +1,14 @@
+{
+  "status": "blocked_pre_publish_capability",
+  "submitted": false,
+  "credentialAlias": "buffer-ozitquan-jr",
+  "brandKey": "jr-academy",
+  "channelId": "6aa55e51cd8b9c702c57b59f",
+  "reasons": [
+    "Hub current media-guide: Buffer YouTube supports only square/portrait Shorts, not approved landscape master",
+    "Custom thumbnail unsupported by governed provider route",
+    "Chinese audio policy requires verified automatic-dubbing disabled; no current verified evidence or Hub control available"
+  ],
+  "policy": "jr-omni/new-media/publishing/PIPELINE.md:136",
+  "asset": "../outro-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4"
+}

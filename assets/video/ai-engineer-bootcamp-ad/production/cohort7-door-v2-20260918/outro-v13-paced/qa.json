@@ -1,0 +1,21 @@
+{
+  "decode": "pass",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "duration": "48.458333"
+      },
+      {
+        "codec_type": "audio",
+        "duration": "48.141000"
+      }
+    ],
+    "format": {
+      "duration": "48.458333"
+    }
+  },
+  "visualCheck": "contact sheet reviewed"
+}

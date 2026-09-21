@@ -1,0 +1,48 @@
+{
+  "registeredAt": "2026-09-18T10:15:48.196Z",
+  "backend": "https://api.jiangren.com.au",
+  "entry": {
+    "id": "ai-engineer-cohort7:2026-09-18:internal-review:door-v2-landscape",
+    "episodeId": "ai-engineer-cohort7:2026-09-18:door-v2",
+    "series": "ai-engineer-cohort7-ad",
+    "seriesLabel": "AI Engineer 第七期宣传",
+    "platform": "internal-review",
+    "date": "2026-09-18",
+    "title": "门还在，锁换了｜AI Engineer 第七期 · 十层技术栈与海外招生",
+    "description": "48.5秒内部审片。开头30秒剧情以1.2倍速压缩为25秒，音频同步变速保持音调；后续课程介绍、十层技术栈与海外六国页保持正常速度。复用既有素材，无新增Seedance生成。未获社媒发布授权。",
+    "durationSeconds": 48.5,
+    "status": "verified_internal",
+    "verifiedAt": "2026-09-18T10:15:17.845406+00:00",
+    "videoUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+    "coverUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/cover.jpg"
+  },
+  "assets": {
+    "video": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+      "sha256": "a1ddc4b25e17d98fd2f8cb93eb335241ee47876f4027876ea732f6dd7963c28b",
+      "contentType": "video/mp4",
+      "contentLength": 23206959,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    },
+    "cover": {
+      "key": "video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/cover.jpg",
+      "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/cover.jpg",
+      "sha256": "d38e227d50703aab0c9176337f9fd8bf827acc9e29f9744f270ae536e046fbdd",
+      "contentType": "image/jpeg",
+      "contentLength": 120654,
+      "presignStatus": 200,
+      "uploadStatus": 200,
+      "readBackStatus": 200
+    }
+  },
+  "registry": {
+    "publicUrl": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/index.json",
+    "previousCount": 168,
+    "nextCount": 168,
+    "readBackStatus": 200,
+    "sha256": "f587b44a3ef8747f650452cf1a57958ad7a324ee3bc0655d784dcfc0bd2bdaaa"
+  }
+}

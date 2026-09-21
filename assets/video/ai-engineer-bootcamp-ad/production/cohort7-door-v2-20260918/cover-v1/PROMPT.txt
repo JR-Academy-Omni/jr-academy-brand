@@ -1,0 +1,14 @@
+Create one finished cinematic advertising VIDEO COVER for JR Academy AI Engineer cohort 7, landscape 16:9, 1920x1080 or higher same ratio. Use case ads-marketing. This is a premium Chinese short-film key art with excellent thumbnail readability, not a slide.
+References: image1 is the actual film characters and muted teal office / door aesthetic. Preserve identities and wardrobe of the young Chinese woman holding diploma/folder and the Chinese male employee with glasses and ID badge. Do not copy subtitles. Image2 is the official white JR Academy logo; insert this supplied logo faithfully as a small clean brand lockup at upper left, correct proportions and no redesign. Image3 is the coral/purple glass ten-layer tower from the film, a subtle supporting motif visible beyond the door, not the dominant subject.
+Composition: left ~48% dark ink/teal negative space with massive brilliantly typeset Chinese headline, right ~52% cinematic close medium shot of both characters beside a normal-sized glass office entry door. Woman looks at man with restrained rueful humor; he examines his old access card, realizing access requirements changed. Soft warm light beyond the door, subtle distant glass tower through door, realistic believable office scale. Cinematic photographic realism, directional soft lighting, rich restrained contrast, no sci-fi neon clutter. No giant screen, no fake software UI. Brand coral accent for second title line. Typography clean ultra-bold Chinese sans, beautifully aligned; title MUST be large readable at small size.
+Exact visible copy, no other promotional text:
+Top small logo supplied: 匠人学院 / JR ACADEMY
+Main two lines:
+门还在，
+锁换了。
+Below main title, bold uppercase: AI ENGINEER
+Small coral badge immediately beside/below course name: 第七期
+One supporting line: 带你一步步，把项目做出来。
+Bottom subtle short caption: 面向海外华人
+Very small corner disclosure: AI 创意演绎
+Do not add job guarantees, dates, prices, URLs, QR codes, claims of global uniqueness, or random text. Maintain clear margins, polished film poster hierarchy. Chinese main title is the central visual hook, characters are substantial and emotionally legible, tower is just a subtle visual link to the course. All title and text are part of the generated finished image.

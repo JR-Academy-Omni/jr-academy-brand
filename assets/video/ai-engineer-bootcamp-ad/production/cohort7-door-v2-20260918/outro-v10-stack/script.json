@@ -1,0 +1,18 @@
+{
+  "revision": "door-v10-stack-r1",
+  "voice": {
+    "provider": "elevenlabs-tts",
+    "model": "eleven_v3",
+    "speakerKey": "amy",
+    "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+    "tempo": 1
+  },
+  "segments": [
+    {
+      "id": "stack",
+      "start": 0.15,
+      "end": 5.8,
+      "text": "十层 AI 工程技术栈，系统学，动手做。"
+    }
+  ]
+}

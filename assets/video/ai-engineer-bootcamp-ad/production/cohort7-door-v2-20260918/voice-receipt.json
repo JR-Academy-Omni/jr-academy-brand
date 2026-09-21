@@ -1,0 +1,49 @@
+{
+  "provider": "elevenlabs-tts",
+  "model": "eleven_v3",
+  "speakerKey": "amy",
+  "voiceId": "bhJUNIXWQQ94l8eI2VUf",
+  "scriptRevision": "door-v2-20260918",
+  "scriptSha256": "fb341fe05e8ca3646319bc289bef2df60aeb2e689b65ee32d6d3a8a3a872b089",
+  "generatedThrough": "backend TtsService with real AiSettingsService and database model",
+  "generatedAt": "2026-09-18T02:05:45.582Z",
+  "usageRights": "JR Academy original advertising narration under configured ElevenLabs account",
+  "segments": [
+    {
+      "id": "graduate",
+      "audioSha256": "50edd8c47007801c0d7597a9bba38493e881406a724d31309027c9b34f526688",
+      "textSha256": "d6c30c453ad56fe3be5be4f3790e14bf7c35316a71a63050d086c13b6c720a21",
+      "bytes": 35570
+    },
+    {
+      "id": "worker",
+      "audioSha256": "8ea9c6d342dfec7af09a4aa00e71596ed3e2339b6e3b8ba4cbc52763708c9732",
+      "textSha256": "128b0683d054b9813b75f825df51a8fb3f2c87ff7ede4364d4a32961e0c46e83",
+      "bytes": 69007
+    },
+    {
+      "id": "recognition",
+      "audioSha256": "b1237fc88ac37897790bc11d5725fc6e31a43704253ffe2ed31d27dadcb35643",
+      "textSha256": "a4fd0d7cb1872549dec71bc04d6c4415af937362c8d2b2644b4e74b67b7bb436",
+      "bytes": 31808
+    },
+    {
+      "id": "turn",
+      "audioSha256": "85f7891008f18cac92ab98b2b2958cc04fc6c7368d78f69d3dd2e68098ab0cbc",
+      "textSha256": "93ed4510cc32554c73499721b462d3cc9d8a1c01a16b2117368347dbd2882d7b",
+      "bytes": 63991
+    },
+    {
+      "id": "practice",
+      "audioSha256": "dd9c01e2234896972b32ff0402c76446564ff9e4963064859abe8488ea92b441",
+      "textSha256": "4b62f03cd47807866ecf9cb4ba3475b1f4150bc829dac5440fb3dfa0f38b7835",
+      "bytes": 65245
+    },
+    {
+      "id": "brand",
+      "audioSha256": "44f226e80feb66fabfbb01da3e4a3f75463729e9554b9f58e7c8b9c7beab09bd",
+      "textSha256": "a50fc6beeb95c49cd5b8cb427036d09fd4c5dae507dcf180233efcb585e3cdb1",
+      "bytes": 109967
+    }
+  ]
+}

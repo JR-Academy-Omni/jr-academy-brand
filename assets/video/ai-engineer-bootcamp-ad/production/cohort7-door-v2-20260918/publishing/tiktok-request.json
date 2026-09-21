@@ -1,0 +1,22 @@
+{
+  "brandKey": "jr-academy",
+  "credentialAlias": "buffer-tiktok",
+  "channelId": "6aa69147ea19ca0bde344a89",
+  "idempotencyKey": "jr-ai-engineer-cohort7-door-20260918-tiktok-paced-v13",
+  "text": "毕业生：进门要经验。\n在职人：我有经验。\n门禁：企业级 AI 项目经验。\n两个人对视了一眼。\n\n原来，门还在，锁换了。\n\nAI Engineer 第七期，从 AI Coding 开始，带你一步步把项目做出来。RAG、Multi-Agent、Harness、LLM Routing、评测与监控，沿着十层 AI 技术栈，系统学，动手做。\n\n澳洲、美国、新加坡、马来西亚、日本、韩国，海外华人都可以上。\n想看课程大纲，私信「AI」。\n\nAI 创意演绎。\n#AIEngineer #匠人学院 #AICoding #海外求职 #程序员转型",
+  "assets": [
+    {
+      "video": {
+        "url": "https://jr-image.s3.ap-southeast-2.amazonaws.com/video-publishing/ai-engineer-cohort7/2026-09-18-door-v13-paced/AI-Engineer-Cohort-7-paced-v13-final.mp4",
+        "metadata": {
+          "thumbnailOffset": 17000
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "tiktok": {
+      "isAiGenerated": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "reviewed_at": "2026-09-18T05:54:00.826538+00:00",
+  "decision": "PASS",
+  "package_sha256": "b4962f75bb382d9e74b1cd83bdeb4733fce273fb604dfc568ba4068c7f1f83cf",
+  "raw_request_file": "raw-request.json",
+  "raw_request_sha256": "b638897150700115a76b6fc4830a064fc3e6dd42e40b2e6b038626d03ec8a07a",
+  "raw_dry_run_sha256": "84a089324c5e4d78de8ab14f6e5d17f59d845baf87949fc2dd41673eded1a866",
+  "task_list_after_validation_sha256": "cada6f2da504ad51d47b7812f37b57305cc364d2630b4b08a35c062dffd8ee64",
+  "task_count": 1,
+  "output_count": 1
+}

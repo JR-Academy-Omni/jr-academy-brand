@@ -1,0 +1,265 @@
+[
+  {
+    "id": "01-answer",
+    "task_id": "cgt-20260723215442-z9678",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "assets/video/ai-engineer-bootcamp-ad/raw/01-answer.mp4",
+    "last_frame": "assets/video/ai-engineer-bootcamp-ad/raw/01-answer-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "A single continuous forward-moving cinematic commercial shot, realistic live action, 16:9. Begin over the shoulder of a young Asian software developer in a premium but believable Sydney office at blue hour, warm wood desk, practical lamp, harbour lights through the window. The developer types a question into a clean AI chat interface and presses Enter. The interface contains only abstract lines and a blinking cursor, no readable text. A concise answer appears. The camera makes a smooth confident dolly forward toward the monitor. In the final two seconds the physical black monitor bezel and bright answer area occupy almost the entire frame, creating a practical threshold for the next shot. High-end technology brand film, 28mm lens, natural hand movement, restrained cream, graphite, coral and cyan accents, subtle film grain. No narration, no dialogue, no music, no logos, no watermark, no captions, no readable words, no cyberpunk, no portal, no holograms, no camera reversal, no shake."
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260723215442-z9678",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481488281100000000000000000000ffffac15b2d1371843.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481488281100000000000000000000ffffac15b2d1371843_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1784814882,
+      "updated_at": 1784815057,
+      "seed": 30838,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "02-system",
+    "task_id": "cgt-20260723215830-m7g8m",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "assets/video/ai-engineer-bootcamp-ad/raw/02-system.mp4",
+    "last_frame": "assets/video/ai-engineer-bootcamp-ad/raw/02-system-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue directly from the supplied first frame with identical lighting, lens, motion direction and screen geometry. The camera keeps moving forward and slides past the physical monitor bezel as a natural wipe. Behind the screen is revealed a large but completely realistic AI engineering workspace in the same office building, not a digital portal. Glide forward through real desks and people: one engineer arranging context documents, another comparing retrieved source evidence, another supervising connected software tools on ordinary monitors. The visual story communicates Context, retrieval, evidence and tool calls without readable text. End as a foreground monitor edge and a passing engineer partially occlude the frame, preparing the next reveal. Premium grounded commercial realism, warm wood, glass, graphite, restrained coral and cyan, believable Asian engineering team. No narration, no dialogue, no music, no logos, no watermark, no captions, no readable words, no neon tunnel, no holograms, no science-fiction control room, no camera reversal."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481488281100000000000000000000ffffac15b2d1371843_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260723215830-m7g8m",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481511114500000000000000000000ffffac181cf0bed080.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481511114500000000000000000000ffffac181cf0bed080_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1784815111,
+      "updated_at": 1784815439,
+      "seed": 93052,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "03-engineer",
+    "task_id": "cgt-20260723220428-mrlf4",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "assets/video/ai-engineer-bootcamp-ad/raw/03-engineer.mp4",
+    "last_frame": "assets/video/ai-engineer-bootcamp-ad/raw/03-engineer-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue seamlessly from the supplied first frame; preserve the exact office, people, lens, forward velocity and light. Move around the foreground monitor and reveal a confident Asian AI Engineer coordinating model, data and tool workflows from the center of the same realistic workspace. Continue past the engineer toward ordinary monitoring screens showing abstract trace timelines, evaluation states and real user feedback with no readable words. One test visibly changes to a restrained failure state; the engineer identifies the issue, makes a correction and reruns it. End close to a real glass doorway ahead, with its dark vertical frame moving across part of the image as a natural transition. Cinematic high-end technology commercial, quiet authority, practical incident-response atmosphere, no exaggerated acting. No narration, no dialogue, no music, no logos, no watermark, no captions, no readable text, no holograms, no giant control room, no cyberpunk, no camera reversal."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481511114500000000000000000000ffffac181cf0bed080_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260723220428-mrlf4",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481546971700000000000000000000ffffac181d0960bb24.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481546971700000000000000000000ffffac181d0960bb24_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1784815469,
+      "updated_at": 1784815646,
+      "seed": 49381,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "04-academy",
+    "task_id": "cgt-20260723220752-zfg5m",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "assets/video/ai-engineer-bootcamp-ad/raw/04-academy.mp4",
+    "last_frame": "assets/video/ai-engineer-bootcamp-ad/raw/04-academy-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue directly through the supplied glass-door first frame with matching forward camera motion. The camera crosses the real doorway and enters a brighter, premium JR Academy project lab within the same building. A mentor and diverse adult Asian coding students actively build real AI applications on laptops and large ordinary displays: arranging context, checking retrieved evidence, connecting tools through MCP, testing an Agent and collaborating on a multi-agent workflow. Show authentic project work and mentor feedback, not a staged lecture. The palette becomes more optimistic with cream walls, warm wood and vivid but tasteful coral and cyan details. The camera keeps gliding forward toward one focused student and a central deployment screen. End behind the student's shoulder with the screen growing large in frame. No narration, no dialogue, no music, no generated logos, no watermark, no captions, no readable words, no robots, no holograms, no science-fiction classroom, no camera reversal."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481546971700000000000000000000ffffac181d0960bb24_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260723220752-zfg5m",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481567275600000000000000000000ffffac1919e9894acf.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481567275600000000000000000000ffffac1919e9894acf_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1784815672,
+      "updated_at": 1784815920,
+      "seed": 71773,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  },
+  {
+    "id": "05-deploy-brand",
+    "task_id": "cgt-20260723221736-rng8w",
+    "model": "doubao-seedance-2-0-260128",
+    "video": "assets/video/ai-engineer-bootcamp-ad/raw/05-deploy-brand.mp4",
+    "last_frame": "assets/video/ai-engineer-bootcamp-ad/raw/05-deploy-brand-last-frame.png",
+    "request": {
+      "model": "ep-20260722120442-whqf6",
+      "content": [
+        {
+          "type": "text",
+          "text": "Continue seamlessly from the supplied first frame. This is the same exact JR Academy classroom, the same Asian coding students, the same Asian mentor, the same clothes, the same seating positions, the same central display, the same lighting and the same forward camera direction. Do not introduce a new room or new people. Stay behind the same focused student as they complete a software deployment on their laptop. The central ordinary display changes from the existing abstract network diagram to a minimal success interface made only of simple shapes, a check mark and clean blank panels, with absolutely no letters or readable text. The mentor and the same classmates react with restrained confidence while remaining at their desks. The camera rises slightly and glides forward to show this same working classroom team, then pushes into the central display until a clean cream interface fills the frame. In the final two seconds, the cream interface folds physically into a premium cream-and-coral rectangular brand box with a large perfectly blank center for an official logo and CTA added in post. Finish stable, centered and blank. High-end educational technology commercial, optimistic, realistic and substantial. No narration, no dialogue, no music, no generated logo, no watermark, no captions, no letters, no words, no fake Chinese characters, no new actors, no western boardroom, no audience rows, no holograms, no cyberpunk, no camera reversal."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481567275600000000000000000000ffffac1919e9894acf_last-frame.png"
+          },
+          "role": "first_frame"
+        }
+      ],
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "generate_audio": false,
+      "watermark": false,
+      "return_last_frame": true
+    },
+    "result": {
+      "id": "cgt-20260723221736-rng8w",
+      "model": "doubao-seedance-2-0-260128",
+      "status": "succeeded",
+      "content": {
+        "video_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481625732000000000000000000000ffffac1415cc6c7611.mp4",
+        "last_frame_url": "https://ark-acg-cn-beijing.tos-cn-beijing.volces.com/doubao-seedance-2-0/02178481625732000000000000000000000ffffac1415cc6c7611_last-frame.png"
+      },
+      "usage": {
+        "completion_tokens": 173700,
+        "total_tokens": 173700
+      },
+      "created_at": 1784816257,
+      "updated_at": 1784816380,
+      "seed": 96002,
+      "resolution": "720p",
+      "ratio": "16:9",
+      "duration": 8,
+      "framespersecond": 24,
+      "service_tier": "default",
+      "execution_expires_after": 172800,
+      "generate_audio": false,
+      "draft": false,
+      "priority": 0
+    }
+  }
+]

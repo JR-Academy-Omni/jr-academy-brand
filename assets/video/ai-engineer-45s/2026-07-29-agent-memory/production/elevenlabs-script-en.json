@@ -1,0 +1,13 @@
+{
+  "provider": "ElevenLabs",
+  "voice": {"name": "Amy", "voiceId": "bhJUNIXWQQ94l8eI2VUf", "model": "eleven_v3", "languageCode": "en", "stability": 0.72, "similarityBoost": 0.86, "style": 0.12, "useSpeakerBoost": true, "tempo": 1.0},
+  "segments": [
+    {"id": "01-hook", "text": "Does replaying every chat give an AI agent memory? No. It only gives the model more current context.", "direction": "Direct, calm Australian English.", "pauseAfterSeconds": 0.16},
+    {"id": "02-boundary", "text": "Switch threads, or trim the context window, and those details disappear.", "direction": "Emphasise disappear.", "pauseAfterSeconds": 0.16},
+    {"id": "03-layers", "text": "Production memory needs three layers: current task state, short-term thread memory, and long-term cross-session memory.", "direction": "Clear three-part cadence.", "pauseAfterSeconds": 0.16},
+    {"id": "04-example", "text": "Suppose a developer says, all my projects use TypeScript. Replaying one hundred and twenty-seven messages wastes tokens and buries the preference.", "direction": "Make the contrast concrete.", "pauseAfterSeconds": 0.16},
+    {"id": "05-record", "text": "Store one structured record instead, keyed to the user.", "direction": "Short and definite.", "pauseAfterSeconds": 0.16},
+    {"id": "06-retrieve", "text": "On the next task, retrieve that preference only when it is relevant, then inject it into context.", "direction": "Explain the data flow.", "pauseAfterSeconds": 0.18},
+    {"id": "07-close", "text": "Chat history is raw material. Agent memory is the system that decides what to write, retrieve, update, and delete.", "direction": "Finish as an engineering rule.", "pauseAfterSeconds": 0}
+  ]
+}
